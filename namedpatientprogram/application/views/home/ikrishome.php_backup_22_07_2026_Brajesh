@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en" data-wf-page="5f775d9aa6e41d02fdcb27b1">
+
+<head>
+  <!-- ===== PRIMARY META TAGS ===== -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Named Patient Program | Global Access to Medicines</title>
+  <meta name="description"
+    content="Access life-saving therapies through global Named Patient Programs. Supporting patients, physicians, and pharmaceutical companies worldwide.">
+  <meta name="keywords"
+    content="Named Patient Program, Named Patient Programs, Early Access Program, Compassionate Use Program, Managed Access Program, Patient Access Solutions, Unlicensed Medicines, Access to Innovative Medicines, Global Patient Access, Expanded Access Program, Pharmaceutical Access Programs, Rare Disease Treatment Access, Global Healthcare Access, Specialty Pharmaceuticals, Life-Saving Medicines">
+  <link rel="canonical" href="https://namedpatientprogram.com/">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="author" content="Ikris Pharma Network">
+  <meta name="language" content="English">
+  <meta name="geo.region" content="IN-UP">
+  <meta name="geo.placename" content="Noida, Uttar Pradesh, India">
+  <!-- ===== OPEN GRAPH (Facebook, LinkedIn, WhatsApp) ===== -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Named Patient Program – Ikris Pharma Network">
+  <meta property="og:title" content="Named Patient Program | Global Access to Medicines">
+  <meta property="og:description"
+    content="Access life-saving therapies through global Named Patient Programs. Supporting patients, physicians, and pharmaceutical companies worldwide.">
+  <meta property="og:url" content="https://namedpatientprogram.com/">
+  <meta property="og:image" content="https://namedpatientprogram.com/assets/images/home/hero_img.jpg">
+  <meta property="og:image:alt" content="Named Patient Program – Global Medicine Access">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="en_IN">
+  <!-- ===== TWITTER / X CARD ===== -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Named Patient Program | Global Access to Medicines">
+  <meta name="twitter:description"
+    content="Access life-saving therapies through global Named Patient Programs. Supporting patients, physicians, and pharmaceutical companies worldwide.">
+  <meta name="twitter:image" content="https://namedpatientprogram.com/assets/images/home/hero_img.jpg">
+  <meta name="twitter:image:alt" content="Named Patient Program – Global Medicine Access">
+  <!-- ===== FORMAT & TECHNICAL ===== -->
+  <meta name="format-detection" content="telephone=yes">
+  <meta name="distribution" content="Global">
+  <meta name="revisit-after" content="7 days">
+  <meta name="rating" content="General">
+  <meta name="category" content="Pharmaceutical, Healthcare, Patient Access">
+  <meta name="classification" content="Pharmaceutical Access Services">
+  <meta name="coverage" content="Worldwide">
+  <meta name="target" content="Patients, Physicians, Hospitals, Pharmaceutical Companies">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <!-- ===== ADDITIONAL SEO ===== -->
+  <meta name="topic" content="Named Patient Program, Access to Unlicensed Medicines, Compassionate Use">
+  <meta name="abstract"
+    content="Ikris Pharma Network facilitates compliant global access to unapproved and unlicensed medicines through Named Patient Programs for patients and healthcare providers worldwide.">
+  <meta name="subject" content="Global Named Patient Medicine Access">
+  <meta name="page-type" content="Homepage">
+
+  <script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://namedpatientprogram.com/#organization",
+    "name": "Ikris Pharma Network – Named Patient Program",
+    "alternateName": "Ikris Pharma Network",
+    "url": "https://namedpatientprogram.com/",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://namedpatientprogram.com/assets/img/logo.svg",
+      "width": 200,
+      "height": 60
+    },
+    "description": "India's leading Named Patient Program provider facilitating compliant global access to unapproved and unlicensed life-saving medicines for patients and healthcare providers worldwide.",
+    "foundingDate": "2015",
+    "numberOfEmployees": {
+      "@type": "QuantitativeValue",
+      "value": "10+"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Indian Pharma Network Tower A 905, I-Thum Business Park, Block A, Sector 62",
+      "addressLocality": "Noida",
+      "addressRegion": "Uttar Pradesh",
+      "postalCode": "201301",
+      "addressCountry": "IN"
+    },
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "telephone": "+91-9654860915",
+        "contactType": "customer support",
+        "areaServed": "Worldwide",
+        "availableLanguage": ["English", "Hindi"],
+        "contactOption": "TollFree",
+        "hoursAvailable": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+          "opens": "09:00",
+          "closes": "18:00"
+        }
+      },
+      {
+        "@type": "ContactPoint",
+        "telephone": "+91-9856458785",
+        "contactType": "sales",
+        "areaServed": "Worldwide",
+        "availableLanguage": ["English", "Hindi"]
+      },
+      {
+        "@type": "ContactPoint",
+        "email": "info@namedpatientprogram.com",
+        "contactType": "customer support"
+      }
+    ],
+    "sameAs": [
+      "https://ikrispharmanetwork.in",
+      "https://ikrishealthplus.com",
+      "https://ikrispharmainternational.com"
+    ],
+    "areaServed": "Worldwide",
+    "knowsAbout": [
+      "Named Patient Program",
+      "Compassionate Use Program",
+      "Early Access Program",
+      "Expanded Access Program",
+      "Managed Access Program",
+      "Unlicensed Medicines",
+      "Rare Disease Treatments",
+      "Oncology",
+      "Hematology",
+      "Specialty Pharmaceuticals"
+    ]
+  },
+
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://namedpatientprogram.com/#website",
+    "url": "https://namedpatientprogram.com/",
+    "name": "Named Patient Program",
+    "description": "Global access to life-saving unapproved and unlicensed medicines through compliant Named Patient Program pathways.",
+    "publisher": {
+      "@id": "https://namedpatientprogram.com/#organization"
+    },
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://namedpatientprogram.com/medicine/search?q={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    }
+  },
+
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://namedpatientprogram.com/#webpage",
+    "url": "https://namedpatientprogram.com/",
+    "name": "Named Patient Program | Global Access to Medicines",
+    "description": "Access life-saving therapies through global Named Patient Programs. Supporting patients, physicians, and pharmaceutical companies worldwide.",
+    "isPartOf": {
+      "@id": "https://namedpatientprogram.com/#website"
+    },
+    "about": {
+      "@id": "https://namedpatientprogram.com/#organization"
+    },
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://namedpatientprogram.com/"
+        }
+      ]
+    },
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": ["h1", ".hero-description"]
+    }
+  },
+
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalOrganization",
+    "@id": "https://namedpatientprogram.com/#medicalorg",
+    "name": "Ikris Pharma Network – Named Patient Program",
+    "url": "https://namedpatientprogram.com/",
+    "logo": "https://namedpatientprogram.com/assets/img/logo.svg",
+    "description": "India's leading Named Patient Program provider facilitating compliant access to unlicensed medicines for patients across oncology, rare diseases, hematology, neurology and more.",
+    "medicalSpecialty": [
+      "Oncology",
+      "Hematology",
+      "Rare Disease",
+      "Neurology",
+      "Immunology",
+      "Nephrology",
+      "Hepatology",
+      "Endocrinology",
+      "Pulmonology",
+      "Cardiology"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Tower A 905, I-Thum Business Park, Block A, Sector 62",
+      "addressLocality": "Noida",
+      "addressRegion": "Uttar Pradesh",
+      "postalCode": "201301",
+      "addressCountry": "IN"
+    },
+    "telephone": "+91-9654860915",
+    "email": "info@namedpatientprogram.com",
+    "areaServed": "Worldwide"
+  },
+
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How do I request a medicine through the Named Patient Program?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You can request a medicine by searching on our platform and submitting a request along with a valid prescription from a licensed medical practitioner."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is it legal to import medicines not approved in India?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Under CDSCO guidelines, medicines can be imported for personal use with a valid prescription through the Named Patient Program pathway."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How is cold-chain maintained during medicine delivery?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "All medicines are transported using temperature-controlled packaging with real-time monitoring (2–8°C refrigerated, -20°C frozen, 15–25°C ambient) aligned with WHO GDP standards to ensure safety and efficacy."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does it take to receive medicine through Named Patient Program?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Delivery timelines typically range between 7–15 days, depending on documentation completeness, regulatory approvals, and logistics."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Who determines the price of Named Patient Program medicines?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Prices are determined by manufacturers, import costs, logistics, regulatory requirements, and currency exchange factors. We provide transparent quotations upfront."
+        }
+      }
+    ]
+  },
+
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Named Patient Program – Medicine Access Service",
+    "serviceType": "Pharmaceutical Access Program",
+    "provider": {
+      "@id": "https://namedpatientprogram.com/#organization"
+    },
+    "description": "Compliant access to unapproved, unlicensed, and globally approved medicines for patients in India and worldwide through regulated Named Patient import pathways.",
+    "areaServed": "Worldwide",
+    "audience": {
+      "@type": "Audience",
+      "audienceType": "Patients, Physicians, Hospitals, Healthcare Providers"
+    },
+    "availableChannel": {
+      "@type": "ServiceChannel",
+      "serviceUrl": "https://namedpatientprogram.com/named-patient-program",
+      "serviceSmsNumber": "+91-9654860915",
+      "servicePhone": {
+        "@type": "ContactPoint",
+        "telephone": "+91-9654860915",
+        "contactType": "customer support"
+      }
+    },
+    "category": [
+      "Named Patient Program",
+      "Compassionate Use",
+      "Early Access Program",
+      "Expanded Access",
+      "Managed Access Program"
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Therapeutic Areas",
+      "itemListElement": [
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Oncology Medicine Access"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Hematology Medicine Access"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Rare Disease Medicine Access"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Neurology Medicine Access"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Immunology Medicine Access"}}
+      ]
+    }
+  },
+
+  {
+    "@context": "https://schema.org",
+    "@type": "AggregateRating",
+    "itemReviewed": {
+      "@type": "Organization",
+      "name": "Ikris Pharma Network – Named Patient Program",
+      "url": "https://namedpatientprogram.com/"
+    },
+    "ratingValue": "4.8",
+    "bestRating": "5",
+    "worstRating": "1",
+    "ratingCount": "150"
+  }
+]
+</script>
+
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-5QFX8TJM');</script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5QFX8TJM" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <link rel="stylesheet" href="<?= base_url(); ?>assets/css/home.css">
+  <style>
+    .breaking-news-title {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  </style>
+  <?php $this->load->view('layouts/includes/head-links'); ?>
+
+</head>
+
+<body>
+
+  <?php $this->load->view('layouts/includes/header'); ?>
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M485LTB" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <div class="page-wrapper">
+
+
+    <?php $this->load->view('pages/home'); ?>
+
+
+
+    <?php $this->load->view('layouts/includes/footer'); ?>
+  </div>
+  <script>
+
+    $(document).ready(function () {
+      var track = document.getElementById('track');
+      var controlBtn = document.getElementById('play-pause');
+
+      function playAudio() {
+        track.play();
+        controlBtn.className = "pause";
+        controlBtn.innerHTML = '<i class="ri-volume-up-line"> </i>';
+      }
+
+      function pauseAudio() {
+        track.pause();
+        controlBtn.className = "play";
+        controlBtn.innerHTML = '<i class="ri-volume-mute-line"> </i>';
+      }
+
+      function togglePlayPause() {
+        if (track.paused) {
+          playAudio();
+        } else {
+          pauseAudio();
+        }
+      }
+      // Play audio when the website opens
+      playAudio();
+      // Listen for user clicks to control audio playback
+      controlBtn.addEventListener("click", togglePlayPause);
+    });
+  </script>
+  <script>
+    window.onload = function () {
+      var track = document.getElementById('track');
+      if (track) {
+        track.play();
+      }
+    };
+  </script>
+  <!-- Home Counter JavaScript -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+
+      function animateCounter(el) {
+        const target = parseFloat(el.dataset.target);
+        const suffix = el.dataset.suffix || '';
+        const decimals = parseInt(el.dataset.decimal || '0', 10);
+        const duration = 1500; // ms
+        const startTime = performance.now();
+
+        function formatNumber(num) {
+          if (decimals > 0) {
+            return num.toFixed(decimals);
+          }
+          return Math.round(num).toLocaleString('en-US');
+        }
+
+        function step(now) {
+          const elapsed = now - startTime;
+          const progress = Math.min(elapsed / duration, 1);
+          // ease-out for a natural deceleration
+          const eased = 1 - Math.pow(1 - progress, 3);
+          const current = target * eased;
+
+          el.textContent = formatNumber(current) + suffix;
+
+          if (progress < 1) {
+            requestAnimationFrame(step);
+          } else {
+            el.textContent = formatNumber(target) + suffix;
+          }
+        }
+
+        requestAnimationFrame(step);
+      }
+
+      const counters = document.querySelectorAll('.stat-counter');
+      if (!counters.length) return;
+
+      const observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            animateCounter(entry.target);
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.4 });
+
+      counters.forEach(function (el) {
+        observer.observe(el);
+      });
+
+    });
+  </script>
+  <!-- End -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+      let index = 0;
+      const slides = document.querySelectorAll(".slider_1 .slide");
+
+      function changeSlide() {
+        slides.forEach(slide => slide.classList.remove("active"));
+        slides[index].classList.add("active");
+        index = (index + 1) % slides.length;
+      }
+
+      setInterval(changeSlide, 3500);
+
+    });
+    document.addEventListener("DOMContentLoaded", function () {
+
+      const prescriptionModal = document.getElementById("prescriptionModal");
+      const showPrescriptionBtn = document.getElementById("showPrescriptionForm");
+      const closePrescriptionBtn = document.getElementById("closePrescriptionModal");
+
+      if (!prescriptionModal || !showPrescriptionBtn || !closePrescriptionBtn) {
+        return;
+      }
+
+      showPrescriptionBtn.addEventListener("click", function () {
+        prescriptionModal.classList.add("active");
+        document.body.style.overflow = "hidden";
+      });
+
+      closePrescriptionBtn.addEventListener("click", function () {
+        prescriptionModal.classList.remove("active");
+        document.body.style.overflow = "";
+      });
+
+      prescriptionModal.addEventListener("click", function (e) {
+        if (e.target === prescriptionModal) {
+          prescriptionModal.classList.remove("active");
+          document.body.style.overflow = "";
+        }
+      });
+
+      document.addEventListener("keydown", function (e) {
+        if (
+          e.key === "Escape" &&
+          prescriptionModal.classList.contains("active")
+        ) {
+          prescriptionModal.classList.remove("active");
+          document.body.style.overflow = "";
+        }
+      });
+
+    });
+  </script>
+
+  <script src="<?= base_url(); ?>assets/js/home.js"></script>
+  <script src="<?= base_url(); ?>assets/js/jquery-3.6.4.min.js"></script>
+  <script src="<?= base_url(); ?>assets/js/jquery.min.js"></script>
+  <script src="<?= base_url(); ?>assets/js/jquery-ui.min.js"></script>
+  <script src="<?= base_url(); ?>assets/js/bootstrap.bundle.min.js"></script>
+  <script src="<?= base_url(); ?>assets/js/form-validator.min.js"></script>
+  <script src="<?= base_url(); ?>assets/js/contact-form-script.js"></script>
+  <script src="<?= base_url(); ?>assets/js/swiper-min.js"></script>
+  <script src="<?= base_url(); ?>assets/js/jquery-magnific-popup.js"></script>
+  <script src="<?= base_url(); ?>assets/js/countdown.js"></script>
+  <script src="<?= base_url(); ?>assets/js/main.js"></script>
+  <script src="<?= base_url(); ?>assets/js/script.js"></script>
+  <!-- jQuery JS -->
+  <script src="<?= base_url(); ?>assets/js/news1.js"></script>
+  <script src="<?= base_url(); ?>assets/js/news2.js"></script>
+  <script src="<?= base_url(); ?>assets/js/news_3.js"></script>
+  <script src="<?= base_url(); ?>assets/js/wow.min.js"></script>
+
+  <script>
+    new WOW().init();
+  </script>
+  <!-- Main JS -->
+  <!-- partial -->
+  <script src="<?= base_url(); ?>assets/js/countryList.js"></script>
+  <script src="<?= base_url(); ?>assets/js/customeSelect.js"></script>
+  <script src='<?= base_url(); ?>assets/js/owl.carousel.min.js'></script>
+  <!-- Cursor follow mover
+  <script src="<?= base_url(); ?>assets/js/cursor-animation.js"></script>
+  <!-- parallax -->
+  <script src="<?= base_url(); ?>assets/js/TweenMax.min.js"></script>
+  <script src="<?= base_url(); ?>assets/npm/sweetalert2%4011"></script>
+  <!---------------- Toaster ------------------->
+  <script type="text/javascript" src="<?= base_url(); ?>assets/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+  <script src="<?= base_url(); ?>assets/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</body>
+
+</html>

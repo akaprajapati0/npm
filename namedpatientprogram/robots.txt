@@ -1,0 +1,8 @@
+# robots.txt for https://namedpatientprogram.com
+# Allow all crawlers full access to the site
+
+User-agent: *
+Allow: /
+
+# Location of the XML sitemap
+Sitemap: https://namedpatientprogram.com/sitemap.xml

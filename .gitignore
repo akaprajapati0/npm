@@ -1,0 +1,36 @@
+# Dependencies and build output
+node_modules/
+.next/
+dist/
+build/
+coverage/
+
+# Environment and local tooling
+.env
+.env.*
+!.env.example
+.docker-local/
+
+# Runtime uploads/logs/backups
+backend/uploads/
+namedpatientprogram/uploads/
+namedpatientprogram/application/logs/
+*.log
+*.zip
+*.sql
+*.dump
+*.archive
+*.gz
+
+# Server backup and inspection artifacts
+server/
+
+# Local-only generated config with credentials
+docker/php/database.local.php
+scripts/add-local-hosts.ps1
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

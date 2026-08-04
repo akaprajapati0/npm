@@ -1,0 +1,302 @@
+# Named Patient Program (Ikris Pharma Network) — Full Content
+
+> Operated by Ikris Pharma Network Pvt Ltd ("NPP"), registered office at 905, I-Thum Business Park, Block A-40, Sector 62, Noida, Uttar Pradesh 201301, India. NPP facilitates compliant access to medicines approved internationally but not yet available in a patient's home country (primarily India), through regulated Named Patient Program / Managed Access Program pathways, against a valid prescription and in compliance with applicable regulatory frameworks (e.g., CDSCO in India). NPP is a facilitator and logistics/regulatory-support provider — it does not manufacture, formulate, or modify any pharmaceutical product.
+
+This file contains the expanded content of the site's core pages, with repeated navigation menus, footers, and cookie banners removed for readability. For a link-only index, see `llms.txt` at the site root.
+
+---
+
+## Page: Home
+URL: https://namedpatientprogram.com/
+
+### Leading Company in the Field of Named Patient Program
+Access to unapproved and unregistered medicines through compliant Named Patient Program pathways — backed by robust regulatory expertise, 100% compliance with Good Distribution Practice (GDP), and a strong global network.
+
+### A Trusted Compliant Partner For Innovative Medicines
+NPP provides authentic access to innovative & unapproved medicines through a trusted global network of manufacturers and stockists, fully aligned with GDP standards. Highlighted pillars: Safety & Transparency, Temperature-Controlled Logistics, Quality & Integrity, EU-Compliant Standards.
+
+### From Search & Approval to Global Medicine Access (process steps)
+1. **Access Request** — Submit your request to initiate the access pathway.
+2. **Medicine Verification** — Documents are reviewed for medical and regulatory compliance.
+3. **Quotation & Timelines** — Transparent pricing with clear timelines provided.
+4. **Regulatory Approval** — Approvals are managed in line with regulatory requirements.
+5. **Controlled Handling** — Product integrity maintained through controlled temperature handling.
+6. **Secure Delivery** — Safe, reliable delivery with end-to-end traceability.
+
+### Key statistics
+- 10+ years of expertise
+- 15,000+ patients served
+- 1.5 million+ product lines
+- 24/7 temperature monitoring
+- 50+ hospitals & institutions served
+
+### Is it legal in India to import?
+NPP is a leading Indian company in the Named Patient Program field, helping patients and healthcare providers access life-saving therapies not yet available in the Indian market. Topics covered on the site: documents required, regulatory approvals, scope of import, and permitted use & restrictions.
+
+### Medicines by Therapeutic Category (summaries)
+- **Oncology** — Therapeutics targeting cancers via chemotherapy, targeted therapies, immunotherapies, and monoclonal antibodies.
+- **Hematology** — Drugs for blood disorders (leukemia, lymphoma, anemia, hemophilia) using chemotherapies, growth factors, and clotting agents.
+- **Rare Disease** — Specialized orphan drugs and gene therapies for uncommon genetic, metabolic, or orphan conditions.
+- **Endocrinology** — Hormone-regulating medicines for diabetes, thyroid disorders, and adrenal conditions (insulins, thyroid replacements, corticosteroids).
+- **Hepatology** — Treatments for liver disease (hepatitis, cirrhosis, fatty liver) using antivirals, antifibrotics, and immunosuppressants.
+- **Immunology** — Agents modulating the immune system for autoimmune disease, allergies, and immunodeficiencies via biologics and immunosuppressants.
+- **Nephrology** — Treatments for kidney disorders (chronic kidney disease, glomerulonephritis, dialysis support) using antihypertensives and erythropoietin.
+- **Neurology** — Medications for CNS disorders (epilepsy, Parkinson's, migraine, multiple sclerosis) using antiepileptics, antiparkinsonians, and analgesics.
+
+### Every Degree Matters for Medicine Safety
+Temperature-sensitive medicines require strict, uninterrupted control from storage to delivery. NPP manages shipments across ambient (15–25°C), refrigerated (2–8°C), and frozen (-20°C) ranges under WHO GDP-aligned practices with real-time monitoring. Pillars: End-to-End Temperature Control, Multi-Range Cold Chain Expertise, Real-Time Temperature Monitoring Systems, Global Compliant Delivery Network.
+
+### Request Medicine With Valid Prescription (process)
+1. Click "request" to share your details and initiate your request.
+2. Securely upload a valid prescription from your doctor.
+3. Verification for authenticity and regulatory compliance.
+4. Receive treatment details, pricing, and delivery timelines.
+
+### FAQs (homepage excerpt)
+- **How do I request a medicine?** Search on the platform and submit a request with a valid prescription.
+- **How is cold-chain maintained?** All medicines are transported in temperature-controlled packaging with continuous monitoring.
+- **How long does it take to receive a medicine?** Typically 7–15 days, depending on documentation and logistics.
+- **Who sets the price?** Manufacturers, import costs, logistics, regulatory requirements, and currency factors determine pricing.
+- **Is it legal to buy medicines not approved in India?** Yes — under CDSCO guidelines, medicines can be imported for personal use with a valid prescription.
+
+### Contact (as listed on homepage)
+Email: info@namedpatientprogram.com | Phone: +91 9810469557 | Address: Indian Pharma Network, Tower A 905, I-Thum Business Park, Block A, Sector 62, Noida, Uttar Pradesh 201301.
+
+---
+
+## Page: About Us
+URL: https://namedpatientprogram.com/about-us
+
+### We are a new kind of pharmacy
+NPP is a leading Indian company in the Named Patient Program field, helping patients and healthcare providers access life-saving therapies not yet available in the Indian market. Mission: compliant, reliable, and timely access to medicines that matter. Over 10 years of expertise; 10,000+ patients facilitated through the Named Patient Program.
+
+### Bridging Access Through Named Patient Program
+Key facts: over 10 years of NPP expertise; 10,000+ patients supported; 1.5 million+ product lines; EU-GDP-certified warehouses (located in Belgium and Bulgaria).
+
+### Why Choose Us
+- **End-to-End Regulatory Support** — Comprehensive support across the NPP process: securing CDSCO approvals, DGFT import permits, and preparing legal documents, with a regulatory team handling each access request with precision.
+- **Patient Safety & Transparency** — Same comprehensive regulatory-support framework applied to safeguard patient safety and transparency.
+- **Quality Assurance & Compliance** — Same framework applied to quality assurance and compliance oversight.
+- **Our Vision** — Continued focus on seamless, compliant access pathways for healthcare providers and patients.
+
+### About Us FAQs
+- The Named Patient Program allows access to medications not yet approved in your country but available elsewhere, designed for patients with serious conditions and no local alternative.
+- Approval typically takes 2–4 weeks depending on country regulatory requirements and documentation completeness.
+- Required documents typically include: a valid prescription, medical history reports, diagnostic test results, and a completed patient consent form.
+- Named Patient Programs are available in many countries including the US, Canada, UK, Australia, and most of Europe and Asia.
+- Costs vary by medication, country of import, and regulatory requirements; pricing is transparent with no hidden fees.
+
+---
+
+## Page: Named Patient Program
+URL: https://namedpatientprogram.com/named-patient-program
+
+### What is a Named Patient Program (NPP)?
+A Named Patient Program, also known as a Managed Access Program, enables patients to access medicines approved in other countries but not yet available locally. It is designed for patients with urgent medical needs where no suitable local treatment exists.
+
+### Why NPP Matters
+Provides access to life-saving therapies; supports rare and critical conditions; enables physician-led treatment decisions; ensures ethical and regulated access.
+
+### How the Program Works
+1. **Medical Evaluation** — Your doctor evaluates your condition and prescribes the required treatment.
+2. **Document Submission** — Submit your prescription and required medical documents online.
+3. **Regulatory Approval** — The NPP team processes your application for regulatory compliance.
+4. **Delivery & Support** — Receive your medication with ongoing patient support.
+
+### Therapeutic Areas Covered
+1. **Oncology** — Advanced cancer treatments including targeted therapies and immunotherapies.
+2. **Hematology** — Treatments for anemia, leukemia, and clotting disorders, including advanced biologics and targeted medicines.
+3. **Neurology** — Therapies for multiple sclerosis, epilepsy, and rare genetic neurological disorders.
+4. **Immunology** — Advanced therapies for autoimmune and inflammatory conditions such as rheumatoid arthritis and lupus.
+5. **Nephrology** — Specialized treatments for chronic kidney disease and renal complications.
+6. **Gastroenterology** — Therapies for IBD, Crohn's disease, liver conditions, and digestive disorders.
+7. **Cardiology** — Treatments for heart failure and cardiovascular disorders.
+8. **Rare Diseases** — Specialized access to orphan drugs for rare and genetic conditions.
+9. **Miscellaneous** — Support for complex and emerging conditions requiring specialized therapies.
+
+### Who Can Access NPP?
+Patients with a life-threatening or serious condition; no approved treatment available locally; not eligible for clinical trials; the medicine has proven safety and efficacy elsewhere.
+
+### Regulatory Approval in India
+Access under NPP requires prior approval from the Central Drugs Standard Control Organization (CDSCO). Once approved, medicines are imported through licensed distributors in compliance with regulatory and safety standards.
+
+### NPP FAQs
+- NPP allows access to medications not yet approved locally but available elsewhere, for patients with serious conditions lacking local alternatives.
+- Approval typically takes 2–4 weeks depending on documentation and country requirements.
+- Required documents: prescription, medical history, diagnostic results, signed patient consent form.
+- NPP availability spans many countries (US, Canada, UK, Australia, most of Europe and Asia) — contact the team to confirm for a specific location.
+- Costs vary by medication, import country, and regulatory requirements; pricing is transparent.
+
+---
+
+## Page: Why Is the Prescription Required?
+URL: https://namedpatientprogram.com/legal-and-documents/why-prescription
+
+### How Prescriptions Are Handled
+Every prescription is reviewed by the compliance team; if details are missing or unclear, the prescribing doctor may be contacted for confirmation. Submitting a prescription authorizes NPP to verify it on the patient's behalf.
+
+### What a Prescription Must Contain
+- Doctor's identity: full name, clinic/hospital name, and contact details on official letterhead.
+- Medical registration number (e.g., MD/DNB) issued by the Medical Council of India.
+- Date of issue.
+- Patient's full name and date of birth.
+- Medication details: drug name (generic and brand), strength, total quantity, dosage instructions.
+- Doctor's hand-signed authorization with official seal.
+- An official prescription slip on the treating doctor's own pad — no photocopies or handwritten notes on plain paper.
+
+### Importance of Temperature Control
+Temperature control is treated as a patient-safety requirement, not a logistical formality, especially for specialty, orphan, and critical medicines. Medicines are handled per manufacturer-defined storage/transport conditions, including cold chain (2–8°C) and controlled room temperature (15–25°C) as applicable.
+
+---
+
+## Page: Medicine Safety
+URL: https://namedpatientprogram.com/legal-and-documents/medicine-safety
+
+### GDP-Compliant Logistics Operations
+NPP works with specialized pharmaceutical logistics partners experienced with regulated medicines under Indian climatic conditions (high ambient temperature/humidity), aligned with Good Distribution Practices (GDP). SOPs govern storage, packing, dispatch, transit, and delivery, overseen by trained personnel.
+
+### EU-GDP Certified Warehouse Infrastructure
+NPP operates through two EU-GDP certified warehouse facilities located in **Belgium and Bulgaria**, supporting compliant storage (2–8°C cold chain and controlled room temperature), consolidation, labeling, and onward distribution for Named Patient Programs. Warehouses follow documented GDP procedures: environmental monitoring, deviation management, access control, and regular quality reviews.
+
+### Temperature Monitoring and Data Logging
+1. Validated temperature-controlled and insulated packaging systems.
+2. Electronic data loggers providing trip-based or real-time temperature data.
+3. Pre-dispatch verification of packaging configuration.
+4. Post-delivery review and documentation of temperature records.
+
+### Product Integrity, Traceability, and FMD Alignment
+Where applicable, Falsified Medicines Directive (FMD)-aligned verification and traceability processes support product authentication and help prevent falsified medicines from entering the supply chain.
+
+### Risk Mitigation and Transit Management
+Structured risk mitigation covers transit delays, customs clearance, route variability, and seasonal climate challenges, via contingency planning, partner coordination, shipment tracking, and proactive communication.
+
+---
+
+## Page: Temperature & Logistics
+URL: https://namedpatientprogram.com/legal-and-documents/temp-and-logistics
+
+(Content largely mirrors the Medicine Safety page above: temperature-control principles, GDP-compliant logistics, EU-GDP certified Belgium/Bulgaria warehouses, temperature monitoring/data logging, FMD-aligned traceability, and risk mitigation.)
+
+### Commitment to Quality and Patient Safety
+Through validated infrastructure, EU-GDP certified warehouses in Belgium and Bulgaria, continuous temperature monitoring, data-driven oversight, and structured risk management, NPP aims to ensure medicines reach providers and patients in compliance with manufacturer specifications, regulatory expectations, and patient-safety requirements.
+
+---
+
+## Page: Reporting Adverse Drug Events
+URL: https://namedpatientprogram.com/legal-and-documents/report-adverse
+
+### Adverse Event Reporting
+Patient safety is described as the highest priority. Any suspected adverse drug event (ADE) or unexpected reaction involving a medicine facilitated through NPP should be reported promptly. Patients are advised to seek medical advice from their treating healthcare provider for any adverse event; patients in a clinical trial should report directly to their coordinating study site per trial protocol.
+
+### Adverse Event Reporting Form (sections)
+1. Patient Details (name, date of birth, age, gender, weight, height, additional info).
+2. Reporter Information (name, address, email, qualification — physician/pharmacist/other, country, phone, date).
+3. Suspected Medicine (name, manufacturer, batch, expiry, indication, dose, route, frequency, treatment dates, causality assessment — including whether the AE improved after stopping/reducing the drug and whether it reappeared on reintroduction).
+4. Adverse Event Description (symptoms, treatment, dates, intensity — mild/moderate/severe, outcome).
+5. Seriousness assessment (death, life-threatening, hospitalization/prolongation, persistent/significant disability, congenital abnormality/birth defect; cause and date of death; whether a post-mortem/autopsy was performed).
+6. Relevant additional information about the AE.
+7. Relevant medical history / concurrent diseases.
+8. Concomitant medication details.
+
+Submissions are described as routed to a pharmacovigilance team, with the reporter's consent to data sharing with the relevant local team.
+
+### Postal Reporting
+Global Pharmacovigilance Department, Ikris Pharma Network, 905 I-Thum Business Park, Plot No. 40, Block A, Unit No. 5, Tower A, Sector 62, Noida 201301 (India). Toll-free number: 1-800-309-8112 (India only).
+
+---
+
+## Page: FAQs
+URL: https://namedpatientprogram.com/faqs
+
+- **How do I request a medicine?** Search on the platform and submit a request along with a valid prescription.
+- **How is cold-chain maintained?** All medicines are transported using temperature-controlled packaging with continuous monitoring to ensure safety.
+- **How long does it take to receive a medicine?** Delivery timelines usually range between 7–15 days, depending on documentation and logistics.
+- **Who sets the price?** Prices are determined by manufacturers, import costs, logistics, regulatory requirements, and currency factors.
+- **Is it legal to buy medicines not approved in India?** Yes — under CDSCO guidelines, medicines can be imported for personal use with a valid prescription.
+
+---
+
+## Page: Contact Us
+URL: https://namedpatientprogram.com/contact-us
+
+- **Phone:** 1800-120-0365 (toll-free)
+- **Email:** info@namedpatientprogram.com
+- **Address:** 905 I-Thum Business Park, Plot No. 40, Unit No. 5, Tower A, Sector 62, Noida 201301 (India)
+- **Business Hours:** Monday–Friday 9:00 AM–6:00 PM; Saturday 10:00 AM–4:00 PM; Sunday closed.
+- Site includes a contact form requesting full name, email, phone number, and a message (max 500 characters).
+
+---
+
+## Page: Terms and Conditions
+URL: https://namedpatientprogram.com/terms-and-conditions
+Last updated: June 2026
+
+The site is operated by **Ikris Pharma Network Pvt Ltd** (registered office: 905, I-Thum Business Park, Block A-40, Sector 62, Noida, Uttar Pradesh 201301, India). Key points (summarized; condensed from the full legal text — see the live page for the complete, binding version):
+
+- **Scope of Services:** NPP facilitates sourcing and import of rare-disease drugs ("Products") not available in India, on a named-patient basis. Services include searching for products, submitting import enquiries, receiving a 3-day-valid ex-works price quote, placing orders, collecting payment in advance, and assisting with import licensing.
+- **Account Enrolment:** Users must register an account with accurate information, must be 18+, may not create duplicate accounts, and are responsible for safeguarding login credentials.
+- **Order Request & Delivery:** Orders are processed once accepted via a signed proforma invoice; delivery terms can be EXW, CNF, or CIF; products ship only after payment is received in full (unless credit terms apply); title/risk passes to the user upon receipt at the delivery point; delivery dates are estimates, not guaranteed.
+- **Pricing & Payment:** Prices include duties, freight, customs, insurance, and applicable taxes (GST); payment is due within 7 days of invoice issuance; NPP may adjust price for cost increases (taxes, government orders, etc.).
+- **Damages & Liability:** Delivered products generally cannot be returned/replaced; obvious defects must be reported in writing within 2 days of delivery with supporting photo evidence; misuse, improper storage, or post-delivery mishandling voids any claim.
+- **Warranty Disclaimer:** No warranties (express or implied, including merchantability or fitness for purpose) are given beyond what is expressly stated.
+- **Force Majeure:** NPP's obligations are excused for events beyond its control (acts of God, war, strikes, lockdowns, epidemic/pandemic, etc.); if such an event persists 60+ days, NPP may terminate pending orders.
+- **Taxes:** Prices are inclusive of applicable taxes including GST; NPP itemizes and remits taxes as required by law.
+- **General Conditions:** NPP acts as a facilitator only — the site is not an offer/solicitation to buy or sell products. NPP disclaims liability for medical decisions made by the user's own physician, and for losses/claims relating to the products themselves. Users consent to NPP's use of location, camera, audio, storage, video, microphone, and medical information needed to provide the service. Reverse engineering, scraping, spamming, and providing false information are prohibited.
+- **Ownership/IP:** NPP and its licensors retain all proprietary rights (copyrights, trademarks, trade secrets) in the website; users retain ownership of content they submit but grant NPP a broad license to use it.
+- **Data Collection & Usage:** By accepting the Terms, users consent to collection, use, and disclosure of their information as described, including anonymized/aggregated sharing with partners for business and R&D purposes, subject to the Privacy Policy.
+- **Prohibited Usage:** Users may not post unlawful, hateful, obscene, or infringing content, or use the site for any unlawful purpose, harassment, impersonation, scraping, or security circumvention.
+- **Disclaimers:** NPP does not guarantee uninterrupted, error-free service, and disclaims liability arising from pre-existing medical conditions, adverse drug reactions, or escalation of a prior medical condition — responsibility rests with the user.
+- **Indemnification:** Users agree to indemnify NPP against claims arising from their violation of law, third-party rights, misuse of products, or breach of the Agreement.
+- **Limitation of Liability:** NPP's aggregate liability to a user is capped at **INR 100**.
+- **Termination:** Users remain bound by the Agreement until the relevant Order Request's Price is paid in full and the service concludes; NPP may terminate access for non-compliance without notice.
+- **Governing Law & Disputes:** Governed by Indian law; disputes are subject to the exclusive jurisdiction of courts in **Ahmedabad, India**.
+- **Communications consent:** Users consent to receive transactional and promotional emails, SMS, and calls (including auto-dialled/pre-recorded) from NPP.
+- Questions about the Terms should be sent to info@namedpatientprogram.com.
+
+---
+
+## Page: Privacy Policy
+URL: https://namedpatientprogram.com/privacy-policy
+Last updated: June 2026
+
+- **Data Retention:** Personal information is retained only as long as necessary for service delivery and legal/regulatory/healthcare/pharmacovigilance/import-licensing compliance. Account data: kept while active, plus up to 30 days after closure (unless law requires longer). Transaction/billing records: retained per accounting/tax regulations. Medical/health information: retained as long as needed for healthcare/regulatory compliance. Analytics data: retained per service-provider practices. Deletion requests are generally processed within 30 days.
+- **Data Deletion:** Users may request deletion of personal information or account closure by emailing info@namedpatientprogram.com. Verified requests are processed within ~30 days, subject to legal/regulatory retention requirements; de-identified/aggregated data may be retained for analytics and research.
+- **Cancellation Policy:** Because orders involve regulatory approvals and patient-specific medicines, requests cannot be cancelled once processing has started (case-by-case review possible in special situations).
+- **Return Policy:** Returns are not allowed once a medicine is shipped or delivered, to maintain safety and regulatory compliance.
+- **Shipping Policy:** Medicines are shipped using temperature-controlled methods as required; delivery time varies with approvals and location; users receive tracking updates.
+- **Data Protection:** Personal and medical information is described as securely protected, accessible only to authorized team members, in line with applicable data-protection rules.
+- **Medical Disclaimer:** NPP does not provide medical advice or doctor consultations; treatment decisions rest with the user's doctor; NPP's role is limited to facilitating access to medicines via the Named Patient Program.
+- **General Policy:** Service depends on regulatory approvals and complete documentation; delays may occur due to authorities or logistics; use of the platform constitutes agreement to these terms.
+
+---
+
+## Indexed Sub-Pages (titles only — full content not expanded in this file)
+
+### Therapeutic Area category pages
+Cardiology, Endocrinology, Hematology, Hepatology, Immunology, Misc, Nephrology, Neurology, Oncology, Pulmonology, Rare Disease — each lists medicines available under that category at `/therapeutic-area/category-page/{id}`. Full catalogue: `/medicine/all`.
+
+### Imported Medicines (country/brand pages)
+Blincyto, Braftovi, Imdeltra, Kineret, Krazati, Lazcluze, Lytgobi, Orencia, Retevmo, Trientine (availability and India-specific pages), Trodelvy, Vyloy, Welireg — each page covers India-specific access information for that named medicine under the Named Patient Program.
+
+### Disease & Treatment Guides
+Acute Myeloid Leukemia, Bladder Cancer, Brain Tumor, Breast Cancer, Cervical Cancer, Colorectal Cancer, Kidney Cancer, Lung Cancer, Muscular Dystrophy, Ovarian Cancer, Prostate Cancer, Rheumatoid Arthritis, Thyroid Cancer, Wilson's Disease.
+
+### Articles & Drug Information
+AHUS, Counterfeit Drugs, Eculizumab, HMPV, Melanoma, MPOX Virus, Nelarabine, PAH, PBC, PNH, Polivy, Trodelvy.
+
+### FDA Drug Approvals
+Alyftrek, Brynovin, Datroway, Gavreto, Gomekli, Grafapex, Lumakras, Symbravo.
+
+### News
+News category, Article category, FDA Updates category; recent items include FDA approval of Qfitlia (fitusiran) for hemophilia, manufacture of risdiplam for SMA, Takeda's Qdenga vaccine, a piece on NPP as a "trusted global supplier from India," and an article on Wilson's Disease neurological symptoms and early signs.
+
+---
+
+## Disclaimer (site-wide, condensed)
+NamedPatientProgram.com facilitates access to prescribed medicines through regulated sourcing channels (manufacturers and authorized distributors); it does not manufacture, formulate, or modify any pharmaceutical product. Trademarks and brand names mentioned belong to their respective owners and are used for identification only, under fair-use principles (Trade Marks Act, 1999). The company does not claim ownership of, or assert rights over, patents associated with referenced products (Patents Act, 1970) — responsibility for patent compliance rests with the relevant patent holders, manufacturers, or marketing authorization holders. Access to medicines not yet approved/available in a patient's country, including newly approved therapies, is provided only through legally permissible named-patient channels, subject to a valid prescription from a licensed practitioner and full regulatory compliance.
+
+## Contact Summary
+- Email: info@namedpatientprogram.com
+- Phone/Toll-free: +91 9810469557 / +91 9654860915 / 1800-120-0365
+- Address: Indian Pharma Network / Ikris Pharma Network Pvt Ltd, Tower A, 905, I-Thum Business Park, Block A, Sector 62, Noida, Uttar Pradesh 201301, India
+- Customer login: https://app.namedpatientprogram.com

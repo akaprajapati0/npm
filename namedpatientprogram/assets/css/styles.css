@@ -1,0 +1,638 @@
+/* =========================================================
+   Ikris Pharma Network – Header Styles
+   ========================================================= */
+
+/*==================================== Phone Input */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+/* Default font */
+/* =========================================================
+   Ikris Pharma Network – Header Styles
+   ========================================================= */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.font-inter {
+  font-family: "Inter", sans-serif;
+}
+
+.font-playfair {
+  font-family: "Playfair Display", serif;
+}
+
+/* h1 {
+  font-size: 2em !important;
+  font-weight: bold !important;
+}
+
+h2 {
+  font-size: 1.5em !important;
+  font-weight: bold !important;
+} */
+
+/* h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serif;
+} */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Inter", sans-serif;
+}
+
+.iti {
+  width: 100% !important;
+  display: block;
+}
+
+.iti__tel-input {
+  width: 100% !important;
+}
+
+.iti input {
+  width: 100% !important;
+}
+
+/* ── Desktop Nav Dropdown ────────────────────────────────────────── */
+.nav-item {
+  position: relative;
+}
+
+.nav-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 200px;
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.25s ease;
+  z-index: 50;
+  padding: 8px 0;
+}
+
+.nav-item:hover>.nav-dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.nav-dropdown .nav-item>.nav-dropdown {
+  top: 0;
+  left: 100%;
+  margin-left: 8px;
+  transform: translateX(10px);
+}
+
+.nav-dropdown .nav-item:hover>.nav-dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+
+.nav-dropdown>a,
+.nav-dropdown>.nav-item>a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  font-size: 14px;
+  color: #374151;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.nav-dropdown>a:hover,
+.nav-dropdown>.nav-item>a:hover {
+  background: #eff6ff;
+  color: #2563eb;
+}
+
+.nav-item>button {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1f2937;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 0.2s;
+  white-space: nowrap;
+}
+
+.nav-item>button:hover {
+  color: #2563eb;
+}
+
+.nav-item>button .fa-chevron-down {
+  font-size: 10px;
+}
+
+nav>a {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1f2937;
+  transition: color 0.2s;
+  white-space: nowrap;
+  /* padding: 8px 12px; */
+}
+
+nav>a:hover {
+  color: #2563eb;
+}
+
+/* ── Search Bar Dropdown Panel ───────────────────────────────────── */
+.header-search {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 70%;
+  z-index: 999;
+  /* border-top: 1px solid #e5e7eb; */
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+  opacity: 0;
+  transform: translateY(-10px);
+  pointer-events: none;
+  transition: all 0.3s ease;
+  /* background: #fff; */
+}
+
+.header-search.active {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* ── Google Translate cleanup ────────────────────────────────────── */
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+}
+
+body {
+  top: 0px !important;
+}
+
+.goog-te-gadget {
+  font-size: 14px !important;
+}
+
+.goog-te-combo {
+  border-radius: 6px;
+  padding: 5px;
+}
+
+/* Flag icon sizing */
+.fi {
+  display: inline-block;
+  width: 22px !important;
+  height: 16px !important;
+  background-size: cover !important;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+#nav-support {
+  display: flex;
+}
+
+/* END TRANSLATE DROPDOWN */
+/* ===============================
+    Popup Cookie
+=============================== */
+
+/* HIDE BY DEFAULT */
+#cookie-popup {
+  display: none;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* BUTTON STYLE */
+.accept-cookie-btn {
+  background: #347cfa;
+  color: #ffffff;
+  padding: 10px 22px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.reject-cookie-btn {
+  background: #7a73a2;
+  color: #fff;
+  padding: 10px 22px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+/* HOVER */
+.accept-cookie-btn:hover {
+  background: #236be5;
+}
+
+.reject-cookie-btn:hover {
+  background: #6a6294;
+}
+
+/* MOBILE IMPROVEMENT */
+@media (max-width: 640px) {
+  #cookie-popup {
+    padding: 16px;
+  }
+
+  .accept-cookie-btn,
+  .reject-cookie-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* =====================
+Category Page Css 
+======================*/
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.cat-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 13px 8px;
+  border-bottom: 1px solid #ececec;
+  font-size: 15px;
+  font-weight: 500;
+  color: #1a1a1a;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.cat-item:last-child {
+  border-bottom: none;
+}
+
+.cat-item:hover {
+  color: #1a56db;
+}
+
+.cat-item.active {
+  color: #1a56db;
+  font-weight: 600;
+}
+
+.cat-item .chk {
+  font-size: 13px;
+  color: #bbb;
+}
+
+.cat-item.active .chk {
+  color: #1a56db;
+}
+
+.med-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.med-card .img-wrap {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background: #efefef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.med-card .img-wrap img {
+  max-width: 82%;
+  max-height: 82%;
+  object-fit: contain;
+  transition: transform 0.25s;
+}
+
+.med-card:hover .img-wrap img {
+  transform: scale(1.06);
+}
+
+.med-card .med-name {
+  margin-top: 12px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #111;
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  line-height: 1.4;
+  padding: 0 4px;
+}
+
+.faq-item {
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.faq-btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  gap: 16px;
+}
+
+.faq-ans {
+  display: none;
+  padding-bottom: 14px;
+  font-size: 14px;
+  color: #666;
+  line-height: 1.8;
+}
+
+/* Page layout */
+.page-wrap {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 32px 24px;
+}
+
+.page-grid {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.med-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px 20px;
+}
+
+.custom-pagination {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 40px;
+  margin-right: 130px;
+}
+
+.custom-pagination a {
+  display: inline-block;
+  min-width: 38px;
+  height: 38px;
+  line-height: 38px;
+  text-align: center;
+  border: 1px solid #bdbdbd;
+  color: #2f43ff;
+  text-decoration: none;
+  margin-left: -1px;
+  font-size: 14px;
+  background: #fff;
+}
+
+.custom-pagination a:hover {
+  background: #f5f5f5;
+}
+
+.custom-pagination .active {
+  background: #2f43ff;
+  color: #fff;
+  border-color: #2f43ff;
+}
+
+.sidebar-desktop {
+  position: sticky;
+  top: 24px;
+  margin-top: 260px;
+}
+
+@media (max-width: 1023px) {
+  .page-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar-desktop {
+    display: none !important;
+  }
+
+  .med-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px 12px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .sidebar-mobile {
+    display: none !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .med-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px 8px;
+  }
+}
+
+/* ===============================
+Adverse Drug Events
+ ================================*/
+/* ===== GLOBAL OVERFLOW FIX ===== */
+/* html,
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+} */
+
+/* ===== DATE INPUT FIX (iOS Safari) ===== */
+/* iOS Safari forces a minimum internal width on date inputs.
+   These rules override that and make them behave like text inputs. */
+input[type="date"] {
+  -webkit-appearance: none;
+  appearance: none;
+  min-width: 0 !important;
+  max-width: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* When date input is inside a flex row with a label,
+   it must be allowed to shrink below its natural size */
+.date-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+
+.date-row input[type="date"] {
+  flex: 1 1 0%;
+  min-width: 0;
+  width: 0;
+  /* forces flex to control width, not content */
+}
+
+.date-row span {
+  white-space: nowrap;
+  flex-shrink: 0;
+  font-size: 13px;
+}
+
+/* Stack date pairs on small screens */
+.date-pair {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media (min-width: 480px) {
+  .date-pair {
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  .date-pair .date-row {
+    flex: 1;
+    min-width: 0;
+  }
+}
+
+/* ===== SECTION / CONTAINER OVERFLOW GUARD ===== */
+section {
+  max-width: 100vw;
+  /* overflow-x: hidden; */
+  box-sizing: border-box;
+}
+
+/* ===========================
+New and Update css
+============================= */
+
+/* Card hover effects */
+.news-card {
+  transition: all 0.35s ease;
+}
+
+.news-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.news-card img {
+  transition: all 0.4s ease;
+}
+
+.news-card:hover img {
+  transform: scale(1.05);
+}
+
+/* Pagination Styles */
+.pagination-wrapper ul {
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pagination-wrapper li {
+  display: inline-block;
+}
+
+.pagination-wrapper li.page-item-active span {
+  font-weight: 700;
+  display: inline-block;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  background-color: #3b82f6;
+  color: #ffffff;
+  border: 1px solid #3b82f6;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+.pagination-wrapper a,
+.pagination-wrapper strong {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2.5rem;
+  height: 2.5rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+  transition: all 0.2s;
+  text-decoration: none;
+}
+
+.pagination-wrapper a {
+  background-color: #ffffff;
+  color: #4b5563;
+  border: 1px solid #e5e7eb;
+}
+
+.pagination-wrapper a:hover {
+  background-color: #3b82f6;
+  color: #ffffff;
+  border-color: #3b82f6;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+.pagination-wrapper strong {
+  background-color: #3b82f6;
+  color: #ffffff;
+  border: 1px solid #3b82f6;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+/* First/Last page arrows */
+.pagination-wrapper li:first-child a,
+.pagination-wrapper li:last-child a {
+  font-weight: 700;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 640px) {
+
+  .pagination-wrapper a,
+  .pagination-wrapper strong {
+    min-width: 2rem;
+    height: 2rem;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+  }
+}

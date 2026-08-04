@@ -1,0 +1,1134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 70px;
+    padding-bottom: 190px;
+    background: #ffffffff;
+}
+
+.hero-left {
+    width: 50%;
+}
+
+.hero-left h1 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero-left p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.btn,
+.btn-outline {
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.btn {
+    background: #705CF6;
+    color: white;
+    border: none;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid #705CF6;
+    color: #705CF6;
+}
+
+.hero-right {
+    width: 45%;
+}
+
+.slider_1 {
+    width: 100%;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.slider_1 img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+}
+
+.slider_1 img.active {
+    opacity: 1;
+}
+
+/* TRACKING */
+/* Background section */
+.tracking-section {
+    background: #8b8b8b;
+    /* grey */
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* Main box */
+.tracking-box {
+    width: 60%;
+    background: #fff;
+    padding: 18px;
+    border: 4px solid #e1e1e1;
+    /* border like screenshot */
+    position: relative;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+/* Input field */
+.tracking-box input {
+    width: 100%;
+    padding: 18px;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    box-sizing: border-box;
+}
+
+/* Button INSIDE box */
+.track-btn {
+    position: absolute;
+    right: 25px;
+    padding: 18px 45px;
+    background: #705CF6;
+    color: white;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: 0.4s;
+}
+
+.track-btn:hover {
+    color: #212529;
+    text-decoration: none;
+}
+
+.npp-btn {
+    background: transparent;
+    border: 2px solid #705CF6;
+    color: #705CF6;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.npp-btn:hover {
+    background: #705CF6;
+    color: white;
+}
+
+/* ==============================
+   Categories Section
+============================== */
+.category-section {
+    padding: 60px 80px;
+}
+
+.category-section h2 {
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.category-section p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.category-card {
+    border: 1px solid #e1e1e1;
+    padding: 20px;
+    text-align: center;
+    background: #e1e1e1;
+}
+
+.cat-img {
+    height: 190px;
+    background: #d9d9d9;
+    margin-bottom: 15px;
+}
+
+.category-card h4 {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.category-card a {
+    font-size: 13px;
+    color: #4d63ff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Global */
+/* .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+} */
+
+/* ------------------ SECTION 1 ------------------ */
+
+.product-access-section {
+    text-align: center;
+    padding: 60px 0;
+    background: #f4f4f4;
+}
+
+.product-access-section h2 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.product-access-section p {
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.product-slider {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 10px 0;
+    justify-content: flex-end;
+}
+
+.product-slider::-webkit-scrollbar {
+    display: none;
+}
+
+.product-card {
+    width: 220px;
+    background: #eaeaea;
+    padding: 15px;
+    border-radius: 6px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 6px;
+    background: #ccc;
+}
+
+.product-card h4 {
+    margin: 10px 0 5px;
+    font-size: 16px;
+}
+
+.product-card a {
+    font-size: 13px;
+    color: #007bff;
+}
+
+.slider-btn {
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.category-section-1 {
+    background: #e8e8e8;
+    padding: 60px 80px;
+}
+
+.category-section-1 h2 {
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.category-section-1 p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.category-grid-1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.category-card-1 {
+    border: 1px solid #e1e1e1;
+    padding: 20px;
+    text-align: center;
+    background: #e1e1e1;
+}
+
+.cat-img-1 {
+    height: 190px;
+    background: #d9d9d9;
+    margin-bottom: 15px;
+}
+
+.category-card-1 h4 {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.category-card-1 a {
+    font-size: 13px;
+    color: #4d63ff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* CENTER BUTTON */
+.center-btn {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.view-btn {
+    background: transparent;
+    border: 2px solid #705CF6;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 20px 10px 20px 20px;
+    display: inline-block;
+}
+
+.view-btn a {
+    color: #705CF6;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.view-btn:hover {
+    background: #705CF6;
+}
+
+.view-btn:hover a {
+    color: white;
+}
+
+
+
+/* ------------------ SECTION 2 ------------------ */
+
+.named-patient-section {
+    padding: 0px 0;
+}
+
+.named-patient-section .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    justify-content: space-between;
+    align-items: stretch;
+    justify-items: stretch;
+    margin-left: 100px;
+}
+
+.left-image img {
+    width: 100%;
+    background: #ccc;
+}
+
+.right-content {
+    margin-top: 60px;
+}
+
+.right-content h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.right-content p {
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px;
+}
+
+.features li {
+    margin-bottom: 6px;
+    padding-left: 18px;
+    position: relative;
+}
+
+.features li::before {
+    content: "▣";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 11px;
+}
+
+.learn-more {
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* ------------------ RESPONSIVE ------------------ */
+
+@media (max-width: 768px) {
+    .named-patient-section .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-card {
+        width: 75%;
+        margin: auto;
+    }
+}
+
+/* GLOBAL */
+/* .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+} */
+
+h2 {
+    font-size: 35px;
+    font-weight: 700;
+}
+
+p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* ========================== EXPERTISE SECTION ========================== */
+.expertise-section {
+    background: #f5f5f5;
+    padding: 60px 0 90px;
+}
+
+.expertise-section .stats-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 130px;
+    margin: 50px 0;
+}
+
+.stat-box {
+    text-align: center;
+}
+
+.stat-box h3 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.stat-box span {
+    color: #555;
+    font-size: 18px;
+}
+
+/* BUTTON */
+.btn-outline {
+    padding: 10px 25px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    display: inline-block;
+    background: #fff;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.center-btn {
+    text-align: center;
+}
+
+/* ========================== NEWS SECTION ========================== */
+.news-section {
+    background: #e8e8e8;
+    padding: 60px 0 90px;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: 45% 50%;
+    gap: 5%;
+    align-items: start;
+}
+
+/* LEFT BOX */
+.news-left {
+    background: #d9d9d9;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+/* 🔥 100% WORKING FIX — ANY IMAGE AUTO COMPRESS → 300×300 */
+.news-left img {
+    width: 100%;
+    /* FINAL OUTPUT WIDTH */
+    height: 300px;
+    /* FINAL OUTPUT HEIGHT */
+    object-fit: cover;
+    /* AUTO CROP + COMPRESS */
+    border-radius: 6px;
+    margin-bottom: 12px;
+    display: block;
+    background: #ccc;
+}
+
+/* RIGHT SIDE ITEMS */
+.news-right .news-item {
+    background: #d9d9d9;
+    padding: 53px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.news-left h4,
+.news-item h4 {
+    font-size: 17px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.news-left p,
+.news-item p {
+    color: #444;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.news-left a,
+.news-item a {
+    font-size: 13px;
+    color: #007bff;
+}
+
+.expertise-section-1 {
+    background: #fff;
+    padding: 26px 0 32px;
+}
+
+
+/* ========================== RESPONSIVE ========================== */
+@media (max-width: 900px) {
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stats-row {
+        gap: 25px;
+    }
+}
+
+@media (max-width: 600px) {
+    h2 {
+        font-size: 26px;
+    }
+
+    .stat-box h3 {
+        font-size: 24px;
+    }
+}
+
+/* TOP STEP SECTION */
+.step-process {
+    background: #d9d9d9;
+    padding: 40px 20px;
+    font-family: "Inter", sans-serif;
+}
+
+.steps-wrapper {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.step-box {
+    width: 140px;
+    flex: 1 1 120px;
+}
+
+.step-number {
+    width: 75px;
+    height: 75px;
+    background: white;
+    border-radius: 50%;
+    margin: 0 auto 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.step-box h4 {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.step-box p {
+    font-size: 12px;
+    color: #444;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .steps-wrapper {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .step-box {
+        width: 100%;
+        max-width: 200px;
+    }
+}
+
+
+.contact-faq-section {
+    background: #f2f2f2;
+    padding: 50px 20px;
+    font-family: "Inter", sans-serif;
+}
+
+/* .container-1 {
+    max-width: 1184px;
+    margin-left: 70px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: baseline;
+    flex-direction: row;
+    align-content: center;
+    gap: 20px;
+} */
+
+.container-2 {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* LEFT SIDE FORM */
+.contact-form {
+    flex: 1 1 45%;
+}
+
+.contact-form h2 {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.contact-form p {
+    font-size: 14px;
+    margin: 10px 0 25px;
+    color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.contact-form textarea {
+    height: 100px;
+    resize: none;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 14px;
+    background: #8ea8ff;
+    border: none;
+    color: black;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: 600;
+    margin-top: 12px;
+}
+
+/* RIGHT SIDE FAQ */
+.faq-section {
+    flex: 1 1 45%;
+}
+
+.faq-section h2 {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.faq-section p {
+    font-size: 14px;
+    color: #333;
+    margin: 10px 0 25px;
+}
+
+/* FAQ ACCORDION (CSS ONLY) */
+.faq {
+    border-bottom: 1px solid #bbb;
+    padding: 12px 0;
+}
+
+.faq input {
+    display: none;
+}
+
+.faq label {
+    display: block;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+    position: relative;
+    padding-right: 25px;
+}
+
+/* PLUS SIGN */
+.faq label::after {
+    content: "+";
+    position: absolute;
+    right: 0;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* MINUS SIGN WHEN OPEN */
+.faq input:checked+label::after {
+    content: "-";
+}
+
+/* ANSWER */
+.answer {
+    display: none;
+    padding-top: 10px;
+    font-size: 14px;
+    color: #444;
+}
+
+.faq input:checked~.answer {
+    display: block;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+
+/* SECTION WRAPPER */
+/* -------------------------------------- */
+/* MAIN CONTAINER                         */
+/* -------------------------------------- */
+
+.container-1 {
+    max-width: 1184px;
+    /* SECTION WRAPPER */
+    margin-left: 100px;
+}
+
+.global_section {
+    background: #e8e8e8;
+    padding: 40px 0;
+    margin: 0 0 10px 0;
+    position: relative;
+    z-index: 3;
+}
+
+/* REMOVE LEFT/RIGHT EXTRA SPACE */
+.global_section .container-fluid {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.global_section .col {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+/* Add gap between text col and video col */
+.col-gap {
+    display: flex;
+    gap: 40px;
+    /* adjust as per need */
+}
+
+/* TITLE AND PARAGRAPH */
+.section-title h2 {
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin: 0;
+    color: #000;
+}
+
+.global_section .section-title p {
+    color: #666;
+    letter-spacing: 0.3px;
+    margin-top: 10px;
+    margin-right: 0;
+    /* removed unwanted space */
+}
+
+/* VIDEO CONTAINER */
+.globe-video-container {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.global-video-1 {
+    width: 100%;
+    border-radius: 20px;
+}
+
+/* HELPLINE ICON BOX */
+.helpline-number {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.helpline-number .number-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 16px;
+}
+
+.number-text h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #000;
+}
+
+
+
+/* SPACING */
+.pt-60 {
+    padding-top: 20px;
+}
+
+/* CTA BUTTON */
+.npp-btn {
+    background: #705CF6;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 6px;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+.npp-btn:hover {
+    background: #5a49d4;
+}
+
+.expertise-section-3 {
+    background: #666;
+    padding: 35px 40px 35px;
+}
+
+.expertise-section-3 h2 {
+    font-size: 55px;
+}
+
+
+/* ================================
+   MOBILE RESPONSIVE FIXES (ONLY)
+================================ */
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+
+    .hero-left,
+    .hero-right {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .hero-left h1 {
+        font-size: 28px;
+    }
+
+    .hero-left p {
+        font-size: 16px;
+    }
+
+    .slider_1 {
+        height: 220px;
+    }
+
+    .slider_1 img {
+        height: 220px;
+    }
+}
+
+
+/* =====================================
+   RESPONSIVE — CATEGORY SECTION 1
+======================================*/
+@media (max-width: 768px) {
+
+    .category-section-1 {
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .category-section-1 h2 {
+        font-size: 22px !important;
+        line-height: 30px !important;
+    }
+
+    .category-section-1 p {
+        font-size: 14px !important;
+    }
+
+    /* Slider buttons become small and closer */
+    .product-slider {
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .product-slider .slider-btn {
+        padding: 6px 10px;
+        font-size: 16px;
+    }
+
+    /* GRID → Single Column */
+    .category-grid {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+    }
+
+    /* Cards fullwidth */
+    .category-card {
+        width: 100%;
+    }
+
+    .category-card h4 {
+        font-size: 16px !important;
+    }
+
+    .category-card a {
+        font-size: 14px !important;
+    }
+
+    /* Button full width */
+    .center-btn .view-btn {
+        width: 100%;
+        padding: 12px 15px;
+        font-size: 16px;
+        margin: 0px;
+    }
+
+    .center-btn .view-btn a {
+        display: block;
+        width: 100%;
+    }
+}
+
+
+/* Extra Small Screens */
+@media (max-width: 480px) {
+
+    .category-section-1 h2 {
+        font-size: 20px !important;
+    }
+
+    .category-grid {
+        gap: 15px !important;
+    }
+}
+
+
+/* TRACKING SECTION */
+@media (max-width: 768px) {
+    .tracking-box {
+        width: 90%;
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .tracking-box input {
+        font-size: 18px;
+        padding: 14px;
+    }
+
+    .track-btn {
+        position: relative;
+        width: 100%;
+        right: 0;
+        margin-top: 10px;
+        padding: 14px;
+        text-align: center;
+    }
+}
+
+/* CATEGORY GRID */
+@media (max-width: 768px) {
+    .category-section {
+        padding: 40px 20px;
+    }
+
+    .category-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+
+    .cat-img {
+        height: 140px;
+    }
+}
+
+/* PRODUCT SLIDER */
+@media (max-width: 768px) {
+    .product-card {
+        width: 70%;
+    }
+}
+
+/* NAMED PATIENT SECTION */
+@media (max-width: 768px) {
+    .named-patient-section .grid {
+        grid-template-columns: 1fr;
+        margin-left: 0;
+        padding: 0 20px;
+    }
+
+    .right-content h2 {
+        font-size: 26px;
+    }
+}
+
+/* NEWS SECTION */
+@media (max-width: 768px) {
+    .news-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .news-right .news-item {
+        padding: 25px;
+    }
+}
+
+/* EXPERTISE NUMBER BOXES */
+@media (max-width: 768px) {
+    .expertise-section .stats-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+/* STEP PROCESS */
+@media (max-width: 768px) {
+    .step-process {
+        padding: 30px 10px;
+    }
+}
+
+/* CONTACT + FAQ */
+@media (max-width: 768px) {
+    .container-2 {
+        flex-direction: column;
+    }
+
+    .contact-form,
+    .faq-section {
+        flex: 1 1 100%;
+    }
+}
+
+/* GLOBE VIDEO + TEXT SECTION */
+@media (max-width: 768px) {
+    .container-1 {
+        margin-left: 0;
+        padding: 0 20px;
+    }
+
+    .col-gap {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .section-title h2 {
+        font-size: 26px;
+    }
+}
+
+/* BOTTOM EXPERTISE SECTION */
+@media (max-width: 768px) {
+    .expertise-section-3 h2 {
+        font-size: 30px;
+        text-align: center;
+    }
+}

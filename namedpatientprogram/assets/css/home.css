@@ -1,0 +1,265 @@
+/* Exact Hero Background */
+.hero-section {
+  background:
+    linear-gradient(to right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.3)),
+    url("<?= base_url(); ?>assets/uploads/partners_image/1211701060354_Mask-Group-28.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 600px;
+  position: relative;
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  overflow-y: auto;
+  animation: fadeIn 0.3s;
+}
+
+.modal.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.modal-content {
+  background: white;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 650px;
+  max-height: 90vh;
+  overflow-y: auto;
+  animation: slideDown 0.3s;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Form Styles */
+.prescription-form input,
+.prescription-form textarea,
+.prescription-form select {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: all 0.3s;
+  background: #f9fafb;
+}
+
+.prescription-form input:focus,
+.prescription-form textarea:focus {
+  outline: none;
+  border-color: #8b5cf6;
+  background: white;
+  box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.1);
+}
+
+.prescription-form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #374151;
+  font-size: 13px;
+}
+
+.required::after {
+  content: "*";
+  color: #ef4444;
+  margin-left: 3px;
+}
+
+/* Exact button from image */
+.btn-white {
+  background: white;
+  color: #1f2937;
+  padding: 14px 28px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 15px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-white:hover {
+  background: #f3f4f6;
+  transform: translateY(-2px);
+}
+
+.btn-outline-white {
+  background: transparent;
+  color: white;
+  padding: 14px 28px;
+  border: 2px solid white;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 15px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.btn-outline-white:hover {
+  background: white;
+  color: #1f2937;
+}
+
+.btn-yellow {
+  background: #ca8a04;
+  color: #1f2937;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(202, 138, 4, 0.3);
+}
+
+.btn-yellow:hover {
+  background: #b45309;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(202, 138, 4, 0.4);
+}
+
+.btn-submit {
+  background: #8b5cf6;
+  color: white;
+  padding: 14px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 15px;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-submit:hover {
+  background: #7c3aed;
+  transform: translateY(-2px);
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #ef4444;
+  color: white;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  font-size: 20px;
+  transition: all 0.3s;
+  z-index: 10;
+}
+
+.close-btn:hover {
+  background: #dc2626;
+  transform: rotate(90deg);
+}
+
+/* ===== MEDICINE SLIDER FIX ===== */
+#sliderWrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+#medicineSlider {
+  display: flex;
+  gap: 24px;
+  transition: transform 0.4s ease;
+  will-change: transform;
+}
+
+#medicineSlider .slide-card {
+  flex: 0 0 256px;
+  /* w-64 = 16rem = 256px */
+  width: 256px;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    min-height: 500px;
+  }
+
+  .modal-content {
+    margin: 10px;
+  }
+
+  #medicineSlider .slide-card {
+    flex: 0 0 220px;
+    width: 220px;
+  }
+}
+
+#categoryWrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.category-card {
+  width: 256px;
+}
+
+/* .iti {
+  width: 100%;
+}
+
+.iti input {
+  width: 100% !important;
+}
+
+.iti__country-list {
+  z-index: 9999 !important;
+}
+
+.iti--container {
+  z-index: 9999 !important;
+} */

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="41.5" height="41.5" viewBox="0 0 41.5 41.5">
+  <g id="globe-outline" transform="translate(-47.25 -47.25)">
+    <path id="Path_12" data-name="Path 12" d="M68,48A20,20,0,1,0,88,68,20,20,0,0,0,68,48Z" fill="none" stroke="#343434" stroke-width="1.5"/>
+    <path id="Path_13" data-name="Path 13" d="M154.164,48c-5.584,0-10.834,8.955-10.834,20s5.25,20,10.834,20S165,79.045,165,68,159.747,48,154.164,48Z" transform="translate(-86.164)" fill="none" stroke="#343434" stroke-width="1.5"/>
+    <path id="Path_14" data-name="Path 14" d="M117.33,117.33a23.415,23.415,0,0,0,26.667,0M144,144a23.415,23.415,0,0,0-26.667,0" transform="translate(-62.664 -62.664)" fill="none" stroke="#343434" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <path id="Path_15" data-name="Path 15" d="M68,48V88M88,68H48" fill="none" stroke="#343434" stroke-width="1.5"/>
+  </g>
+</svg>

@@ -1,0 +1,1325 @@
+<!-- <section class="hidden bg-gray-50 md:block">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="flex items-center justify-end h-14 gap-4">
+
+
+            <span class="hidden sm:inline text-gray-800 text-sm">
+                Request medicine with Valid Prescription
+            </span>
+
+
+            <a href="#Prescription"
+                class="text-[#8D57FF] border border-[#0040C6] px-5 py-2 text-sm font-semibold rounded-sm hover:opacity-90 transition whitespace-nowrap">
+                Request With Prescription
+            </a>
+
+        </div>
+    </div>
+</section> -->
+
+<!-- ================= HERO SECTION ================= -->
+<section class="relative overflow-hidden">
+
+    <!-- Hero -->
+    <div class="relative h-[420px] sm:h-[620px] lg:h-[600px] xl:h-[660px]">
+
+        <!-- Background Image -->
+        <img src="<?= base_url('assets/images/home/hero_img.jpg'); ?>" alt="Named Patient Program"
+            class="absolute inset-0 w-full h-full object-cover object-center lg:object-center">
+
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-[#0F024A]/75"></div>
+
+        <!-- Content -->
+        <div class="relative z-10 h-full flex items-center justify-center">
+
+            <div class="max-w-5xl mx-auto px-6 text-center text-white">
+
+                <p class="font-serif
+                           text-white
+                           font-normal
+                           text-[32px]
+                           leading-[1.2]
+                           sm:text-[46px]
+                           sm:leading-[1.18]
+                           lg:text-[72px]
+                           lg:leading-[1.12]">
+
+                    Leading Company in the Field
+                    Of Named Patient Program
+
+                </p>
+
+                <p class="mx-auto
+                           mt-8
+                           max-w-4xl
+                           text-[15px]
+                           leading-7
+                           sm:text-[18px]
+                           lg:text-[20px]
+                           text-white/95">
+
+                    Access to unapproved and unregistered medicines through compliant
+                    Named Patient Program pathways backed by robust regulatory expertise,
+                    100% compliance with GDP, and a strong global network.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= TRACKING BAR ================= -->
+<section class="relative bg-white">
+
+    <div class="absolute left-1/2 -translate-x-1/2 -top-8 sm:-top-10 lg:-top-18 w-full max-w-6xl px-4 z-30">
+
+        <form action="<?= base_url('tracking'); ?>" method="GET"
+            class="flex items-center bg-white border-2 border-[#2F6BFF] rounded-full shadow-xl h-16 overflow-hidden p-2">
+
+            <!-- Input -->
+            <input type="text" name="invoice" placeholder="Enter your tracking number, e.g., IKL/IGL/25-26/090/327"
+                class="flex-1 h-full px-6 md:px-4 sm:px-2 bg-transparent outline-none
+                       text-sm md:text-base text-gray-700
+                       placeholder:text-gray-500 min-w-0" required>
+
+            <!-- Button -->
+            <button type="submit" class="h-12 md:h-full
+                       w-[100px] sm:w-[120px] md:w-[220px]
+                       rounded-full
+                       bg-[#2F6BFF]
+                       hover:bg-blue-700
+                       text-white
+                       font-medium
+                       text-xs md:text-base
+                       transition-all duration-300
+                       flex items-center justify-center
+                       shrink-0">
+
+                Track <span class="hidden md:inline">&nbsp;Your</span>&nbsp;Medicine
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<!-- Section 1 -->
+<section class="bg-[#F8FAFC] flex justify-center px-6 lg:px-[70px] py-10 lg:py-20 mt-5">
+    <div class="w-full max-w-[1280px] flex flex-col lg:flex-row items-center gap-8 lg:gap-16">
+
+        <!-- Text column -->
+        <div class="w-full lg:flex-1 flex flex-col lg:px-6">
+
+            <!-- Image: shown first on mobile, hidden here on lg (rendered in image column instead) -->
+            <div class="order-1 lg:hidden mb-6">
+
+                <img src="<?= base_url('assets/images/home/section_img1.png'); ?>" alt="Named Patient Program" class="w-full
+                   h-[260px]
+                   sm:h-[340px]
+                   object-cover
+                   ">
+
+            </div>
+
+            <!-- Title -->
+            <!-- <p class="px-4 order-2 text-2xl sm:text-3xl md:text-4xl font-medium leading-tight text-black mb-2 px-1 sm:px-2 font-playfair"> -->
+            <h2 class="text-2xl order-2 sm:text-3xl md:text-4xl font-medium leading-tight font-playfair text-black">
+                A Trusted Compliant Partner<br class="hidden sm:block" />For
+                <span class="text-[#0047AB]">Innovative Medicines</span>
+            </h2>
+
+            <!-- Description -->
+            <p class="order-3 mt-5 text-base leading-7 text-[#444]">
+                We ensure authentic access to innovative & unapproved medicines through a trusted global manufacturers
+                and
+                stockists network, fully aligned with Good Distribution Practice (GDP) standards. With strong regulatory
+                oversight and adherence to applicable guidelines, we maintain the highest levels of safety and
+                compliance.
+            </p>
+
+            <!-- Feature icons -->
+
+            <!-- Features -->
+            <div class="order-4 grid grid-cols-2 gap-y-5 gap-x-4 mt-8 items-start">
+
+                <div class="flex items-center gap-3">
+                    <img src="<?= base_url('assets/images/home/safety1.png') ?>"
+                        class="w-8 h-8 sm:w-10 sm:h-10 flex-shrink-0" alt="Safety & Transparency">
+                    <span class="text-sm sm:text-base">Safety & Transparency</span>
+                </div>
+
+                <div class="flex items-center gap-3">
+                    <img src="<?= base_url('assets/images/home/tempreture1.png') ?>"
+                        class="w-8 h-8 sm:w-10 sm:h-10 flex-shrink-0" alt="Tempreture Controlled Logistics">
+                    <span class="text-sm sm:text-base">Tempreture Controlled Logistics</span>
+                </div>
+
+                <div class="flex items-center gap-3">
+                    <img src="<?= base_url('assets/images/home/quality1.png') ?>"
+                        class="w-8 h-8 sm:w-10 sm:h-10 flex-shrink-0" alt="Quality & Integrity">
+                    <span class="text-sm sm:text-base">Quality & Integrity</span>
+                </div>
+
+                <div class="flex items-center gap-3">
+                    <img src="<?= base_url('assets/images/home/standard1.png') ?>"
+                        class="w-8 h-8 sm:w-10 sm:h-10 flex-shrink-0" alt="Eu Complaince Standard">
+                    <span class="text-sm sm:text-base">Eu Complaince Standard</span>
+                </div>
+
+            </div>
+
+            <!-- CTA -->
+            <!-- <div class="order-5 lg:px-6">
+                <a href="<?= base_url('named-patient-program'); ?>"
+                    class="text-sm inline-flex items-center mt-6 text-white rounded-md border border-[#0040C6] bg-[#0040C6] font-medium hover:bg-[#0040C6] hover:text-white transition duration-300 px-6 py-2">
+                    Learn more
+                </a>
+            </div> -->
+            <div class="order-5 mt-8">
+                <a href="<?= base_url('about-us'); ?>"
+                    class="inline-flex items-center px-6 py-2.5 bg-[#0040C6] text-white rounded-md hover:bg-[#0037A8] transition">
+                    Learn More
+                </a>
+            </div>
+        </div>
+
+        <!-- Image column: hidden on mobile (image already shown above), visible from lg -->
+        <div class="hidden lg:flex lg:flex-shrink-0 justify-center">
+
+            <img src="<?= base_url('assets/images/home/section_img1.png'); ?>" class="w-full
+            lg:w-[420px]
+            xl:w-[520px]
+            lg:h-[420px]
+            xl:h-[500px]
+            object-cover
+            ">
+
+        </div>
+
+    </div>
+</section>
+<!-- SECTION : Search to Global Medicine Access -->
+<section class="bg-white py-20">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+
+        <!-- Heading -->
+        <div class="text-center">
+
+            <h2 class="text-[28px] md:text-[42px] leading-[1.25] font-normal text-[#1A1A1A] font-playfair">
+                From Search &amp;<br>
+                Approval to
+                <span class="text-[#355ED8]">
+                    Global Medicine Access
+                </span>
+            </h2>
+
+            <p class="mt-7 text-[15px] md:text-[16px] text-[#444444]">
+                When access goes beyond borders, this is the path your medicine follows.
+                <span class="font-semibold text-[#355ED8]">
+                    Get Start with our help
+                </span>
+            </p>
+
+        </div>
+
+        <!-- Steps -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-y-14 gap-x-6 mt-20">
+
+            <!-- Step 1 -->
+            <div class="flex flex-col items-center lg:items-start text-center lg:text-left">
+
+                <div class="flex items-center justify-center lg:justify-start w-full">
+
+                    <span class="text-[#355ED8] text-[34px] font-light">
+                        01
+                    </span>
+
+                    <div class="hidden lg:flex flex-1 ml-4 items-center">
+                        <svg class="w-full h-6 text-[#355ED8]" viewBox="0 0 100 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                            <line x1="0" y1="12" x2="90" y2="12" stroke="currentColor" stroke-width="2" />
+                            <path d="M84 5L92 12L84 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" fill="none" />
+                        </svg>
+                    </div>
+
+                </div>
+
+                <p class="mt-2 px-2 lg:px-0 text-[15px] leading-[1.5] font-semibold text-[#111827]">
+                    Submit your request to initiate the access pathway
+                </p>
+
+                <div class="lg:hidden mt-6 flex justify-center w-full">
+                    <svg class="w-6 h-6 text-[#355ED8]" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <line x1="12" y1="2" x2="12" y2="18" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" />
+                        <path d="M5 13L12 20L19 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" fill="none" />
+                    </svg>
+                </div>
+
+            </div>
+
+            <!-- Step 2 -->
+            <div class="flex flex-col items-center lg:items-start text-center lg:text-left">
+
+                <div class="flex items-center justify-center lg:justify-start w-full">
+
+                    <span class="text-[#355ED8] text-[34px] font-light">
+                        02
+                    </span>
+
+                    <div class="hidden lg:flex flex-1 ml-4 items-center">
+                        <svg class="w-full h-6 text-[#355ED8]" viewBox="0 0 100 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                            <line x1="0" y1="12" x2="90" y2="12" stroke="currentColor" stroke-width="2" />
+                            <path d="M84 5L92 12L84 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" fill="none" />
+                        </svg>
+                    </div>
+
+                </div>
+
+                <p class="mt-2 px-2 lg:px-0 text-[15px] leading-[1.5] font-semibold text-[#111827]">
+                    Review documents for compliance
+                </p>
+
+                <div class="lg:hidden mt-6 flex justify-center w-full">
+                    <svg class="w-6 h-6 text-[#355ED8]" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <line x1="12" y1="2" x2="12" y2="18" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" />
+                        <path d="M5 13L12 20L19 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" fill="none" />
+                    </svg>
+                </div>
+
+            </div>
+
+            <!-- Step 3 -->
+            <div class="flex flex-col items-center lg:items-start text-center lg:text-left">
+
+                <div class="flex items-center justify-center lg:justify-start w-full">
+
+                    <span class="text-[#355ED8] text-[34px] font-light">
+                        03
+                    </span>
+
+                    <div class="hidden lg:flex flex-1 ml-4 items-center">
+                        <svg class="w-full h-6 text-[#355ED8]" viewBox="0 0 100 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                            <line x1="0" y1="12" x2="90" y2="12" stroke="currentColor" stroke-width="2" />
+                            <path d="M84 5L92 12L84 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" fill="none" />
+                        </svg>
+                    </div>
+
+                </div>
+
+                <p class="mt-2 px-2 lg:px-0 text-[15px] leading-[1.5] font-semibold text-[#111827]">
+                    Provide transparent pricing with clear timelines
+                </p>
+
+                <div class="lg:hidden mt-6 flex justify-center w-full">
+                    <svg class="w-6 h-6 text-[#355ED8]" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <line x1="12" y1="2" x2="12" y2="18" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" />
+                        <path d="M5 13L12 20L19 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" fill="none" />
+                    </svg>
+                </div>
+
+            </div>
+
+            <!-- Step 4 -->
+            <div class="flex flex-col items-center lg:items-start text-center lg:text-left">
+
+                <div class="flex items-center justify-center lg:justify-start w-full">
+
+                    <span class="text-[#355ED8] text-[34px] font-light">
+                        04
+                    </span>
+
+                    <div class="hidden lg:flex flex-1 ml-4 items-center">
+                        <svg class="w-full h-6 text-[#355ED8]" viewBox="0 0 100 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                            <line x1="0" y1="12" x2="90" y2="12" stroke="currentColor" stroke-width="2" />
+                            <path d="M84 5L92 12L84 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" fill="none" />
+                        </svg>
+                    </div>
+
+                </div>
+
+                <p class="mt-2 px-2 lg:px-0 text-[15px] leading-[1.5] font-semibold text-[#111827]">
+                    Manage approvals in line with regulations
+                </p>
+
+                <div class="lg:hidden mt-6 flex justify-center w-full">
+                    <svg class="w-6 h-6 text-[#355ED8]" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <line x1="12" y1="2" x2="12" y2="18" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" />
+                        <path d="M5 13L12 20L19 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" fill="none" />
+                    </svg>
+                </div>
+
+            </div>
+
+            <!-- Step 5 -->
+            <div class="flex flex-col items-center lg:items-start text-center lg:text-left">
+
+                <div class="flex items-center justify-center lg:justify-start w-full">
+
+                    <span class="text-[#355ED8] text-[34px] font-light">
+                        05
+                    </span>
+
+                </div>
+
+                <p class="mt-2 px-2 lg:px-0 text-[15px] leading-[1.5] font-semibold text-[#111827]">
+                    Ensure safe delivery with full traceability
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- Button -->
+        <div class="text-center mt-16">
+
+            <a href="<?= base_url('contact-us') ?>"
+                class="inline-flex items-center justify-center bg-[#355ED8] hover:bg-[#2f54d0] transition text-white text-[15px] font-medium px-8 py-2 rounded-md">
+                Learn More
+            </a>
+
+        </div>
+
+    </div>
+</section>
+<!-- SECTION 3 : BRIDGING ACCESS -->
+<section class="bg-[#F8FAFC] flex justify-center px-6 sm:px-6 lg:px-[100px] py-10 lg:py-20">
+    <div class="w-full max-w-[1280px] flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
+
+        <!-- Image Column -->
+        <div class="w-full lg:w-auto lg:flex-shrink-0 order-1">
+
+            <img src="<?= base_url('assets/images/home/section_img2.png'); ?>" alt="Named Patient Program" class="w-full
+                   h-[260px]
+                   sm:h-[340px]
+                   lg:h-[420px]
+                   xl:h-[500px]
+                   lg:max-w-[420px]
+                   xl:max-w-[520px]
+                   object-cover
+                   ">
+
+        </div>
+
+        <!-- Content Column -->
+        <div class="w-full lg:flex-1 order-2 lg:px-6">
+
+            <!-- Title -->
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-medium leading-tight font-playfair text-black">
+                Is it Legal in
+                <span class="text-[#0047AB]"> India<br />to Import ?</span>
+            </h2>
+
+            <!-- Description -->
+            <p class="mt-5 text-base leading-7 text-[#444]">
+                We are a leading Indian company in the Named Patient Program, enabling patients and healthcare providers
+                to access life-saving therapies not yet available in India, with a clear mission to deliver compliant,
+                reliable, and timely
+                access to essential medicines for those
+                in need.
+            </p>
+
+            <!-- Features -->
+            <div class="grid grid-cols-2 gap-y-5 gap-x-4 mt-8 items-start">
+
+                <div class="flex items-center gap-3">
+                    <img src="<?= base_url('assets/images/home/check.png') ?>"
+                        class="w-8 h-8 sm:w-10 sm:h-10 flex-shrink-0" alt="Document Required">
+                    <span class="text-sm sm:text-base">Document Required</span>
+                </div>
+
+                <div class="flex items-center gap-3">
+                    <img src="<?= base_url('assets/images/home/out.png') ?>"
+                        class="w-8 h-8 sm:w-10 sm:h-10 flex-shrink-0" alt="Scope of Import">
+                    <span class="text-sm sm:text-base">Scope of Import</span>
+                </div>
+
+                <div class="flex items-center gap-3">
+                    <img src="<?= base_url('assets/images/home/approve.png') ?>"
+                        class="w-8 h-8 sm:w-10 sm:h-10 flex-shrink-0" alt="Regulatory Approval">
+                    <span class="text-sm sm:text-base">Regulatory Approval</span>
+                </div>
+
+                <div class="flex items-center gap-3">
+                    <img src="<?= base_url('assets/images/home/permit.png') ?>"
+                        class="w-8 h-8 sm:w-10 sm:h-10 flex-shrink-0" alt="Permitted Use & Restrictions">
+                    <span class="text-sm sm:text-base">Permitted Use & Restrictions</span>
+                </div>
+
+            </div>
+
+            <!-- Button -->
+            <div class="mt-8">
+                <a href="<?= base_url('compliance-and-safety/indian-import-regulations'); ?>"
+                    class="inline-flex items-center px-6 py-2.5 bg-[#0040C6] text-white rounded-md hover:bg-[#0037A8] transition">
+                    Learn More
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- New section added -->
+
+<!-- Content -->
+<div class="max-w-4xl mx-auto text-center space-y-5 pt-20">
+
+    <h1 class="text-3xl sm:text-4xl lg:text-[32px] font-normal leading-tight text-gray-900 font-playfair">
+        Trusted Expertise in<br />Compliant <span class="text-[#2563EB]">Global Medicine </span>Access
+    </h1>
+
+    <p class="text-base sm:text-lg text-[#333333] leading-relaxed max-w-3xl mx-auto font-inter">
+        We support patients and healthcare providers through compliant pathways, trusted sourcing, and reliable
+        logistics ensuring timely access to essential medicines when it matters most.
+    </p>
+
+</div>
+
+<!-- Stats -->
+<div class="max-w-6xl mx-auto mt-12">
+
+    <div id="statsGrid" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-6 items-start py-5">
+
+        <div class="text-center">
+            <h2 class="stat-counter text-2xl sm:text-3xl font-bold text-black" data-target="10" data-suffix="+">0+</h2>
+            <p class="text-sm sm:text-base text-gray-600 mt-2">
+                Years of Expertise
+            </p>
+        </div>
+
+        <div class="text-center">
+            <h2 class="stat-counter text-2xl sm:text-3xl font-bold text-black" data-target="15000" data-suffix="+">0+
+            </h2>
+            <p class="text-sm sm:text-base text-gray-600 mt-2">
+                Patients Served
+            </p>
+        </div>
+
+        <div class="text-center">
+            <h2 class="stat-counter text-2xl sm:text-3xl font-bold text-black" data-target="1.5" data-suffix=" Million+"
+                data-decimal="1">0 Million+</h2>
+            <p class="text-sm sm:text-base text-gray-600 mt-2">
+                Product Lines
+            </p>
+        </div>
+
+        <div class="text-center">
+            <h2 class="text-2xl sm:text-3xl font-bold text-black">24/7</h2>
+            <p class="text-sm sm:text-base text-gray-600 mt-2">
+                Temperature Monitoring
+            </p>
+        </div>
+
+    </div>
+    <div class="text-center col-span-2 sm:col-span-1">
+        <h2 class="stat-counter text-2xl sm:text-3xl font-bold text-black" data-target="50" data-suffix="+">0+</h2>
+        <p class="text-sm sm:text-base text-gray-600 mt-2">
+            Hospitals & Institutions Served
+        </p>
+    </div>
+    <!-- Button -->
+    <div class="flex justify-center pb-20">
+        <a href="<?= base_url('about-us'); ?>"
+            class="text-sm inline-flex items-center mt-8 text-white rounded-md font-medium bg-[#0040C6] hover:text-[#0040C6] transition duration-300 px-6 py-2">
+            Learn more
+        </a>
+    </div>
+
+</div>
+</section>
+
+<!-- Section 3 -->
+
+<!-- Section 3 -->
+<section class="bg-[#F8FAFC] flex justify-center px-6 sm:px-6 lg:px-[100px] py-10 lg:py-20">
+    <div class="w-full max-w-[1280px] flex flex-col lg:flex-row items-center gap-8 lg:gap-16">
+
+        <!-- Text column -->
+        <div class="w-full lg:flex-1 flex flex-col lg:px-6">
+
+            <!-- Image: shown first on mobile, hidden here on lg (rendered in image column instead) -->
+            <div class="order-1 lg:hidden mb-6">
+
+                <img src="<?= base_url('assets/images/home/section_img3.png'); ?>" alt="Named Patient Program" class="w-full
+                   h-[260px]
+                   sm:h-[340px]
+                   object-cover
+                   ">
+
+            </div>
+
+            <!-- Title -->
+            <!-- <p class="px-4 order-2 text-2xl sm:text-3xl md:text-4xl font-medium leading-tight text-black mb-2 px-1 sm:px-2 font-playfair"> -->
+            <h2 class="text-2xl order-2 sm:text-3xl md:text-4xl font-medium leading-tight font-playfair text-black">
+                Every Degree
+                <br class="hidden sm:block" />Matters For
+                <span class="text-[#0047AB]">Medicine Safety</span>
+            </h2>
+
+            <!-- Description -->
+            <p class="order-3 mt-5 text-base leading-7 text-[#444]">
+                Temperature-sensitive medicines require strict, uninterrupted control from storage to delivery, as even
+                minimal variation can impact safety and effectiveness. With temperature ranges from ambient (15–25°C) to
+                refrigerated (2–8°C) and frozen (-20°C), each shipment is managed under a fully compliant supply chain
+                using WHO GDP-aligned practices and real-time monitoring to ensure optimal condition upon arrival.
+            </p>
+
+            <!-- Feature icons -->
+
+            <div class="order-4 grid grid-cols-2 gap-y-5 gap-x-4 mt-8 items-start">
+
+                <div class="flex items-center gap-3">
+                    <img src="<?= base_url('assets/images/home/temp2.png') ?>"
+                        class="w-8 h-8 sm:w-10 sm:h-10 flex-shrink-0" alt="Safety & Transparency">
+                    <span class="text-sm sm:text-base">Safety & Transparency</span>
+                </div>
+
+                <div class="flex items-center gap-3">
+                    <img src="<?= base_url('assets/images/home/box.png') ?>"
+                        class="w-8 h-8 sm:w-10 sm:h-10 flex-shrink-0" alt="Temperature Controlled Logistics">
+                    <span class="text-sm sm:text-base">Temperature Controlled Logistics</span>
+                </div>
+
+                <div class="flex items-center gap-3">
+                    <img src="<?= base_url('assets/images/home/moniter.png') ?>"
+                        class="w-8 h-8 sm:w-10 sm:h-10 flex-shrink-0" alt="Quality & Integrity">
+                    <span class="text-sm sm:text-base">Quality & Integrity</span>
+                </div>
+
+                <div class="flex items-center gap-3">
+                    <img src="<?= base_url('assets/images/home/globe.png') ?>"
+                        class="w-8 h-8 sm:w-10 sm:h-10 flex-shrink-0" alt="EU Compliance Standard">
+                    <span class="text-sm sm:text-base">EU Compliance Standard</span>
+                </div>
+
+            </div>
+
+            <!-- CTA -->
+            <div class="order-5 mt-8">
+                <a href="<?= base_url('compliance-and-safety/product-safety-standards'); ?>"
+                    class="inline-flex items-center px-6 py-2.5 bg-[#0040C6] text-white rounded-md hover:bg-[#0037A8] transition">
+                    Learn More
+                </a>
+            </div>
+        </div>
+
+        <!-- Image column: hidden on mobile (image already shown above), visible from lg -->
+        <div class="hidden lg:flex lg:flex-shrink-0 justify-center">
+
+            <img src="<?= base_url('assets/images/home/section_img3.png'); ?>" class="w-full
+            lg:w-[420px]
+            xl:w-[520px]
+            lg:h-[420px]
+            xl:h-[500px]
+            object-cover
+            rounded-md">
+
+        </div>
+
+    </div>
+</section>
+<!-- SECTION 5 : PRODUCT SLIDER -->
+<section class="bg-[#F8FAFC] py-16 md:py-24 px-4">
+    <div class="max-w-7xl mx-auto">
+
+        <!-- Heading -->
+        <div class="flex flex-col items-center justify-center text-center mb-10">
+            <h2 class="text-3xl md:text-4xl font-normal text-gray-900 mb-4 font-playfair">
+                Trusted Expertise In<br class="hidden sm:block" />
+                Compliant <span class="text-[#2563EB]">Global Medicine</span> Access
+            </h2>
+
+            <p class="text-gray-600 text-base max-w-3xl font-inter">
+                We support patients and healthcare providers through compliant pathways,
+                trusted sourcing, and reliable logistics ensuring timely access to
+                essential medicines when it matters most.
+            </p>
+        </div>
+
+        <!-- Controls -->
+        <div class="flex justify-end gap-2 mb-4">
+            <button onclick="slidePrev()" id="btnPrev" class="w-10 h-10 bg-white border border-gray-300 rounded-lg
+                       hover:bg-gray-100 flex items-center justify-center transition">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button onclick="slideNext()" id="btnNext" class="w-10 h-10 bg-white border border-gray-300 rounded-lg
+                       hover:bg-gray-100 flex items-center justify-center transition">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+
+        <?php
+        // Build a category_name => description lookup ONCE, instead of
+        // wrapping the whole slider in a foreach($med_categories) loop.
+        $category_descriptions = [];
+        if (!empty($med_categories)) {
+            foreach ($med_categories as $cat) {
+                // adjust the key field to whatever actually identifies the category
+                // (e.g. $cat->name / $cat->slug) so it matches $med->category_name
+                $category_descriptions[$cat->name] = $cat->description;
+            }
+        }
+        ?>
+
+        <!-- Slider Wrapper (rendered ONCE) -->
+        <div id="sliderWrapper">
+            <div id="medicineSlider">
+
+                <?php
+                $limit = 0;
+                if (!empty($patent_medicines)):
+                    foreach ($patent_medicines as $med):
+                        if ($limit >= 12)
+                            break;
+                        $limit++;
+
+                        // pull the description that matches THIS medicine's own category,
+                        // instead of reusing an outer-loop $cat variable
+                        $description = $category_descriptions[$med->category_name] ?? '';
+                        ?>
+                <div class="slide-card bg-white rounded-xl shadow-md hover:shadow-xl transition p-3 text-start">
+
+                    <!-- Image -->
+                    <div class="w-full h-44 bg-gray-100 rounded-lg mb-4
+                                    flex items-center justify-center overflow-hidden">
+                        <?php if (!empty($med->image)): ?>
+                        <img src="<?= base_url('assets/images/medicines/' . $med->image); ?>"
+                            alt="<?= htmlspecialchars($med->name); ?>" class="max-w-full max-h-full object-contain">
+                        <?php else: ?>
+                        <img src="<?= base_url('assets/images/medicine-placeholder.png'); ?>" alt="No Image"
+                            class="max-w-full max-h-full object-contain">
+                        <?php endif; ?>
+                    </div>
+
+                    <!-- Title -->
+                    <h4 class="text-lg font-bold text-gray-900 mb-2 line-clamp-2">
+                        <?= htmlspecialchars($med->name); ?>
+                    </h4>
+
+                    <!-- Description -->
+                    <p class="text-gray-600 text-sm">
+                        <?= htmlspecialchars($description); ?>
+                    </p>
+
+                    <!-- Link -->
+                    <a href="<?= base_url('m/' . strtolower($med->category_name) . '/' . strtolower($med->name)); ?>"
+                        class="text-black underline hover:text-blue-800 font-medium">
+                        Read more
+                    </a>
+
+                </div>
+                <?php
+                    endforeach;
+                endif;
+                ?>
+
+            </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="flex justify-center mt-5">
+            <a href="<?= site_url('medicine/all'); ?>"
+                class="text-sm inline-flex items-center mt-8 rounded-md text-white font-medium bg-[#0040C6] transition duration-300 px-6 py-2">
+                View All Product List
+            </a>
+        </div>
+    </div>
+</section>
+
+
+<!-- Request Medicine With Valid Prescription -->
+<section class="bg-[#2F63E6] py-12 sm:py-16 lg:py-24">
+    <div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-16">
+
+        <!-- Heading -->
+        <div class="max-w-3xl">
+            <h2 class="font-playfair text-white text-[22px] sm:text-[28px] lg:text-[40px] leading-tight font-normal">
+                Request Medicine <br>
+                With Valid Prescription
+            </h2>
+
+            <p
+                class="mt-4 sm:mt-6 text-white/95 text-[13px] sm:text-[14px] lg:text-[15px] leading-6 sm:leading-7 max-w-4xl">
+                We support patients and healthcare providers by facilitating access
+                to medicines through a transparent process, ensuring regulatory compliance,
+                prescription verification, and reliable delivery support.
+            </p>
+        </div>
+
+        <!-- Steps -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 lg:gap-12 mt-10 sm:mt-14 py-8">
+
+            <!-- Step 1 -->
+            <div>
+                <h3 class="text-[#FFF200] text-[26px] sm:text-[34px] lg:text-[38px] font-light leading-none">
+                    01
+                </h3>
+
+                <p
+                    class="mt-3 sm:mt-4 text-white font-semibold text-[14px] sm:text-[16px] lg:text-[17px] leading-6 sm:leading-7">
+                    Click on Request to Share Your Details to initiate your request
+                </p>
+            </div>
+
+            <!-- Step 2 -->
+            <div>
+                <h3 class="text-[#FFF200] text-[26px] sm:text-[34px] lg:text-[38px] font-light leading-none">
+                    02
+                </h3>
+
+                <p
+                    class="mt-3 sm:mt-4 text-white font-semibold text-[14px] sm:text-[16px] lg:text-[17px] leading-6 sm:leading-7">
+                    Securely upload a valid prescription from your doctor
+                </p>
+            </div>
+
+            <!-- Step 3 -->
+            <div>
+                <h3 class="text-[#FFF200] text-[26px] sm:text-[34px] lg:text-[38px] font-light leading-none">
+                    03
+                </h3>
+
+                <p
+                    class="mt-3 sm:mt-4 text-white font-semibold text-[14px] sm:text-[16px] lg:text-[17px] leading-6 sm:leading-7">
+                    Verification for authenticity and regulatory compliance requirements
+                </p>
+            </div>
+
+            <!-- Step 4 -->
+            <div>
+                <h3 class="text-[#FFF200] text-[26px] sm:text-[34px] lg:text-[38px] font-light leading-none">
+                    04
+                </h3>
+
+                <p
+                    class="mt-3 sm:mt-4 text-white font-semibold text-[14px] sm:text-[16px] lg:text-[17px] leading-6 sm:leading-7">
+                    Receive treatment details, pricing, and delivery timelines.
+                </p>
+            </div>
+
+        </div>
+
+        <!-- Button -->
+        <div class="mt-10 sm:mt-16">
+            <button type="button" id="showPrescriptionForm" class="inline-flex items-center justify-center
+               w-full sm:w-auto
+               bg-white
+               text-[#2F63E6]
+               text-[14px] sm:text-[15px]
+               font-medium
+               rounded-md
+               px-8
+               py-3
+               hover:bg-[#F5F5F5]
+               transition">
+                Upload Your Prescription
+            </button>
+        </div>
+
+    </div>
+</section>
+<!-- PRESCRIPTION MODAL (NEW) -->
+<div id="prescriptionModal" class="modal">
+    <div class="modal-content">
+        <button type="button" class="close-btn" id="closePrescriptionModal">
+            <i class="fas fa-times"></i>
+        </button>
+
+        <div class="p-6 md:p-8">
+            <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6 text-center">
+                Submit Your Prescription
+            </h3>
+
+            <form id="prescriptionForm" action="<?= base_url('contact/submit'); ?>" method="post"
+                enctype="multipart/form-data" class="prescription-form space-y-4">
+
+                <div>
+                    <label class="required">Full Name</label>
+                    <input type="text" name="name" placeholder="Enter Name" maxlength="40"
+                        oninput="this.value = this.value.replace(/[^a-zA-Z ]/g, '')">
+                    <p class="text-red-500 text-sm mt-1 hidden" id="error-name"></p>
+                </div>
+
+                <div>
+                    <label class="required">Phone Number</label>
+                    <input type="tel" id="pphone" name="pphone" placeholder="Phone Number" maxlength="20"
+                        oninput="this.value=this.value.replace(/\D/g,'')">
+                    <p class="text-red-500 text-sm mt-1 hidden" id="error-phone"></p>
+                </div>
+
+                <div>
+                    <label class="required">Email</label>
+                    <input type="email" name="email" placeholder="Email" maxlength="45"
+                        oninput="this.value = this.value.replace(/[^a-zA-Z0-9@._+-]/g, '')">
+                    <p class="text-red-500 text-sm mt-1 hidden" id="error-email"></p>
+                </div>
+
+                <div>
+                    <label class="required">Message</label>
+                    <textarea name="message" rows="4" placeholder="Message" maxlength="250"></textarea>
+                    <p class="text-red-500 text-sm mt-1 hidden" id="error-message"></p>
+                </div>
+
+
+                <!-- Prescription Upload -->
+                <div>
+                    <label>
+                        <i class="fas fa-file-medical text-purple-600 mr-2"></i>
+                        Upload Prescription (img, PDF)
+                    </label>
+                    <input type="file" name="prescription" accept="image/jpeg,image/png,application/pdf" class="w-full px-4 py-3 border border-gray-300 rounded-lg
+                                  focus:outline-none focus:border-purple-600
+                                  file:mr-4 file:py-2 file:px-4 file:rounded-full
+                                  file:border-0 file:text-sm file:font-semibold
+                                  file:bg-purple-50 file:text-purple-700
+                                  hover:file:bg-purple-100">
+                    <p class="text-red-500 text-sm mt-1 hidden" id="error-prescription"></p>
+                </div>
+
+                <button type="submit" class="btn-submit">
+                    Submit Prescription
+                </button>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Content Hub -->
+<?php
+$home_news = $home_news ?? [];
+$lead = $home_news[0] ?? null;
+$others = array_slice($home_news, 1, 2);
+?>
+
+<section class="bg-white py-14 lg:py-20">
+    <div class="max-w-7xl mx-auto px-6 space-y-8">
+        <!-- Heading -->
+        <div class="space-y-4">
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight text-gray-900">
+                Content Hub
+            </h2>
+            <p class="text-base sm:text-lg text-gray-600 leading-relaxed">
+                Providing structured product categories with safe, compliant, and reliable global access.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
+
+            <!-- LEFT: lead item (1st selected news) -->
+            <?php if ($lead): ?>
+            <div class="relative rounded-lg overflow-hidden">
+                <img src="<?= base_url('assets/images/news/' . $lead['image']); ?>"
+                    alt="<?= htmlspecialchars($lead['name']); ?>"
+                    class="w-full h-[360px] object-cover rounded-md bg-gray-200">
+
+                <div class="absolute inset-0 bg-gradient-to-t from-[#0000]/85 via-[#0B2E7A]/30 to-transparent"></div>
+
+                <div class="absolute bottom-0 left-0 p-4 text-white">
+                    <h3 class="font-semibold text-[18px] leading-tight">
+                        <?= htmlspecialchars($lead['name']); ?>
+                    </h3>
+                    <p class="mt-2 text-[14px] text-white/90">
+                        <?= word_limiter(strip_tags($lead['description']), 40); ?>
+                    </p>
+                    <a href="<?= base_url('news/category/' . $lead['slug']); ?>"
+                        class="inline-block mt-1 text-white font-semibold border-b border-white">
+                        Read More
+                    </a>
+                </div>
+            </div>
+            <?php endif; ?>
+
+            <!-- RIGHT: remaining 2 selected news -->
+            <div class="flex items-start justify-between flex-col h-full gap-5">
+                <?php foreach ($others as $item): ?>
+                <div class="space-y-4 text-start">
+                    <h1 class="text-xl text-black">
+                        <?= htmlspecialchars($item['name']); ?>
+                    </h1>
+                    <p class="text-base text-[#333333] leading-relaxed">
+                        <?= word_limiter(strip_tags($item['description']), 20); ?>
+                    </p>
+                    <a href="<?= base_url('news/category/' . $item['slug']); ?>" class="text-[#3557A5] underline">
+                        Read More
+                    </a>
+                </div>
+                <?php endforeach; ?>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- SECTION 4 : MEDICINES BY THERAPEUTIC CATEGORY -->
+<section class="bg-[#F5F8FF] py-16 px-4">
+    <div class="max-w-7xl mx-auto">
+        <!-- Heading -->
+        <div class="mb-12">
+            <h2 class="text-3xl md:text-4xl font-normal text-gray-900 mb-3 font-playfair text-center">
+                Medicines by <br class="hidden sm:block">
+                Therapeutics <span class="text-[#2563EB]">Category</span>
+
+            </h2>
+            <p class="text-gray-600 text-base md:text-lg text-center">
+                Supporting paitents and doctors in finding the right therapies
+            </p>
+        </div>
+
+        <!-- Grid -->
+        <div class=" p-4">
+            <div id="categoryWrapper">
+
+                <div id="categoryGrid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+
+                    <?php if (!empty($med_categories)): ?>
+                    <?php foreach (array_slice($med_categories, 0, 4) as $cat): ?>
+
+                    <div class="slide-card bg-white rounded-xl shadow-md hover:shadow-xl transition p-3 text-start">
+
+                        <!-- Image -->
+                        <div class="w-full h-44 rounded-lg mb-4
+                                    flex items-center justify-center overflow-hidden">
+                            <?php if (!empty($cat->image)): ?>
+                            <img src="<?= base_url('assets/images/category/' . $cat->image); ?>"
+                                alt="<?= htmlspecialchars($cat->name); ?>"
+                                class="max-w-full max-h-full object-cover object-center">
+                            <?php endif; ?>
+                        </div>
+
+                        <!-- Title -->
+                        <h4 class="font-bold text-gray-900 uppercase text-sm">
+                            <?= htmlspecialchars($cat->name); ?>
+                        </h4>
+                        <!-- Description -->
+                        <p class="text-gray-600 text-sm">
+                            <?= htmlspecialchars($cat->description); ?>
+                        </p>
+
+                        <!-- Link -->
+                        <!-- <a href="<?= base_url('medicine/search?category=' . $cat->name); ?>" -->
+                        <a href="<?= base_url('therapeutic-area/' . $cat->slug) ?>"
+                            class="mt-2 text-sm text-blue-600 hover:underline inline-flex items-center gap-1">
+                            Read more
+                            <i class="fa fa-arrow-right text-xs"></i>
+                        </a>
+
+                    </div>
+
+                    <?php endforeach; ?>
+                    <?php endif; ?>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="flex justify-center mt-10">
+            <a href="<?= base_url('named-patient-program'); ?>"
+                class="text-sm inline-flex items-center mt-8 text-white rounded-md font-medium bg-[#0040C6] transition duration-300 px-6 py-2">
+                Know More About Therapeutic Area
+            </a>
+
+        </div>
+    </div>
+</section>
+
+<!-- GET IN TOUCH -->
+<section class="py-12 lg:px-8 bg-white">
+    <div class="max-w-7xl mx-auto">
+
+        <div class="grid md:grid-cols-2 gap-8 items-start">
+
+            <!-- Left: CONTACT INFO -->
+            <div class="px-6">
+                <span class="text-sm font-semibold text-gray-500 uppercase">
+                    TRUSTED BY HEALTHCARE PROFESSIONALS & HOSPITALS
+                </span>
+
+                <h3 class="text-4xl font-bold text-gray-900 mt-2 mb-4 font-playfair">
+                    Need Help<br>Accessing Medicines?
+                </h3>
+
+                <p class="text-gray-600 mb-8">
+                    Our specialists are here to guide you through every step of the medicine access process.
+                </p>
+
+                <div class="space-y-6">
+
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-lg
+                                    flex items-center justify-center">
+                            <i class="fas fa-envelope text-blue-800 text-2xl"></i>
+                        </div>
+                        <div>
+                            <p class="text-sm text-black font-bold tracking-wider">Mail Us At:</p>
+                            <a href="mailto:info@namedpatientprogram.com"
+                                class="font-medium text-blue-700 hover:underline">
+                                info@namedpatientprogram.com
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-lg 
+                                    flex items-center justify-center">
+                            <i class="fas fa-phone text-blue-800 text-2xl"></i>
+                        </div>
+                        <div>
+                            <p class="text-sm text-black font-bold tracking-wider">Contact Us:</p>
+                            <a href="tel:+919654860915" class="font-medium text-blue-700 hover:underline">
+                                +91 9654860915
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT: FORM -->
+            <div id="inquiry-section" class="p-8 pr-4 lg:p-0 xl:p-0">
+
+                <h3 class="text-[30px] font-semibold text-gray-900 mb-2">
+                    Let us help!
+                </h3>
+
+                <p class="text-gray-600 mb-6">
+                    We will get back to you shortly during our working hours.
+                </p>
+
+                <?php if ($this->session->flashdata('success')): ?>
+                <div class="mb-6 bg-green-100 border border-green-400 text-green-700 px-6 py-4 rounded-lg">
+                    <div class="flex items-center gap-3">
+                        <i class="fas fa-check-circle text-xl"></i>
+                        <span><?= $this->session->flashdata('success'); ?></span>
+                    </div>
+                </div>
+                <?php endif; ?>
+
+                <?php if ($this->session->flashdata('error')): ?>
+                <div class="mb-6 bg-red-100 border border-red-400 text-red-700 px-6 py-4 rounded-lg">
+                    <div class="flex items-center gap-3">
+                        <i class="fas fa-exclamation-circle text-xl"></i>
+                        <span><?= $this->session->flashdata('error'); ?></span>
+                    </div>
+                </div>
+                <?php endif; ?>
+
+                <form id="inquiryForm" action="<?= base_url('inquire'); ?>" method="post" class="space-y-4">
+
+                    <div class="grid sm:grid-cols-2 gap-4">
+
+                        <div>
+                            <input id="first_name" type="text" name="first_name" placeholder="First Name"
+                                class="w-full px-4 py-3 rounded-lg bg-[#1D1D1D0D] border border-gray-300 focus:border-purple-600 focus:outline-none"
+                                oninput="this.value = this.value.replace(/[^a-zA-Z ]/g, '')">
+
+                            <small id="firstnameError" class="hidden text-red-500 text-sm"></small>
+                        </div>
+
+                        <div>
+                            <input id="last_name" type="text" name="l_name" placeholder="Last Name"
+                                class="w-full px-4 py-3 rounded-lg bg-[#1D1D1D0D] border border-gray-300 focus:border-purple-600 focus:outline-none"
+                                oninput="this.value = this.value.replace(/[^a-zA-Z ]/g, '')">
+
+                            <small id="lastnameError" class="hidden text-red-500 text-sm"></small>
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <input id="email" type="email" name="email" placeholder="Email"
+                            class="w-full px-4 py-3 rounded-lg bg-[#1D1D1D0D] border border-gray-300 focus:border-purple-600 focus:outline-none"
+                            oninput="this.value = this.value.replace(/[^a-zA-Z0-9@._+-]/g, '')">
+
+                        <small id="emailError" class="hidden text-red-500 text-sm"></small>
+                    </div>
+
+                    <div>
+                        <input id="phone" type="tel" name="phone" placeholder="Phone Number"
+                            class="w-full py-3 rounded-lg bg-[#1D1D1D0D] border border-gray-300 focus:border-purple-600 focus:outline-none"
+                            oninput="this.value=this.value.replace(/\D/g,'')">
+
+                        <small id="phoneError" class="hidden text-red-500 text-sm"></small>
+                    </div>
+
+                    <div>
+                        <textarea id="message" name="message" rows="5" placeholder="Message"
+                            class="w-full px-4 py-3 rounded-lg bg-[#1D1D1D0D] border border-gray-300 focus:border-purple-600 focus:outline-none"></textarea>
+
+                        <small id="messageError" class="hidden text-red-500 text-sm"></small>
+                    </div>
+
+                    <!-- <button
+                        type="submit"
+                        class="w-full bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 rounded-lg transition duration-300">
+                        Submit
+                    </button> -->
+                    <div class="flex justify-center">
+                        <button type="submit" class="w-[60%] py-3 rounded-lg
+                            bg-blue-600 hover:bg-blue-700
+                            text-white font-medium transition">
+                            Submit Your Enquery
+                        </button>
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- FAQ SECTION -->
+<section class="py-20 md:py-28 px-4 bg-gray-50">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-start">
+
+        <!-- LEFT -->
+        <div>
+            <h2 class="text-4xl md:text-5xl font-normal mb-6 font-playfair">
+                Frequently Asked<br>Questions
+            </h2>
+
+            <p class="text-gray-600 text-lg mb-4 max-w-md leading-tight">
+                Here are answers to questions<br class="hidden sm:block" /> we're often asked.
+            </p>
+
+            <a href="<?= base_url('faqs'); ?>" class="text-[#2563EB] font-semibold transition tracking-wider">
+                Find your Answers?
+            </a>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="space-y-8">
+
+            <!-- ITEM -->
+            <div class="border-b border-gray-300 pb-4">
+                <button onclick="toggleFaq(1)" class="w-full flex justify-between items-center text-left">
+                    <span class="text-lg  text-gray-900">
+                        What is the Named Patient Program (NPP) in India?
+                    </span>
+                    <span id="icon-1" class="text-2xl font-bold">+</span>
+                </button>
+                <div id="faq-1" class="hidden pt-4 text-gray-600">
+                    Patients with serious, chronic, or life-threatening medical conditions may need medicines that are
+                    not available in their own country. In India, such medicines can be accessed through the Named
+                    Patient Program (NPP), subject to applicable regulatory requirements. With a valid prescription, the
+                    necessary approvals from the relevant authorities, and compliance with import regulations, these
+                    medicines can be imported for the personal treatment of a specific patient through authorized
+                    pharmaceutical suppliers.
+
+                </div>
+            </div>
+
+            <!-- ITEM -->
+            <div class="border-b border-gray-300 pb-4">
+                <button onclick="toggleFaq(2)" class="w-full flex justify-between items-center text-left">
+                    <span class="text-lg  text-gray-900">
+                        How long does it take to receive medicine?
+                    </span>
+                    <span id="icon-2" class="text-2xl font-bold">+</span>
+                </button>
+                <div id="faq-2" class="hidden pt-4 text-gray-600">
+                    Delivery times vary based on your location, the medicines you order, as well as customs clearance.
+                    However, a rough guide would be 7-15 days.
+                    Once the medicines have been shipped, we’ll send you a tracking number and keep you informed about
+                    your delivery.
+                    For a more detailed estimate for a specific medicine, please get in touch with our team.
+
+                </div>
+            </div>
+
+            <!-- ITEM -->
+            <div class="border-b border-gray-300 pb-4">
+                <button onclick="toggleFaq(3)" class="w-full flex justify-between items-center text-left">
+                    <span class="text-lg text-gray-900">
+                        Why are imported medicines expensive? Who determines their price?
+                    </span>
+                    <span id="icon-3" class="text-2xl font-bold">+</span>
+                </button>
+                <div id="faq-3" class="hidden pt-4 text-gray-600">
+                    The price of these medicines is set by the manufacturer and may vary between countries. Many
+                    innovative medicines are first approved in markets such as the United States, where prices are often
+                    higher. As availability expands to more countries, pricing may change. We work with trusted global
+                    suppliers to help source the medicine at the most competitive available price.
+                </div>
+            </div>
+
+            <!-- ITEM -->
+            <div class="border-b border-gray-300 pb-4">
+                <button onclick="toggleFaq(4)" class="w-full flex justify-between items-center text-left">
+                    <span class="text-lg text-gray-900">
+                        Is it legal to buy unapproved or unavailable medicines in India?
+                    </span>
+                    <span id="icon-4" class="text-2xl font-bold">+</span>
+                </button>
+                <div id="faq-4" class="hidden pt-4 text-gray-600">
+                    Yes, under certain circumstances. Medicines that are unavailable or not approved for marketing in
+                    India may be imported for personal use through the Named Patient Program, subject to applicable
+                    regulations. A valid prescription from a registered medical practitioner and the necessary
+                    regulatory approvals are generally required before the medicine can be imported.
+                </div>
+            </div>
+
+            <!-- ITEM -->
+            <div class="border-b border-gray-300 pb-4">
+                <button onclick="toggleFaq(5)" class="w-full flex justify-between items-center text-left">
+                    <span class="text-lg text-gray-900">
+                        What documents are required to request medicine?
+                    </span>
+                    <span id="icon-5" class="text-2xl font-bold">+</span>
+                </button>
+                <div id="faq-5" class="hidden pt-4 text-gray-600">
+                    To process your medicine request, you will generally need the following documents:
+                    <ul class="list-disc ml-8 mt-3 space-y-3">
+                        <li>
+                            <span class="font-bold">A valid prescription</span> signed and stamped by your treating
+                            doctor, including the doctor's registration number.
+                        </li>
+                        <li>
+                            <span class="font-bold">A copy of your medical records or case history,</span> if
+                            applicable.
+                        </li>
+                        <li>
+                            <span class="font-bold">A copy of your photo ID,</span> such as your Aadhaar card, Passport,
+                            Voter ID, or any other government-issued identity proof.
+                        </li>
+                        <li>
+                            <span class="font-bold">A completed Order Form,</span> which will be shared with you by our
+                            team. Please sign and return it along with the required documents.
+                        </li>
+                    </ul>
+                    Providing complete and accurate documents helps us process your request more efficiently and avoid
+                    unnecessary delays.
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>

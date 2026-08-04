@@ -1,0 +1,45 @@
+
+/* Modal Popup */
+.visitPopup .modal-content{
+    border-radius: 20px;
+}
+.visitPopup  .modal-body {
+    padding: 60px 75px;
+    text-align: center;
+}
+.modal-dialog.visitPopWith {
+    max-width: 700px;
+}
+.visiParButton a{
+    width: 180px;
+    height: 45px;
+    text-align: center;
+    border-radius: 35px;
+    background: #007AFF;
+    color: #fff;
+    font-family: 'Aeonik-Regular';
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+    margin: 60px auto 0px auto;
+}
+.visiParButton a:hover{
+    background: #0043c6;
+    color: #fff;
+}
+.visitPopup .modal-header{
+    border-bottom: none;
+}
+.visitPopup .btn-close {
+    width: 0px;
+    height: 0px;
+    background-size: cover;
+    top: 10px;
+    right: 10px;
+    position: relative;
+}
+.vpsContents p span{
+    color: #007AFF;
+}

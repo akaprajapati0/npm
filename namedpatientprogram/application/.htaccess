@@ -1,0 +1,28 @@
+<!-- RewriteEngine on
+
+# Exclude specific paths from being rewritten
+RewriteCond $1 !^(index\.php|resources|robots\.txt)
+
+# Check if the requested file is not an existing file or directory
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Rewrite all other requests to index.php
+RewriteRule ^(.*)$ index.php/$1 [L,QSA] -->
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /ikris_new1/
+
+    # Exclude specific paths from being rewritten
+    RewriteCond $1 !^(index\.php|resources|robots\.txt)
+
+    # If the requested file or directory exists, do not rewrite
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+
+    # Rewrite everything else to index.php
+    RewriteRule ^(.*)$ index.php/$1 [L,QSA]
+
+</IfModule>
+

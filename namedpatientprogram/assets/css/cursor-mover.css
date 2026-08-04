@@ -1,0 +1,65 @@
+
+.tool-row {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	width: 100%;
+	margin-bottom: 80px;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-transition: color 200ms ease-in-out;
+	transition: color 200ms ease-in-out;
+	color: #e5eadf;
+	text-decoration: none;
+}
+
+.tool-row:hover {
+	color: #ff78ce;
+}
+
+.tool-headline {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-family: 'Rubik Mono One', sans-serif;
+	font-size: 100px;
+	line-height: 1;
+	font-weight: 400;
+	text-shadow: 8px 8px 0 rgba(0, 0, 0, 0.25);
+}
+
+.tool-description {
+	color: #767775;
+}
+
+.image-preview-wrap {
+	position: fixed;
+	left: 0%;
+	top: 0%;
+	right: 0%;
+	bottom: 0%;
+	z-index: 1;
+	display: none;
+	width: 100%;
+	height: auto;
+	min-height: 100vh;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.image-preview {
+	width: 291px;
+	border-radius: 4px;
+}

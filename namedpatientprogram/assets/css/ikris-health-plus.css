@@ -1,0 +1,446 @@
+/* Fonts */
+.appWrapper{
+    background: #101010;
+}
+.appWrapper h1, .appWrapper h2, .appWrapper h3, .appWrapper h4, .appWrapper h5, .appWrapper h6{
+    color: #ffff;
+}
+.appWrapper p{
+    color: #888888;
+}
+.appWrapper a{
+    color: #fff;
+}
+.appWrapper a:hover{
+    color: #0074fa;
+}
+.site-width{
+    padding: 0 6%;
+}
+.site-width-Medi {
+    max-width: 872px;
+    margin: 0px auto;
+}
+.appHeaderWrap{
+    padding-top: 40px;
+    padding-bottom: 24px;
+}
+.appHeaderWrap > ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.appHeaderWrap > ul > li > a img.appLogo{
+    width: 56px;
+    height: 56px;
+}
+.appHeaderWrap > ul > li > a .sayHiBtn {
+    /* width: 135px; */
+    height: 56px;
+    border: 2px solid #333333;
+    border-radius: 28px;
+    line-height: 47px;
+    text-align: center;
+    padding: 0px 26px 0px 12px;
+}
+.appHeaderWrap > ul > li > a .sayHiBtn img{
+    width: 35px;
+}
+.appTitleWrap{
+    text-align: center;
+}
+.appTitleWrap h5{
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 5.6px;
+    margin-bottom: 40px;
+}
+.appTitleWrap h1{
+    font-family: 'Coluna';
+    font-size: 100px;
+    max-width: 872px;
+    width: 100%;
+    margin: 0px auto;
+    line-height: 100px;
+}
+.appCImgWrap{
+    margin: 0px auto;
+}
+.appCImgWrap.mobileShowImg {
+    margin-top: 40px;
+    max-width: 536px;
+    min-height: 800px;
+    background: linear-gradient(180deg, #c9d9d7, #f1e5d6);
+    overflow: hidden;
+    border-top-left-radius: 268px;
+    border-top-right-radius: 268px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.middContentWrap{
+    width: 100%;
+    max-width: 595px;
+    width: 100%;
+    margin: 0px auto;
+}
+.middContentWrap.cusmargin{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.middContentWrap h6{
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    font-family: 'Aeonik-Light';
+    font-weight: normal;
+}
+
+.middCardWrap{
+    display: flex;
+    justify-content: space-between;
+}
+.mcardRow{
+    width: fit-content;
+}
+.mFeatureCard{
+    max-width: 424px;
+    min-height: 648px;
+    border-radius: 24px;
+    background: #171717;
+    border: 1px solid #222222;
+    text-align: center;
+    padding: 117px 37px;
+    margin-bottom: 24px;
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.mfcTitle h2{
+    font-size: 40px;
+    letter-spacing: 1.6px;
+    line-height: 30px;
+    margin-bottom: 26px;
+    font-family: 'Coluna';
+}
+.mfcTitle p{
+    font-size: 18px;
+    letter-spacing: 0.29px;
+    line-height: 26px;
+    margin-bottom: 64px;
+}
+.mfcImg{
+    width: 240px;
+    height: 240px;
+    margin: 0px auto;
+}
+.mfcImg img{
+    width: 100%;
+}
+.mFeatureCard.mFeatureCardNor{
+    max-width: 424px;
+    min-height: 424px;
+    padding: 48px;
+    width: 424px;
+}
+.mFeatureCard.mFeatureCardNor .mfcImg{
+    width: 180px;
+    height: 180px;
+}
+
+.mFeatureCard.mFeatureCardNor .mfcTitle p{
+    margin-bottom: 46px;
+}
+.mFeatureCard.mFeatureCardNor .mfcTitle h2{
+    margin-bottom: 16px;
+}
+.appsfRow{
+    display: flex;
+    justify-content: space-between;
+}
+.appSafeSecure{
+    padding-top: 100px;
+    padding-bottom: 80px;
+    text-align: center;
+}
+.apssImg{
+    width: 240px;
+    height: 240px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.apssImg img{
+    width: 100%;
+}
+.apssContnt h2{
+    font-size: 80px;
+    letter-spacing: 3.2px;
+    line-height: 100px;
+    font-family: 'Coluna';
+}
+.appsCard{
+    max-width: 424px;
+    width: 385px;
+    min-height: 648px;
+    border-radius: 24px;
+    background: #171717;
+    border: 1px solid #222222;
+    padding: 120px 28px;
+    text-align: center;
+}
+.appsCardTitle h2{
+    font-size: 40px;
+    letter-spacing: 1.6px;
+    line-height: 30px;
+    font-family: 'Coluna';
+    margin-bottom: 16px;
+}
+.appsCardTitle p{
+    font-size: 18px;
+    letter-spacing: 0.29px;
+    line-height: 26px;
+    margin-bottom: 64px;
+}
+.appsCardImg{
+    width: 240px;
+    height: 240px;
+    margin: 0px auto;
+}
+.appsCardImg img{
+    width: 100%;
+}
+.appQRdownload{
+    margin-top: 120px;
+}
+.apqrWrapper{
+    margin: 0px auto;
+    width: fit-content;
+    display: flex;
+}
+.apqrimgCard{
+    width: 248px;
+    height: 248px;
+
+}
+.apqrimgCard img{
+    width: 100%;
+}
+.apqrWrapper .apqrimgCard:nth-child(1){
+    margin-right: 20px;
+}
+.apqrWrapper .apqrimgCard:nth-child(2){
+    margin-left: 20px;
+}
+
+.apqrContents{
+    text-align: center;
+    margin-top: 32px;
+}
+.apqrContents h3{
+    font-size: 22px;
+    margin-bottom: 40px;
+}
+.apqrContents p{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.appDownloadbtns {
+    width: 165px;
+}
+.appDownloadbtns img{
+    width: 100%;
+}
+.appDownloadBtns{
+    display: flex;
+    width: fit-content;
+    margin: 0px auto;
+}
+.aapFooter{
+    margin-top: 97px;
+    padding-bottom: 80px;
+}
+.appFootterLinks ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.appFootterLinks ul li a{
+    display: inline-block;
+    margin: 0px 25px;
+    color: #666666;
+}
+
+.appWrapper .gotoTopBtn{
+    margin-bottom:0px ;
+    text-align: center;
+}
+/* responsive */
+@media screen and (max-width:1024px) and (min-width:769px) {
+    .appsCard {
+        width: 213px;
+        padding: 25px 12px;
+        min-height: auto;
+    }
+    .appsCardTitle h2{
+        font-size: 20px; 
+    }
+    .appsCardTitle p{
+        font-size: 14px;
+        line-height: 22px;
+        margin-bottom: 20px;
+    }
+    .appsCardImg{
+        width: 180px;
+        height: auto;
+    }
+    .mFeatureCard{
+        max-width: 350px;
+    }
+    .mFeatureCard.mFeatureCardNor{
+        max-width: 350px;
+        width: 350px;
+    }
+    .site-width-Medi{
+        padding: 0px 3%;
+    }
+}
+@media screen and (max-width:768px) and (min-width:426px) {
+    .appsCard {
+        width: 100%;
+        padding: 25px 12px;
+        min-height: auto;
+        margin-bottom: 20px;
+    }
+    .appSafeSecure{
+        padding-bottom: 30px;
+        padding-top: 60px;
+    }
+    .appsCardTitle h2{
+        font-size: 20px; 
+    }
+    .appsCardTitle p{
+        font-size: 14px;
+        line-height: 22px;
+        margin-bottom: 20px;
+    }
+    .appsCardImg{
+        width: 180px;
+        height: auto;
+    }
+    .mFeatureCard{
+        max-width: 100%;
+        margin: 0px 2%;
+        margin-bottom: 30px;
+    }
+    .mFeatureCard.mFeatureCardNor{
+        max-width: 100%;
+        width: 100%;
+        margin: 0px 2%;
+        margin-bottom: 30px;
+    }
+    .site-width-Medi{
+        padding: 0px 3%;
+    }
+    .middCardWrap{
+        flex-direction: column;
+    }
+    .appsfRow{
+        flex-direction: column;
+    }
+    .apqrimgCard{
+        width: 48%;
+        height: auto;
+    }
+    .appTitleWrap h1{
+        font-size: 50px;
+        line-height: 60px;
+    }
+    .appCenteredImg{
+        padding: 0px 3%;
+    }
+    .appCImgWrap.mobileShowImg{
+        min-height: auto;
+    }
+    .apssContnt h2{
+        font-size: 50px;
+    }
+}
+@media screen and (max-width:425px) and (min-width:320px) {
+    .appsCard {
+        width: 100%;
+        padding: 25px 12px;
+        min-height: auto;
+        margin-bottom: 20px;
+    }
+    .appSafeSecure{
+        padding-bottom: 30px;
+        padding-top: 60px;
+    }
+    .appsCardTitle h2{
+        font-size: 20px; 
+    }
+    .appsCardTitle p{
+        font-size: 14px;
+        line-height: 22px;
+        margin-bottom: 20px;
+    }
+    .appsCardImg{
+        width: 180px;
+        height: auto;
+    }
+    .mFeatureCard{
+        max-width: 100%;
+        margin: 0px;
+        margin-bottom: 30px;
+    }
+    .mFeatureCard.mFeatureCardNor{
+        max-width: initial;
+        width: 100%;
+        margin: 0px;
+        margin-bottom: 30px;
+    }
+    .site-width-Medi{
+        padding: 0px 3%;
+    }
+    .middCardWrap{
+        flex-direction: column;
+    }
+    .appsfRow{
+        flex-direction: column;
+    }
+    .apqrimgCard{
+        width: 48%;
+        height: auto;
+    }
+    .appTitleWrap h1{
+        font-size: 50px;
+        line-height: 60px;
+    }
+    .appCenteredImg{
+        padding: 0px 3%;
+    }
+    .appCImgWrap.mobileShowImg{
+        min-height: auto;
+    }
+    .apssContnt h2{
+        font-size: 50px;
+    }
+    .appFootterLinks ul{
+        flex-direction: column;
+    }
+    .appDownloadBtns{
+        flex-direction: column;
+    }
+    .appQRdownload{
+        margin-top: 60px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .gotoTopBtn{
+        text-align: center;
+        margin-top: 0px;
+        margin-bottom: 60px;
+        top: -40px;
+    }     
+}

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <g id="ellipsis-vertical-circle-outline" transform="translate(-63 -63)" opacity="0.697">
+    <circle id="Ellipse_20" data-name="Ellipse 20" cx="2" cy="2" r="2" transform="translate(77 77)" fill="#fff"/>
+    <circle id="Ellipse_21" data-name="Ellipse 21" cx="2" cy="2" r="2" transform="translate(77 83.933)" fill="#fff"/>
+    <circle id="Ellipse_22" data-name="Ellipse 22" cx="2" cy="2" r="2" transform="translate(77 70.067)" fill="#fff"/>
+    <path id="Path_26" data-name="Path 26" d="M94,79A15,15,0,1,0,79,94,15,15,0,0,0,94,79Z" fill="none" stroke="#fff" stroke-width="2"/>
+  </g>
+</svg>
