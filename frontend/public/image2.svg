@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 485.24 539.99">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        stroke: #000;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1, .cls-3 {
+        fill: none;
+      }
+
+      .cls-4 {
+        opacity: .53;
+      }
+
+      .cls-5 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-6 {
+        letter-spacing: -.06em;
+      }
+
+      .cls-7 {
+        font-size: 12.17px;
+      }
+
+      .cls-7, .cls-8, .cls-9 {
+        font-family: ArialMT, Arial;
+      }
+
+      .cls-10 {
+        letter-spacing: .04em;
+      }
+
+      .cls-8 {
+        font-size: 164.89px;
+      }
+
+      .cls-2 {
+        fill: #f4f4f4;
+      }
+
+      .cls-11 {
+        font-family: Autography, Autography;
+        font-size: 25.41px;
+      }
+
+      .cls-9 {
+        font-size: 11px;
+      }
+
+      .cls-3 {
+        stroke: #231f20;
+      }
+    </style>
+  </defs>
+  <rect class="cls-3" x="23.4" y="5.91" width="441.98" height="533.59"/>
+  <image class="cls-4" width="225" height="225" transform="translate(320.8 425.84) scale(.4)" xlink:href="images (6).png"/>
+  <rect class="cls-2" x=".5" y=".5" width="484.24" height="162.66" rx="10.47" ry="10.47"/>
+  <line class="cls-3" x1="23.4" y1="163.16" x2="465.39" y2="163.16"/>
+  <text class="cls-8" transform="translate(18.66 144.86) scale(.73 1)"><tspan x="0" y="0">Rx</tspan></text>
+  <text class="cls-7" transform="translate(178.29 48.01)"><tspan x="0" y="0">Name of the docto</tspan><tspan class="cls-6" x="99.47" y="0">r</tspan><tspan x="102.86" y="0">.</tspan></text>
+  <text class="cls-9" transform="translate(52.89 194.51)"><tspan x="0" y="0">Name of the Patient :</tspan></text>
+  <text class="cls-9" transform="translate(276.28 194.51)"><tspan x="0" y="0">Age / Sex</tspan></text>
+  <text class="cls-9" transform="translate(296.14 223.85)"><tspan x="0" y="0">Date :</tspan></text>
+  <text class="cls-9" transform="translate(52.89 223.85)"><tspan x="0" y="0">Address :</tspan></text>
+  <text class="cls-9" transform="translate(52.89 263.02)"><tspan x="0" y="0">Drug Prescription :</tspan></text>
+  <text class="cls-9" transform="translate(52.89 309.32)"><tspan x="0" y="0">S.no.</tspan></text>
+  <text class="cls-9" transform="translate(105.55 309.32)"><tspan x="0" y="0">Medicine Name</tspan></text>
+  <text class="cls-9" transform="translate(227.91 309.32)"><tspan x="0" y="0">Strength</tspan></text>
+  <text class="cls-9" transform="translate(315.61 309.32)"><tspan x="0" y="0">Dose</tspan></text>
+  <text class="cls-9" transform="translate(382.94 309.32)"><tspan x="0" y="0">Duration</tspan></text>
+  <text class="cls-9" transform="translate(52.89 348.2)"><tspan x="0" y="0">1</tspan></text>
+  <text class="cls-9" transform="translate(105.55 348.2)"><tspan x="0" y="0">Metformin</tspan></text>
+  <text class="cls-9" transform="translate(227.91 348.2)"><tspan x="0" y="0">500mg</tspan></text>
+  <text class="cls-9" transform="translate(315.61 348.2)"><tspan x="0" y="0">1-0-1</tspan></text>
+  <text class="cls-9" transform="translate(382.94 348.2)"><tspan x="0" y="0">6 mpnths</tspan></text>
+  <text class="cls-9" transform="translate(52.89 389.09)"><tspan x="0" y="0">2</tspan></text>
+  <text class="cls-9" transform="translate(105.55 389.09)"><tspan x="0" y="0">Galvus Met</tspan></text>
+  <text class="cls-9" transform="translate(227.91 389.09)"><tspan x="0" y="0">50mg</tspan></text>
+  <text class="cls-9" transform="translate(315.61 389.09)"><tspan x="0" y="0">1-0-0</tspan></text>
+  <text class="cls-9" transform="translate(382.94 389.09)"><tspan x="0" y="0">3Monts</tspan></text>
+  <text class="cls-9" transform="translate(311.93 516.74)"><tspan x="0" y="0">Docto</tspan><tspan class="cls-10" x="28.74" y="0">r</tspan><tspan class="cls-5" x="32.81" y="0">’</tspan><tspan x="35.05" y="0">s Sign and Stamp</tspan></text>
+  <text class="cls-11" transform="translate(337.96 479.35) rotate(-4.22) scale(.71 1)"><tspan x="0" y="0">D.Sign</tspan></text>
+  <text class="cls-7" transform="translate(178.29 73.99)"><tspan x="0" y="0">Name of the hospital/Clinic:</tspan></text>
+  <text class="cls-7" transform="translate(178.29 99.96)"><tspan x="0" y="0">Address of the hospital/Clinic:</tspan></text>
+  <text class="cls-7" transform="translate(178.29 129.14)"><tspan x="0" y="0">Regd. no.</tspan></text>
+  <line class="cls-1" x1="242.63" y1="127.28" x2="418.59" y2="127.28"/>
+  <line class="cls-1" x1="342.23" y1="99.96" x2="418.59" y2="99.96"/>
+  <line class="cls-1" x1="342.23" y1="72.99" x2="418.59" y2="72.99"/>
+  <line class="cls-1" x1="318.8" y1="46.43" x2="418.59" y2="46.43"/>
+</svg>
