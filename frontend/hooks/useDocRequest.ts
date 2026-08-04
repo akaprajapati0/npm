@@ -81,6 +81,7 @@ export const useDocRequest = () => {
         throw new Error(data?.message || "Request failed");
       }
       queryClient.invalidateQueries({ queryKey: ["document"] });
+      queryClient.invalidateQueries({ queryKey: ["profile"] });
 
       return data;
     },

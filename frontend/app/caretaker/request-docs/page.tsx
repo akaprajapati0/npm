@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useState } from "react";
+import { useCallback, useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
 
 import CarouselInfo from "@/components/CarouselInfo";
@@ -12,7 +12,7 @@ import { QUOTATION_CONFIG } from "@/lib/allReadableText";
 import { quotationCarouselItems } from "@/utils/carouselData";
 import { POPUP_CONTENT, RequestStep } from "@/types/quotationtypes";
 
-import { useDocRequest } from "@/hooks/useDocRequest";
+import { useDocRequest, useGetdocs } from "@/hooks/useDocRequest";
 import { errorToast, successToast } from '@/utils/toast';
 import { useGetKyc } from '@/hooks/useKycMutation';
 import { useGetProfile } from '@/hooks/useAuthMutations';
@@ -58,10 +58,13 @@ const REQUEST_BUTTONS: Array<{
 export default function RequestDocument() {
     const router = useRouter();
     // const { data, isPending: isGetDataPending } = useGetAllDocuments();
-    const { data, isPending: isGetProgress } = useGetProfile()
+    const { isPending: isGetProgress } = useGetProfile()
     const { mutate, isPending } = useDocRequest();
     // const { data: docsCount, isPending: isDocsCountPending } = useDocumentCount()
     const kycStatus = useGetKyc()
+    const medicineQuotationDoc = useGetdocs("medicine_quotation");
+    const proformaInvoiceDoc = useGetdocs("proforma_invoice");
+    const importLicenseDoc = useGetdocs("import_license");
     // console.log(data)
 
     // const isSecondOrder = Number(docsCount) >= 1;
@@ -92,10 +95,23 @@ export default function RequestDocument() {
         ? QUOTATION_CONFIG[activeModal]
         : undefined;
 
+    const existingDocs = useMemo(() => ({
+        medicine_quotation: medicineQuotationDoc.data,
+        proforma_invoice: proformaInvoiceDoc.data,
+        import_license: importLicenseDoc.data,
+    }), [medicineQuotationDoc.data, proformaInvoiceDoc.data, importLicenseDoc.data]);
+
     /* ------------------ HANDLERS ------------------ */
 
     const handleRequest = useCallback(
         (step: RequestStep) => {
+            const existingDoc = existingDocs[step];
+
+            if (existingDoc) {
+                router.replace(STEP_ROUTE_MAP[step]);
+                return;
+            }
+
             // Optimistic update
             // setOptimisticSteps((prev) => [...prev, step]);
             setLoadingStep(step);
@@ -104,8 +120,8 @@ export default function RequestDocument() {
                 onSuccess: (res) => {
                     successToast(res.message || "Request submitted");
 
-                    setLastRequestedStep(step);
                     setOpenPopup(true);
+                    setLastRequestedStep(step);
                     setLoadingStep(null);
                 },
                 onError: (err: any) => {
@@ -121,22 +137,22 @@ export default function RequestDocument() {
                 },
             });
         },
-        [mutate, router]
+        [existingDocs, mutate, router]
     );
 
     const handlePopupChange = (open: boolean) => {
         setOpenPopup(open);
 
-        // When popup closes, redirect
-        if (!open && lastRequestedStep) {
-            const route = STEP_ROUTE_MAP[lastRequestedStep];
-            if (route) {
-                router.replace(route);
-            }
-        }
+        // Stay on the request hub so users can submit the remaining forms.
     };
 
-    if (kycStatus.isPending || isGetProgress) {
+    if (
+        kycStatus.isPending ||
+        isGetProgress ||
+        medicineQuotationDoc.isPending ||
+        proformaInvoiceDoc.isPending ||
+        importLicenseDoc.isPending
+    ) {
         return (
             <div className="w-full min-h-screen flex items-center justify-center">
                 <p>Loading...</p>
@@ -144,10 +160,7 @@ export default function RequestDocument() {
         );
     }
 
-    const progress = data?.user?.progress;
-    const DISABLED_PROGRESS_STATES = ["request_quotation", "request_invoice", "request_license"];
-
-    const isDisabled = isPending || !kycStatus.data || kycStatus.data.status !== "approved";
+    const isDisabled = isPending || !kycStatus.data;
 
     /* ------------------ UI ------------------ */
 
@@ -171,7 +184,7 @@ export default function RequestDocument() {
                     <Button
                         className="w-full mt-5 py-6 text-base font-medium"
                         onClick={() => handleRequest("medicine_quotation")}
-                        disabled={isDisabled || DISABLED_PROGRESS_STATES.includes(progress)}
+                        disabled={isDisabled}
                     >
                         {loadingStep === "medicine_quotation" ? "Processing..." : "Request Medicine Quotation"}
                     </Button>
@@ -190,7 +203,7 @@ export default function RequestDocument() {
                     <Button
                         className="w-full mt-5 py-6 text-base font-medium"
                         onClick={() => handleRequest("proforma_invoice")}
-                        disabled={isDisabled || DISABLED_PROGRESS_STATES.slice(1).includes(progress)}
+                        disabled={isDisabled}
                     >
                         {loadingStep === "proforma_invoice" ? "Processing..." : "Request Proforma Invoice"}
                     </Button>
@@ -209,7 +222,7 @@ export default function RequestDocument() {
                     <Button
                         className="w-full mt-5 py-6 text-base font-medium"
                         onClick={() => handleRequest("import_license")}
-                        disabled={isDisabled || DISABLED_PROGRESS_STATES.slice(2).includes(progress)}
+                        disabled={isDisabled}
                     >
                         {loadingStep === "import_license" ? "Processing..." : "Request Import License"}
                     </Button>

@@ -65,23 +65,20 @@ export const requestDocument = async (req: Request, res: Response) => {
       ImportLicenseRequest.findOne({ user: user._id }).select("status"),
     ]);
 
-    const anyRequested = [medRequest, proformaRequest, importRequest].some(
-      (r) => r?.status === "Requested",
-    );
-
-    if (anyRequested) {
-      return sendErrorResponse(res, 400, "Already requested");
-    }
-
     const existingByType: Record<DocumentType, typeof medRequest> = {
       medicine_quotation: medRequest,
       proforma_invoice: proformaRequest,
       import_license: importRequest,
     };
 
-    // if (existingByType[type]?.status === "Approved") {
-    //     return sendErrorResponse(res, 400, "Already approved");
-    // }
+    const existingRequest = existingByType[type];
+    if (existingRequest?.status === "Requested") {
+      return sendErrorResponse(res, 400, "Already requested");
+    }
+
+    if (existingRequest?.status === "Approved") {
+      return sendErrorResponse(res, 400, "Already approved");
+    }
 
     const { model, event, progress } = DOCUMENT_TYPE_CONFIG[type];
 

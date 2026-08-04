@@ -26,7 +26,7 @@ export default function KYC() {
         );
     }
 
-    const presStatus = data.status !== "approved"
+    const hasPrescription = Boolean(data);
 
     return (
         <div className="min-h-screen flex items-center justify-center bg-white md:bg-gray-100">
@@ -49,7 +49,7 @@ accuracy and compliance.'
                         className="object-cover mx-auto"
                     />
 
-                    <Button className="w-full mt-5 py-6 text-xl font-medium" disabled={presStatus} onClick={handleKyc}>Complete KYC Upload</Button>
+                    <Button className="w-full mt-5 py-6 text-xl font-medium" disabled={!hasPrescription} onClick={handleKyc}>Complete KYC Upload</Button>
 
 
                     <div className="space-y-2">

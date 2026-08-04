@@ -30,10 +30,9 @@ export const redirectByProgress = (
             go("/caretaker/request-docs");
             break;
         case "request_quotation":
-            go("/caretaker/request-docs/medicine-quotation");
-            break;
         case "request_invoice":
-            go("/caretaker/request-docs/proforma-invoice");
+        case "request_license":
+            go("/caretaker/request-docs");
             break;
         case "bank_receipt_uploaded":
             go("/caretaker/cdec");

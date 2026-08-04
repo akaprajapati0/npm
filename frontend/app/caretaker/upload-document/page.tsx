@@ -51,7 +51,7 @@ export default function PrescriptionKycUpload() {
 
     const progress = data?.user?.progress;
     const progressStatus = progress === "prescription_uploaded";
-    const presStatus = prescriptionData?.status !== "approved"; // Use correct variable name
+    const hasPrescription = Boolean(prescriptionData);
 
     return (
         <div className="min-h-screen bg-white md:bg-gray-100">
@@ -75,7 +75,7 @@ export default function PrescriptionKycUpload() {
                     <Button
                         className="w-full mt-5 py-6 text-xl font-medium"
                         variant={!progressStatus ? "secondary" : "default"}
-                        disabled={!progressStatus || presStatus}
+                        disabled={!progressStatus || !hasPrescription}
                         onClick={() => router.replace("/caretaker/kyc")}
                     >
                         KYC

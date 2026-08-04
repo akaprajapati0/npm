@@ -34,3 +34,4 @@ scripts/add-local-hosts.ps1
 Thumbs.db
 .idea/
 .vscode/
+.agents/
