@@ -5,7 +5,12 @@ import Patient from "../models/patient.model";
 import User from "../models/user.model";
 import patientModel from '../models/patient.model';
 import { extractDocuments } from '../utils/normalizeDocuments';
+import { generatePatientPassword } from "../utils/auth.utils";
+import { PRPSmsService } from "../service/sendSMS";
+import { sendEmail } from "../service/sendMail";
+import { passwordTemplate } from "../service/emailTemplate";
 
+const smsService = new PRPSmsService();
 
 export const registerCaretaker = async (req: Request, res: Response) => {
     try {
@@ -61,6 +66,13 @@ export const registerCaretaker = async (req: Request, res: Response) => {
             );
         }
 
+        let initialPassword: string;
+        try {
+            initialPassword = generatePatientPassword(pName, dateOfBirth);
+        } catch {
+            return sendErrorResponse(res, 400, "Invalid patient date ofBirth");
+        }
+
         // ---------- Check User ----------
         const user = await User.findById(userId);
         if (!user) {
@@ -88,14 +100,34 @@ export const registerCaretaker = async (req: Request, res: Response) => {
             gender,
         });
 
-        // ---------- Update User Atomically ----------
-        await User.findByIdAndUpdate(user._id, {
-            $addToSet: { patients: patient._id }, // prevent duplicates
-            $set: {
-                email: email || user.email,
-                progress: "caretaker_uploaded",
-            },
-        });
+        // ---------- Update User ----------
+        if (!user.patients.some((id: any) => id.toString() === patient._id.toString())) {
+            user.patients.push(patient._id);
+        }
+        user.email = email || user.email;
+        user.progress = "caretaker_uploaded";
+        user.password = initialPassword;
+        await user.save();
+
+        const username = user.phone || user.email;
+        if (user.phone) {
+            smsService.sendOtp({
+                mobile: user.phone,
+                username,
+                password: initialPassword,
+                type: "password",
+            }).catch((error) => {
+                console.error("Initial password SMS failed:", error);
+            });
+        } else if (user.email) {
+            sendEmail({
+                to: user.email,
+                subject: "Named Patient Program - Your Username and Password",
+                html: passwordTemplate(initialPassword, username),
+            }).catch((error) => {
+                console.error("Initial password email failed:", error);
+            });
+        }
 
         return sendSuccessResponse(
             res,

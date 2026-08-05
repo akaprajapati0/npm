@@ -24,7 +24,7 @@ import Patient from "../models/patient.model";
 import PrescribedMedicine from "../models/prescribedMedicine.model";
 import Prescription from "../models/prescription.model";
 import { sendEmail } from '../service/sendMail';
-import { otpTemplate, passwordTemplate } from '../service/emailTemplate';
+import { otpTemplate } from '../service/emailTemplate';
 
 const smsService = new PRPSmsService();
 
@@ -274,45 +274,8 @@ export const registerWithOtp = async (
 
         const plainPassword = generatePassword();
 
-        // Send Credentials FIRST
-
-        if (phone) {
-            const smsResponse =
-                await smsService.sendOtp({
-                    mobile: phone,
-                    username: phone,
-                    password: plainPassword,
-                    type: "password",
-                });
-
-            if (!smsResponse) {
-                return sendErrorResponse(
-                    res,
-                    502,
-                    "SMS sending failed"
-                );
-            }
-        }
-
-        if (email) {
-            const emailResponse = await sendEmail({
-                to: email,
-                subject:
-                    "Named Patient Program - Your Username and Password",
-                html: passwordTemplate(
-                    plainPassword,
-                    email
-                ),
-            });
-
-            if (!emailResponse.success) {
-                return sendErrorResponse(
-                    res,
-                    502,
-                    "Email sending failed"
-                );
-            }
-        }
+        // Patient details are not available at OTP signup.
+        // The user receives the final initial password after caretaker registration.
 
         // Create User
 
