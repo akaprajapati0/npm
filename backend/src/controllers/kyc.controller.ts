@@ -181,12 +181,18 @@ export const kycStatusUpdate = async (req: Request, res: Response) => {
     // ---------- Notifications (non-blocking) ----------
     const phone = kyc.user?.phone;
     const email = kyc.user?.email;
+    const whatsappEvent =
+      status === STATUS.APPROVED
+        ? "KYC_APPROVED"
+        : status === STATUS.REJECTED
+          ? "KYC_REJECTED"
+          : null;
 
-    if (phone) {
+    if (phone && whatsappEvent) {
       void sendWhatsappEvent({
         mobile: phone,
-        event: "KYC_STATUS_UPDATED",
-        variables: [status],
+        event: whatsappEvent,
+        variables: [],
       }).catch((err) => {
         console.error(
           "WhatsApp notification failed:",

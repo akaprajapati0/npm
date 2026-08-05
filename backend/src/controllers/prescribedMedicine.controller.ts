@@ -161,12 +161,18 @@ export const updatePresMedicineByAdmin = async (req: Request, res: Response) => 
         }
 
         const phone = medicine.user?.phone;
+        const whatsappEvent =
+            status === STATUS.APPROVED
+                ? "CARETAKER_APPROVED"
+                : status === STATUS.REJECTED
+                    ? "CARETAKER_REJECTED"
+                    : null;
 
-        if (phone) {
+        if (phone && whatsappEvent) {
             sendWhatsappEvent({
                 mobile: phone,
-                event: "CARETAKER_STATUS_UPDATED",
-                variables: [status]
+                event: whatsappEvent,
+                variables: []
             }).catch(err => console.error("WhatsApp failed:", err));
         }
 

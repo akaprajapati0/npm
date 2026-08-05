@@ -2,10 +2,10 @@ type WhatsappEventConfig = {
     templateId: string;
     variables: number;
     buttonVariables?: number;
-    headerType?: "image";
+    headerType?: "image" | "document";
 };
 
-export const WHATSAPP_EVENTS: Record<string, WhatsappEventConfig> = {
+export const WHATSAPP_EVENTS = {
     SEND_OTP: {
         templateId: process.env.SEND_OTP_TEMPLATE!,
         variables: 1,
@@ -33,6 +33,21 @@ export const WHATSAPP_EVENTS: Record<string, WhatsappEventConfig> = {
         variables: 0,
     },
 
+    PRESCRIPTION_APPROVED: {
+        templateId: process.env.PRESCRIPTION_APPROVED!,
+        variables: 2,
+    },
+
+    PRESCRIPTION_REJECTED: {
+        templateId: process.env.PRESCRIPTION_REJECTED!,
+        variables: 0,
+    },
+
+    KYC_REQUIRED: {
+        templateId: process.env.KYC_REQUIRED!,
+        variables: 0,
+    },
+
     // KYC
     KYC_UPLOADED: {
         templateId: process.env.KYC_TEMPLATE!,
@@ -46,7 +61,17 @@ export const WHATSAPP_EVENTS: Record<string, WhatsappEventConfig> = {
 
     KYC_REJECTED: {
         templateId: process.env.TEMPLATE_KYC_REJECTED!,
-        variables: 1, // {{1}} = reason
+        variables: 0,
+    },
+
+    CARETAKER_APPROVED: {
+        templateId: process.env.CARETAKER_APPROVED!,
+        variables: 0,
+    },
+
+    CARETAKER_REJECTED: {
+        templateId: process.env.CARETAKER_REJECTED!,
+        variables: 0,
     },
 
     // Quotation
@@ -68,6 +93,7 @@ export const WHATSAPP_EVENTS: Record<string, WhatsappEventConfig> = {
     READY_QUOTATION: {
         templateId: process.env.READY_QUOTATION!,
         variables: 1,
+        headerType: "document",
     },
 
     // Proforma
@@ -84,6 +110,12 @@ export const WHATSAPP_EVENTS: Record<string, WhatsappEventConfig> = {
     READY_PROFORMA: {
         templateId: process.env.READY_PROFORMA!,
         variables: 1,
+        headerType: "document",
+    },
+
+    REVISION_PROFORMA: {
+        templateId: process.env.REVISION_PROFORMA!,
+        variables: 0,
     },
 
     // Import License
@@ -94,17 +126,18 @@ export const WHATSAPP_EVENTS: Record<string, WhatsappEventConfig> = {
 
     ACCEPT_IMPORT_PERMIT: {
         templateId: process.env.ACCEPT_IMPORT_PERMIT!,
-        variables: 1,
+        variables: 0,
     },
 
     REJECT_IMPORT_PERMIT: {
         templateId: process.env.REJECT_IMPORT_PERMIT!,
-        variables: 1,
+        variables: 0,
     },
 
     READY_IMPORT_PERMIT: {
         templateId: process.env.READY_IMPORT_PERMIT!,
-        variables: 1,
+        variables: 0,
+        headerType: "document",
     },
 
     // Bank Transaction
@@ -129,12 +162,32 @@ export const WHATSAPP_EVENTS: Record<string, WhatsappEventConfig> = {
         variables: 1,
     },
 
+    CDEC_APPROVED: {
+        templateId: process.env.CDEC_APPROVED!,
+        variables: 0,
+    },
+
+    CDEC_REJECTED: {
+        templateId: process.env.CDEC_REJECTED!,
+        variables: 0,
+    },
+
+    DELIVERY_DETAILS_SHARED: {
+        templateId: process.env.DELIVERY_DETAILS_SHARED!,
+        variables: 0,
+    },
+
+    ALL_DOCUMENTS_UPLOADED: {
+        templateId: process.env.ALL_DOCUMENTS_UPLOADED!,
+        variables: 0,
+    },
+
     // Admin document verification
     DOCUMENT_VERIFIED: {
         templateId: process.env.DOCUMENT_VERIFIED!,
         variables: 2,
     },
 
-} as const;
+} as const satisfies Record<string, WhatsappEventConfig>;
 
 export type WhatsappEventKey = keyof typeof WHATSAPP_EVENTS;

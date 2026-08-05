@@ -13,8 +13,6 @@ import { IUser } from "../utils/status";
 import { Image } from "../types/controllersTypes";
 import { RequestStatus } from "../types/schemaTypes";
 import fs from "fs/promises";
-import { WhatsappEventKey } from "../types/whatsappEvents";
-import PrescribedMedicine from "../models/prescribedMedicine.model";
 
 type DocumentType =
   | "medicine_quotation"
@@ -23,68 +21,26 @@ type DocumentType =
 
 const DOCUMENT_TYPE_CONFIG: Record<
   DocumentType,
-  { model: typeof MedicineQuotationRequest; event: WhatsappEventKey; progress: string }
+  { model: typeof MedicineQuotationRequest; event: string; progress: string }
 > = {
   medicine_quotation: {
     model: MedicineQuotationRequest,
-    event: "REQUEST_QUOTATION",
+    event: "MEDICINE_QUOTATION",
     progress: "request_quotation",
   },
   proforma_invoice: {
     model: ProformaInvoiceRequest,
-    event: "REQUEST_PROFORMA",
+    event: "PROFORMA_INVOICE",
     progress: "request_invoice",
   },
   import_license: {
     model: ImportLicenseRequest,
-    event: "REQUEST_IMPORT_PERMIT",
+    event: "IMPORT_LICENSE",
     progress: "request_license",
   },
 };
 
-const DOCUMENT_STATUS_EVENTS: Record<
-  DocumentType,
-  Partial<Record<RequestStatus, WhatsappEventKey>>
-> = {
-  medicine_quotation: {
-    Approved: "READY_QUOTATION",
-    Revise_Request: "REVISION_QUOTATION",
-  },
-  proforma_invoice: {
-    Approved: "READY_PROFORMA",
-  },
-  import_license: {
-    Approved: "READY_IMPORT_PERMIT",
-    Rejected: "REJECT_IMPORT_PERMIT",
-  },
-};
-
 const VALID_TYPES = Object.keys(DOCUMENT_TYPE_CONFIG) as DocumentType[];
-
-const toPublicUploadUrl = (filePath?: string) => {
-  if (!filePath) return undefined;
-  if (/^https?:\/\//i.test(filePath)) return filePath;
-
-  const baseUrl = (
-    process.env.PUBLIC_UPLOAD_BASE_URL ||
-    process.env.BACKEND_PUBLIC_URL ||
-    process.env.API_PUBLIC_URL ||
-    ""
-  ).replace(/\/$/, "");
-
-  if (!baseUrl) return undefined;
-
-  const normalizedPath = filePath.replace(/\\/g, "/").replace(/^\/+/, "");
-  return `${baseUrl}/${normalizedPath}`;
-};
-
-const getStatusVariables = (event: WhatsappEventKey, type: DocumentType, status: RequestStatus, medicineName?: string) => {
-  if (event === "READY_QUOTATION" || event === "READY_PROFORMA") {
-    return [medicineName || "Medicine"];
-  }
-
-  return [];
-};
 
 export const requestDocument = async (req: Request, res: Response) => {
   try {
@@ -253,7 +209,7 @@ export const updateDocumentStatus = async (req: Request, res: Response) => {
       return sendErrorResponse(res, 400, "Invalid status value");
     }
 
-    const { model: Model } = DOCUMENT_TYPE_CONFIG[type];
+    const { model: Model, event } = DOCUMENT_TYPE_CONFIG[type];
 
     const existing = await Model.findById(id).populate<{ user: IUser }>({
       path: "user",
@@ -289,32 +245,13 @@ export const updateDocumentStatus = async (req: Request, res: Response) => {
     await existing.save();
 
     const phone = existing.user?.phone;
-    const event = DOCUMENT_STATUS_EVENTS[type][status];
+    // const event = events[status];
 
     if (phone && event) {
-      const prescribedMedicine = await PrescribedMedicine.findOne({
-        user: existing.user._id,
-      })
-        .sort({ createdAt: -1 })
-        .select("medicineName")
-        .lean();
-      const documentUrl = toPublicUploadUrl(uploadedDocuments[0]?.url);
-
       sendWhatsappEvent({
         mobile: phone,
         event,
-        variables: getStatusVariables(
-          event,
-          type,
-          status,
-          prescribedMedicine?.medicineName,
-        ),
-        document: documentUrl
-          ? {
-              link: documentUrl,
-              filename: `${type.replace(/_/g, "-")}.pdf`,
-            }
-          : undefined,
+        variables: [`${type} has been ${status.toLowerCase()}`],
       }).catch((err) => console.error("WhatsApp notification failed:", err));
     }
 
@@ -378,7 +315,7 @@ export const reviseDocumentRequest = async (req: Request, res: Response) => {
       return sendErrorResponse(res, 400, "Invalid status value");
     }
 
-    const { model: Model } = DOCUMENT_TYPE_CONFIG[type];
+    const { model: Model, event } = DOCUMENT_TYPE_CONFIG[type];
 
     const existing = await Model.findById(id).populate<{ user: IUser }>({
       path: "user",
@@ -415,33 +352,13 @@ export const reviseDocumentRequest = async (req: Request, res: Response) => {
     await existing.save();
 
     const phone = existing.user?.phone;
-    const event = DOCUMENT_STATUS_EVENTS[type][status];
+    // const event = events[status];
 
     if (phone && event) {
-      const prescribedMedicine = await PrescribedMedicine.findOne({
-        user: existing.user._id,
-      })
-        .sort({ createdAt: -1 })
-        .select("medicineName")
-        .lean();
-      const latestDocument = existing.documents[existing.documents.length - 1];
-      const documentUrl = toPublicUploadUrl(latestDocument?.url);
-
       sendWhatsappEvent({
         mobile: phone,
         event,
-        variables: getStatusVariables(
-          event,
-          type,
-          status,
-          prescribedMedicine?.medicineName,
-        ),
-        document: documentUrl
-          ? {
-              link: documentUrl,
-              filename: `${type.replace(/_/g, "-")}.pdf`,
-            }
-          : undefined,
+        variables: [`${type} has been ${status.toLowerCase()}`],
       }).catch((err) => console.error("WhatsApp notification failed:", err));
     }
 

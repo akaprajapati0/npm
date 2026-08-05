@@ -16,6 +16,10 @@ type WhatsappVariable =
 
 type WhatsappComponent =
   | {
+    type: "header";
+    parameters: { type: "document"; document: { link: string; filename?: string } }[];
+  }
+  | {
     type: "body";
     parameters: { type: "text"; text: string }[];
   }
@@ -33,6 +37,10 @@ interface SendWhatsappEventOptions {
   buttonParams?: string[]; // NEW
   image?: {
     link: string;
+  };
+  document?: {
+    link: string;
+    filename?: string;
   };
   overrideBot?: "yes" | "no";
 }
@@ -58,12 +66,19 @@ export const sendWhatsappEvent = async ({
   variables = [],
   buttonParams = [],
   image,
+  document,
   overrideBot = "yes",
 }: SendWhatsappEventOptions) => {
   try {
     const eventConfig = WHATSAPP_EVENTS[event];
 
+    if (!eventConfig) {
+      throw new Error(`Unsupported WhatsApp event: ${event}`);
+    }
 
+    if (!eventConfig.templateId) {
+      throw new Error(`WhatsApp template ID is missing for event: ${event}`);
+    }
 
     if (variables.length !== eventConfig.variables) {
       throw new Error(
@@ -89,7 +104,7 @@ export const sendWhatsappEvent = async ({
     };
 
 
-    if (eventConfig.headerType === "image" && image?.link) {
+    if ("headerType" in eventConfig && eventConfig.headerType === "image" && image?.link) {
       payload.header = {
         type: "image",
         media: {
@@ -100,6 +115,21 @@ export const sendWhatsappEvent = async ({
 
 
     const components: any[] = [];
+
+    if ("headerType" in eventConfig && eventConfig.headerType === "document" && document?.link) {
+      components.push({
+        type: "header",
+        parameters: [
+          {
+            type: "document",
+            document: {
+              link: document.link,
+              ...(document.filename ? { filename: document.filename } : {}),
+            },
+          },
+        ],
+      });
+    }
 
     if (variables.length > 0) {
       components.push({

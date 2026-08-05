@@ -166,12 +166,21 @@ export const updatePrescriptionStatus = async (req: Request, res: Response) => {
 
     // ---------- Notification ----------
     const phone = prescription.user?.phone;
+    const whatsappEvent =
+      status === STATUS.APPROVED
+        ? "PRESCRIPTION_APPROVED"
+        : status === STATUS.REJECTED
+          ? "PRESCRIPTION_REJECTED"
+          : null;
 
-    if (phone) {
+    if (phone && whatsappEvent) {
       sendWhatsappEvent({
         mobile: phone,
-        event: "PRESCRIPTION_STATUS_UPDATED",
-        variables: [status]
+        event: whatsappEvent,
+        variables:
+          whatsappEvent === "PRESCRIPTION_APPROVED"
+            ? ["prescription and KYC", "request a quotation"]
+            : [],
       }).catch(err => console.error("WhatsApp failed:", err));
     }
 

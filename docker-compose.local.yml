@@ -38,6 +38,7 @@ services:
       FRONTEND_URL: http://localhost
       SOCIAL_REDIRECT_URI: http://localhost/api/auth
       CORS_ORIGINS: http://localhost,http://localhost:3000
+      PUBLIC_UPLOAD_BASE_URL: http://localhost
       ACCESS_TOKEN_SECRET: local-access-secret
       REFRESH_TOKEN_SECRET: local-refresh-secret
       ADMIN_ACCESS_SECRET: local-admin-access-secret

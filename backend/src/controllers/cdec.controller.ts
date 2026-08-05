@@ -158,12 +158,18 @@ export const updateCdecStatus = async (req: Request, res: Response) => {
 
     // ---------- Notification ----------
     const phone = cdec.user?.phone;
+    const whatsappEvent =
+      status === STATUS.APPROVED
+        ? "CDEC_APPROVED"
+        : status === STATUS.REJECTED
+          ? "CDEC_REJECTED"
+          : null;
 
-    if (phone) {
+    if (phone && whatsappEvent) {
       sendWhatsappEvent({
         mobile: phone,
-        event: "CDEC_STATUS_UPDATED",
-        variables: [status],
+        event: whatsappEvent,
+        variables: [],
       }).catch(err => console.error("WhatsApp failed:", err));
     }
 
