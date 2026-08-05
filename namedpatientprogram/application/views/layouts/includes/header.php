@@ -1,3 +1,10 @@
+<?php
+$currentHost = $_SERVER['HTTP_HOST'] ?? '';
+$appLoginUrl = in_array($currentHost, ['namedpatientprogram.local', 'localhost'], true)
+    ? 'http://localhost/login'
+    : 'https://app.namedpatientprogram.com';
+?>
+
 <!-- TOP BAR -->
 <div class="bg-[#0B1739] text-white text-sm">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -32,7 +39,7 @@
                     class="text-sm text-white underline whitespace-nowrap">
                     For Know More about NPP
                 </a>
-                <a href="https://app.namedpatientprogram.com" target="_blank"
+                <a href="<?= $appLoginUrl ?>" target="_blank"
                     class="bg-[#2563EB] px-4 py-2 rounded text-sm whitespace-nowrap hover:text-white transition">
                     Log In
                 </a>
@@ -371,7 +378,7 @@
             Sign in to access your account
         </p>
 
-        <a href="https://app.namedpatientprogram.com" target="_blank"
+        <a href="<?= $appLoginUrl ?>" target="_blank"
             class="block text-center bg-[#2F336E] text-white py-3.5 rounded-lg font-semibold hover:bg-[#23265a] transition">
             Log In
         </a>
