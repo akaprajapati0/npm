@@ -109,6 +109,7 @@ export const useUpdateCaretaker = () => {
                 setUser(caretaker);
                 successToast("Caretaker updated successfully");
                 queryClient.invalidateQueries({ queryKey: ["profile"] });
+                queryClient.invalidateQueries({ queryKey: ["caretaker"] });
                 router.push("/home")
 
             },

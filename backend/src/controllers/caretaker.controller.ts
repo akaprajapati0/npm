@@ -254,13 +254,20 @@ export const updateCaretaker = async (req: Request, res: Response) => {
 
         return sendSuccessResponse(res, 200, "Caretaker updated successfully", {
             caretaker: {
-                id: caretaker._id,
+                _id: caretaker._id,
                 fullname: caretaker.fullname,
                 email: caretaker.email,
+                relationship: caretaker.relationship,
+                country: caretaker.country,
+                city: caretaker.city,
+                pincode: caretaker.pincode,
+                phone: caretaker.phone,
             },
             patient: {
-                id: patient._id,
+                _id: patient._id,
                 fullname: patient.fullname,
+                dateOfBirth: patient.dateOfBirth,
+                gender: patient.gender,
             },
         });
 

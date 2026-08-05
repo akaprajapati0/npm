@@ -88,3 +88,60 @@ export const getAddressByUserId = async (req: Request, res: Response) => {
         return sendErrorResponse(res, 500, "Server error while fetching address details");
     }
 }
+
+export const updateAddress = async (req: Request, res: Response) => {
+    try {
+        const userId = (req.user as any).id || (req.user as any)._id || req.user;
+        const { id } = req.params;
+
+        if (!userId) {
+            return sendErrorResponse(res, 401, "Unauthorized");
+        }
+
+        if (!id) {
+            return sendErrorResponse(res, 400, "Address ID is required");
+        }
+
+        if (req.body.checkMark !== true) {
+            return sendErrorResponse(
+                res,
+                400,
+                "Delivery address confirmation is required"
+            );
+        }
+
+        const address = await Address.findOneAndUpdate(
+            { _id: id, user: userId },
+            {
+                $set: {
+                    name: req.body.name,
+                    phone: req.body.phone,
+                    houseName: req.body.houseName,
+                    roadName: req.body.roadName,
+                    city: req.body.city,
+                    state: req.body.state,
+                    country: req.body.country,
+                    pincode: req.body.pincode,
+                    landmark: req.body.landmark,
+                    checkMark: req.body.checkMark,
+                    isDefault: req.body.isDefault,
+                },
+            },
+            { new: true, runValidators: true }
+        );
+
+        if (!address) {
+            return sendErrorResponse(res, 404, "Address not found");
+        }
+
+        return sendSuccessResponse(
+            res,
+            200,
+            "Address updated successfully",
+            address
+        );
+    } catch (error: any) {
+        console.error("UPDATE ADDRESS ERROR:", error);
+        return sendErrorResponse(res, 500, "Server Error");
+    }
+};

@@ -169,7 +169,7 @@ export default function ProfileSidebar({
                     {/* <DeactivateAccount /> */}
 
                     <div className="text-sm">
-                        <p className='font-semibold leading-tight tracking-wider bg-linear-to-b from-[#0040C6] to-[#00FF99] bg-clip-text text-transparent mb-1 text-base'>India's Leading Partner in Named Patient Medicine Access</p>
+                        <p className='font-semibold leading-tight tracking-wider bg-linear-to-b from-[#0040C6] to-[#00FF99] bg-clip-text text-transparent mb-1 text-base'>India&apos;s Leading Partner in Named Patient Medicine Access</p>
 
                         <p className="text-xs text-gray-500">Made with NPM</p>
                     </div>

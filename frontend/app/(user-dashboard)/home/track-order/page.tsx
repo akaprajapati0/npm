@@ -11,12 +11,11 @@ export default function Track() {
         useState("");
 
     const handleTrack = () => {
-        if (!trackingNumber.trim()) return;
+        const trimmedTrackingNumber = trackingNumber.trim();
+        if (!trimmedTrackingNumber) return;
 
-        // Redirect directly to tracking portal
         window.location.href =
-            `https://trackorder.ikrispharmanetwork.com/showData`;
-        // ${trackingNumber.trim()}
+            "https://trackorder.ikrispharmanetwork.com/showData";
     };
 
     return (

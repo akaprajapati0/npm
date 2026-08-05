@@ -8,7 +8,14 @@ import { SectionItem } from '@/types/componentTypes'
 
 // ======== SIDEBAR ITEMS CONTENT =======
 export const sidebarItems = [
-    { label: "Edit Profile", href: "/home/edit-profile" },
+    {
+        label: "Edit Profile",
+        href: null,
+        children: [
+            { label: "User Details", href: "/home/edit-profile?section=user-details" },
+            { label: "Delivery Address Details", href: "/home/edit-profile?section=delivery-address" },
+        ],
+    },
     {
         label: "Order with Prescription",
         href: null,

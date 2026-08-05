@@ -30,28 +30,49 @@ const STEP_ROUTE_MAP: Record<RequestStep, string> = {
 const REQUEST_BUTTONS: Array<{
     step: RequestStep;
     label: string;
+    requestedLabel: string;
+    approvedLabel: string;
+    rejectedLabel: string;
     infoKey: keyof typeof QUOTATION_CONFIG;
     statusKey: "quotation_requested" | "invoice_requested" | "license_requested";
 }> = [
         {
             step: "medicine_quotation",
             label: "Request Medicine Quotation",
+            requestedLabel: "Medicine Quotation Requested",
+            approvedLabel: "View Medicine Quotation",
+            rejectedLabel: "Medicine Quotation Rejected",
             infoKey: "WHY_QUOTE_REQUIRED",
             statusKey: "quotation_requested",
         },
         {
             step: "proforma_invoice",
             label: "Request Proforma Invoice",
+            requestedLabel: "Proforma Invoice Requested",
+            approvedLabel: "View Proforma Invoice",
+            rejectedLabel: "Proforma Invoice Rejected",
             infoKey: "WHAT_PROFORMA",
             statusKey: "invoice_requested",
         },
         {
             step: "import_license",
             label: "Request Import License",
+            requestedLabel: "Import License Requested",
+            approvedLabel: "View Import License",
+            rejectedLabel: "Import License Rejected",
             infoKey: "WHY_LICENSE_REQUIRED",
             statusKey: "license_requested",
         },
     ];
+
+type RequestDocStatus = "Pending" | "Requested" | "Approved" | "Rejected" | "Revise_Request";
+type ApiError = {
+    response?: {
+        data?: {
+            message?: string;
+        };
+    };
+};
 
 /* ------------------ COMPONENT ------------------ */
 
@@ -78,6 +99,9 @@ export default function RequestDocument() {
         useState<RequestStep | null>(null);
 
     const [loadingStep, setLoadingStep] = useState<RequestStep | null>(null);
+    const [requestedSteps, setRequestedSteps] = useState<Set<RequestStep>>(
+        () => new Set()
+    );
 
     // Optimistic UI state
     // const [optimisticSteps, setOptimisticSteps] = useState<RequestStep[]>([]);
@@ -120,13 +144,16 @@ export default function RequestDocument() {
                 onSuccess: (res) => {
                     successToast(res.message || "Request submitted");
 
+                    setRequestedSteps((prev) => new Set(prev).add(step));
                     setOpenPopup(true);
                     setLastRequestedStep(step);
                     setLoadingStep(null);
                 },
-                onError: (err: any) => {
+                onError: (err: unknown) => {
+                    const apiError = err as ApiError;
                     errorToast(
-                        err?.response?.data?.message || "Something went wrong"
+                        apiError.response?.data?.message ||
+                        (err instanceof Error ? err.message : "Something went wrong")
                     );
 
                     // Rollback optimistic UI
@@ -162,6 +189,50 @@ export default function RequestDocument() {
 
     const isDisabled = isPending || !kycStatus.data;
 
+    const getButtonState = (button: (typeof REQUEST_BUTTONS)[number]) => {
+        const doc = existingDocs[button.step];
+        const status = doc?.status as RequestDocStatus | undefined;
+        const wasRequested = requestedSteps.has(button.step);
+
+        if (loadingStep === button.step) {
+            return {
+                label: "Processing...",
+                disabled: true,
+                className: "bg-gray-300 text-gray-600 hover:bg-gray-300",
+            };
+        }
+
+        if (status === "Approved") {
+            return {
+                label: button.approvedLabel,
+                disabled: isDisabled,
+                className: "",
+            };
+        }
+
+        if (status === "Rejected") {
+            return {
+                label: button.rejectedLabel,
+                disabled: true,
+                className: "bg-gray-300 text-gray-600 hover:bg-gray-300",
+            };
+        }
+
+        if (doc || wasRequested) {
+            return {
+                label: button.requestedLabel,
+                disabled: true,
+                className: "bg-gray-300 text-gray-600 hover:bg-gray-300",
+            };
+        }
+
+        return {
+            label: button.label,
+            disabled: isDisabled,
+            className: "",
+        };
+    };
+
     /* ------------------ UI ------------------ */
 
     return (
@@ -171,62 +242,30 @@ export default function RequestDocument() {
                 subHeading="Easily manage each stage of your request in a structured and compliant workflow."
                 items={quotationCarouselItems}
             >
-                <div className="w-full relative">
-                    <button
-                        type="button"
-                        className="absolute rounded-full h-6 w-6 bg-yellow-300 text-black -right-1 cursor-pointer"
-                        onClick={() => setActiveModal("WHY_QUOTE_REQUIRED")}
-                        aria-label="More info"
-                    >
-                        ?
-                    </button>
+                {REQUEST_BUTTONS.map((button) => {
+                    const buttonState = getButtonState(button);
 
-                    <Button
-                        className="w-full mt-5 py-6 text-base font-medium"
-                        onClick={() => handleRequest("medicine_quotation")}
-                        disabled={isDisabled}
-                    >
-                        {loadingStep === "medicine_quotation" ? "Processing..." : "Request Medicine Quotation"}
-                    </Button>
-                </div>
+                    return (
+                        <div key={button.step} className="w-full relative">
+                            <button
+                                type="button"
+                                className="absolute rounded-full h-6 w-6 bg-yellow-300 text-black -right-1 cursor-pointer"
+                                onClick={() => setActiveModal(button.infoKey)}
+                                aria-label="More info"
+                            >
+                                ?
+                            </button>
 
-                <div className="w-full relative">
-                    <button
-                        type="button"
-                        className="absolute rounded-full h-6 w-6 bg-yellow-300 text-black -right-1 cursor-pointer"
-                        onClick={() => setActiveModal("WHAT_PROFORMA")}
-                        aria-label="More info"
-                    >
-                        ?
-                    </button>
-
-                    <Button
-                        className="w-full mt-5 py-6 text-base font-medium"
-                        onClick={() => handleRequest("proforma_invoice")}
-                        disabled={isDisabled}
-                    >
-                        {loadingStep === "proforma_invoice" ? "Processing..." : "Request Proforma Invoice"}
-                    </Button>
-                </div>
-
-                <div className="w-full relative">
-                    <button
-                        type="button"
-                        className="absolute rounded-full h-6 w-6 bg-yellow-300 text-black -right-1 cursor-pointer"
-                        onClick={() => setActiveModal("WHY_LICENSE_REQUIRED")}
-                        aria-label="More info"
-                    >
-                        ?
-                    </button>
-
-                    <Button
-                        className="w-full mt-5 py-6 text-base font-medium"
-                        onClick={() => handleRequest("import_license")}
-                        disabled={isDisabled}
-                    >
-                        {loadingStep === "import_license" ? "Processing..." : "Request Import License"}
-                    </Button>
-                </div>
+                            <Button
+                                className={`w-full mt-5 py-6 text-base font-medium ${buttonState.className}`}
+                                onClick={() => handleRequest(button.step)}
+                                disabled={buttonState.disabled}
+                            >
+                                {buttonState.label}
+                            </Button>
+                        </div>
+                    );
+                })}
 
             </CarouselInfo>
 
