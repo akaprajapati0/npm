@@ -1,7 +1,7 @@
 <?php
 $currentHost = $_SERVER['HTTP_HOST'] ?? '';
 $appLoginUrl = in_array($currentHost, ['namedpatientprogram.local', 'localhost'], true)
-    ? 'http://localhost/login'
+    ? 'http://localhost/caretaker'
     : 'https://app.namedpatientprogram.com';
 ?>
 
