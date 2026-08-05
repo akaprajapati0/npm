@@ -1,17 +1,17 @@
 "use client";
 
-import GoBackBtn from '@/components/GoBackBtn';
 import { ReusableCard } from '@/components/ReusableCard';
 import { Button } from '@/components/ui/button';
 import ReusablePopup from '@/components/ui/ReusablePopup';
 import UploadDocument from '@/components/UploadDocument';
+import PreviewDialog from '@/components/PreviewDialog';
 import { useUploadCdec } from '@/hooks/useCdecMutation';
 import { uploadDocumentStore } from '@/store/uploadDocumentStore';
 import { PopupType } from '@/types/componentTypes';
 import { File, Loader } from 'lucide-react';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
-import { useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 
 export default function CdecDocument() {
     const router = useRouter();
@@ -20,6 +20,13 @@ export default function CdecDocument() {
     const { files, removeFile, clearFiles } = uploadDocumentStore();
     const [uploadType, setUploadType] = useState<PopupType>("");
     const [successPopup, setSuccessPopup] = useState<boolean>(false);
+    const [preview, setPreview] = useState<{ url: string; type: string } | null>(null);
+    // eslint-disable-next-line react-hooks/preserve-manual-memoization
+    const fileUrls = useMemo(() => files.map((file) => URL.createObjectURL(file)), [files]);
+
+    useEffect(() => {
+        return () => fileUrls.forEach((url) => URL.revokeObjectURL(url));
+    }, [fileUrls]);
 
     const onSubmit = () => {
         mutate(files)
@@ -48,7 +55,16 @@ export default function CdecDocument() {
                         {files.map((file, index) => (
                             <div
                                 key={index}
-                                className="relative h-24 w-24 rounded-md border"
+                                role="button"
+                                tabIndex={0}
+                                className="relative h-24 w-24 rounded-md border cursor-pointer overflow-hidden"
+                                onClick={() => setPreview({ url: fileUrls[index], type: file.type })}
+                                onKeyDown={(event) => {
+                                    if (event.key === "Enter" || event.key === " ") {
+                                        event.preventDefault();
+                                        setPreview({ url: fileUrls[index], type: file.type });
+                                    }
+                                }}
                             >
                                 {file.type === "application/pdf" ? (
                                     <div className="flex flex-col items-center justify-center h-full w-full bg-red-50 rounded-md gap-1">
@@ -59,7 +75,7 @@ export default function CdecDocument() {
                                     </div>
                                 ) : (
                                     <Image
-                                        src={URL.createObjectURL(file)}
+                                        src={fileUrls[index]}
                                         alt={`Prescription ${index + 1}`}
                                         fill
                                         className="object-cover rounded-md"
@@ -67,7 +83,10 @@ export default function CdecDocument() {
                                 )}
 
                                 <button
-                                    onClick={() => removeFile(index)}
+                                    onClick={(event) => {
+                                        event.stopPropagation();
+                                        removeFile(index);
+                                    }}
                                     className="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center cursor-pointer"
                                 >
                                     ×
@@ -116,6 +135,13 @@ export default function CdecDocument() {
                 image="/successfull-popup.svg"
                 title="Uploaded Successfully"
                 description="Your CDEC has been uploaded successfully and is under verification. Our team will review it and update you shortly."
+            />
+
+            <PreviewDialog
+                open={!!preview}
+                onOpenChange={(open) => !open && setPreview(null)}
+                previewUrl={preview?.url || null}
+                fileType={preview?.type}
             />
         </div>
     )

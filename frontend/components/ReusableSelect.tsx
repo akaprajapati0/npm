@@ -16,6 +16,7 @@ interface ReusableSelectProps {
     onChange?: (value: string) => void;
     onBlur?: () => void;
     name?: string;
+    contentClassName?: string;
 }
 
 export function ReusableSelect({
@@ -24,6 +25,7 @@ export function ReusableSelect({
     placeholder,
     value,
     onChange,
+    contentClassName,
 }: ReusableSelectProps) {
     return (
         <div className="w-full space-y-2">
@@ -34,7 +36,7 @@ export function ReusableSelect({
                     <SelectValue placeholder={placeholder || "Select option"} />
                 </SelectTrigger>
 
-                <SelectContent>
+                <SelectContent className={contentClassName}>
                     {options.map((item) => (
                         <SelectItem key={item.value} value={item.value}>
                             {item.label}

@@ -88,8 +88,9 @@ export default function PrescribedMedicinePage() {
                 storageConditions: "",
                 manufacturer: "",
             });
-            setIsItemSelected(false)
-            setShowDropdown(true)
+            // eslint-disable-next-line react-hooks/set-state-in-effect
+            setIsItemSelected(false);
+            setShowDropdown(true);
             setAutofilledFields({});
         }
     }, [medicineName, form]);
@@ -114,6 +115,7 @@ export default function PrescribedMedicinePage() {
 
     useEffect(() => {
         if (!isItemSelected) {
+            // eslint-disable-next-line react-hooks/set-state-in-effect
             setShowDropdown(Boolean(shouldSearch && results.length));
         }
     }, [shouldSearch, results.length, isItemSelected]);
@@ -341,6 +343,7 @@ export default function PrescribedMedicinePage() {
                                 <ReusableSelect
                                     label="Quantity Required"
                                     options={quantityOptions}
+                                    contentClassName="max-h-44 overflow-y-auto"
                                     {...field}
                                 />
                             )

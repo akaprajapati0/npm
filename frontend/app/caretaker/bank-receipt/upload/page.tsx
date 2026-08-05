@@ -16,6 +16,7 @@ import UploadDocument from "@/components/UploadDocument";
 import ReadTextModal from "@/components/ReadTextModal";
 import ReadTextPopup from "@/components/ReadTextPopup";
 import ReusablePopup from "@/components/ui/ReusablePopup";
+import PreviewDialog from "@/components/PreviewDialog";
 
 import { useUploadBankReceipt } from "@/hooks/useBankReciept";
 import { useGetdocs } from "@/hooks/useDocRequest";
@@ -35,6 +36,7 @@ export default function UploadBankReceipt() {
     const [openPopup, setOpenPopup] = useState(false);
     const [uploadType, setUploadType] = useState<PopupType>("");
     const [activeModal, setActiveModal] = useState<keyof typeof BANK_RECEIPT_CONFIG | null>(null);
+    const [preview, setPreview] = useState<{ url: string; type: string } | null>(null);
 
     // NOTE: this is 3 separate network requests for what's conceptually one
     // check ("are all required docs approved?"). If a combined backend
@@ -84,7 +86,8 @@ export default function UploadBankReceipt() {
         form.setValue("files", files, { shouldValidate: true });
     }, [files, form]);
 
-    const fileUrls = useMemo(() => files.map((f) => URL.createObjectURL(f)), [files]);
+    // eslint-disable-next-line react-hooks/preserve-manual-memoization
+    const fileUrls = useMemo(() => files.map((file) => URL.createObjectURL(file)), [files]);
 
     useEffect(() => {
         return () => fileUrls.forEach((url) => URL.revokeObjectURL(url));
@@ -154,7 +157,19 @@ export default function UploadBankReceipt() {
 
                     <div className="grid grid-cols-3 gap-4">
                         {files.map((file, index) => (
-                            <div key={index} className="relative h-24 w-24 rounded-md border">
+                            <div
+                                key={index}
+                                role="button"
+                                tabIndex={0}
+                                className="relative h-24 w-24 rounded-md border cursor-pointer overflow-hidden"
+                                onClick={() => setPreview({ url: fileUrls[index], type: file.type })}
+                                onKeyDown={(event) => {
+                                    if (event.key === "Enter" || event.key === " ") {
+                                        event.preventDefault();
+                                        setPreview({ url: fileUrls[index], type: file.type });
+                                    }
+                                }}
+                            >
                                 {file.type === "application/pdf" ? (
                                     <div className="flex flex-col items-center justify-center h-full w-full bg-red-50 rounded-md gap-1">
                                         <FileIcon />
@@ -173,7 +188,10 @@ export default function UploadBankReceipt() {
 
                                 <button
                                     type="button"
-                                    onClick={() => removeFile(index)}
+                                    onClick={(event) => {
+                                        event.stopPropagation();
+                                        removeFile(index);
+                                    }}
                                     className="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center cursor-pointer"
                                 >
                                     ×
@@ -236,6 +254,13 @@ export default function UploadBankReceipt() {
                 title={currentData?.title || ""}
                 markdown={currentData?.markdown || ""}
                 fileName={currentData?.fileName || ""}
+            />
+
+            <PreviewDialog
+                open={!!preview}
+                onOpenChange={(open) => !open && setPreview(null)}
+                previewUrl={preview?.url || null}
+                fileType={preview?.type}
             />
         </div>
     );
