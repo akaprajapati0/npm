@@ -310,14 +310,16 @@
 
             <?php endif; ?>
 
-            <!-- BACK TO HOME -->
-            <div class="mt-8 text-center">
-                <a href="<?= base_url(); ?>"
-                    class="inline-flex items-center gap-2 px-6 py-3 bg-gray-200 text-gray-800 font-semibold rounded-lg hover:bg-gray-300 transition">
-                    <i class="fas fa-arrow-left"></i>
-                    <span>Back to Home</span>
-                </a>
-            </div>
+            <?php if (($source ?? '') !== 'app'): ?>
+                <!-- BACK TO HOME -->
+                <div class="mt-8 text-center">
+                    <a href="<?= base_url(); ?>"
+                        class="inline-flex items-center gap-2 px-6 py-3 bg-gray-200 text-gray-800 font-semibold rounded-lg hover:bg-gray-300 transition">
+                        <i class="fas fa-arrow-left"></i>
+                        <span>Back to Home</span>
+                    </a>
+                </div>
+            <?php endif; ?>
 
         </div>
     </div>

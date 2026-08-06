@@ -16,9 +16,11 @@ class Tracking extends MY_Controller
     public function index()
     {
         $invoice_number = $this->input->get('invoice') ?? $this->input->post('invoice');
+        $source = $this->input->get('source') ?? $this->input->post('source');
 
         $data = [
             'invoice_number' => $invoice_number,
+            'source' => $source,
             'tracking_data' => null,
             'error' => null,
             'timeline' => []

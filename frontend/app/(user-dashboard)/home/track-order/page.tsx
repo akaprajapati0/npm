@@ -14,8 +14,14 @@ export default function Track() {
         const trimmedTrackingNumber = trackingNumber.trim();
         if (!trimmedTrackingNumber) return;
 
+        const trackingPageUrl =
+            window.location.hostname.includes("localhost") ||
+                window.location.hostname.endsWith(".local")
+                ? "http://namedpatientprogram.local/tracking"
+                : "https://namedpatientprogram.com/tracking";
+
         window.location.href =
-            "https://trackorder.ikrispharmanetwork.com/showData";
+            `${trackingPageUrl}?invoice=${encodeURIComponent(trimmedTrackingNumber)}&source=app`;
     };
 
     return (
