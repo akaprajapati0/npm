@@ -11,6 +11,7 @@ import { sendEmail } from "../service/sendMail";
 import { passwordTemplate } from "../service/emailTemplate";
 
 const smsService = new PRPSmsService();
+const pincodeRegex = /^\d{6}$/;
 
 export const registerCaretaker = async (req: Request, res: Response) => {
     try {
@@ -53,6 +54,10 @@ export const registerCaretaker = async (req: Request, res: Response) => {
 
         if (email && !/^\S+@\S+\.\S+$/.test(email)) {
             return sendErrorResponse(res, 400, "Invalid email format");
+        }
+
+        if (!pincodeRegex.test(String(pincode).trim())) {
+            return sendErrorResponse(res, 400, "Pincode must be exactly 6 digits");
         }
 
         // ---------- Patient Validation ----------
@@ -198,6 +203,10 @@ export const updateCaretaker = async (req: Request, res: Response) => {
 
         if (email && !emailRegex.test(email)) {
             return sendErrorResponse(res, 400, "Invalid email format");
+        }
+
+        if (!pincodeRegex.test(String(pincode).trim())) {
+            return sendErrorResponse(res, 400, "Pincode must be exactly 6 digits");
         }
 
         // ---------- Patient Validation ----------

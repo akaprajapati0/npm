@@ -24,7 +24,12 @@ const CaretakerSchema = new Schema<CaretakerTypes>(
         country: { type: String, trim: true, required: true },
 
         city: { type: String, trim: true, required: true },
-        pincode: { type: String, trim: true, required: true },
+        pincode: {
+            type: String,
+            trim: true,
+            required: true,
+            match: [/^\d{6}$/, "Pincode must be exactly 6 digits"],
+        },
 
         phone: {
             type: String,

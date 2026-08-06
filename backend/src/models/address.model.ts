@@ -56,8 +56,7 @@ const AddressSchema = new Schema<AddressDocument>(
             type: String,
             required: true,
             trim: true,
-            minlength: 4,
-            maxlength: 10,
+            match: [/^\d{6}$/, "Pincode must be exactly 6 digits"],
         },
 
         landmark: {

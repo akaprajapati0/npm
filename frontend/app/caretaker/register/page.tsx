@@ -342,9 +342,8 @@ export default function RegisterPage() {
             <Input
               {...form.register("pincode")}
               placeholder="Enter pincode"
-              maxLength={15}
-              allowPattern={/[^0-9-]/}
-              className="capitalize"
+              maxLength={6}
+              allowPattern={/[^0-9]/g}
             />
             {form.formState.errors.pincode && (
               <p className="text-red-500 text-sm">

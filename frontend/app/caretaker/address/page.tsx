@@ -180,7 +180,7 @@ export default function Address() {
 
                     <div className="space-y-1">
                         <Label>Pincode</Label>
-                        <Input {...register("pincode")} placeholder='Enter Pincode' maxLength={15} allowPattern={/[^A-Za-z0-9]/g} />
+                        <Input {...register("pincode")} placeholder='Enter Pincode' maxLength={6} allowPattern={/[^0-9]/g} />
                         {errors.pincode && (
                             <p className="text-sm text-red-500">
                                 {errors.pincode.message}

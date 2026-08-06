@@ -3,6 +3,8 @@ import User from "../models/user.model";
 import { sendErrorResponse, sendSuccessResponse } from "../utils/response";
 import Address from '../models/address.model';
 
+const pincodeRegex = /^\d{6}$/;
+
 export const createAddress = async (req: Request, res: Response) => {
     try {
         const userId = (req.user as any).id || (req.user as any)._id || req.user;
@@ -18,6 +20,10 @@ export const createAddress = async (req: Request, res: Response) => {
                 400,
                 "Delivery address confirmation is required"
             );
+        }
+
+        if (!pincodeRegex.test(String(req.body.pincode ?? "").trim())) {
+            return sendErrorResponse(res, 400, "Pincode must be exactly 6 digits");
         }
 
         const user = await User.findById(userId).populate("patients");
@@ -108,6 +114,10 @@ export const updateAddress = async (req: Request, res: Response) => {
                 400,
                 "Delivery address confirmation is required"
             );
+        }
+
+        if (!pincodeRegex.test(String(req.body.pincode ?? "").trim())) {
+            return sendErrorResponse(res, 400, "Pincode must be exactly 6 digits");
         }
 
         const address = await Address.findOneAndUpdate(

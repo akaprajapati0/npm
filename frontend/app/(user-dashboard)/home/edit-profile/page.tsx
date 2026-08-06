@@ -390,9 +390,8 @@ function EditProfileContent() {
                             <Input
                                 {...form.register("pincode")}
                                 placeholder="Enter pincode"
-                                maxLength={15}
-                                allowPattern={/[^A-Za-z0-9]/g}
-                                className='capitalize'
+                                maxLength={6}
+                                allowPattern={/[^0-9]/g}
                             />
                             {form.formState.errors.pincode && (
                                 <p className="text-red-500 text-sm">{form.formState.errors.pincode.message}</p>
@@ -569,8 +568,8 @@ function EditProfileContent() {
                             <Input
                                 {...addressForm.register("pincode")}
                                 placeholder="Enter Pincode"
-                                maxLength={15}
-                                allowPattern={/[^A-Za-z0-9]/g}
+                                maxLength={6}
+                                allowPattern={/[^0-9]/g}
                             />
                             {addressForm.formState.errors.pincode && (
                                 <p className="text-sm text-red-500">

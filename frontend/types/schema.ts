@@ -113,7 +113,10 @@ export const RegisterSchema = z.object({
     relationshipOther: z.string(),
     country: z.string().min(1, "Country required"),
     city: z.string().min(1, "City required"),
-    pincode: z.string().min(1, "Pincode required"),
+    pincode: z
+        .string()
+        .trim()
+        .regex(/^\d{6}$/, "Pincode must be exactly 6 digits"),
 
     patient: z.object({
         fullname: z.string().min(1, "Patient name is required"),
@@ -211,7 +214,10 @@ export const AddressSchema = z.object({
 
     country: z.string().trim().min(1, "Country is required"),
 
-    pincode: z.string().trim().min(4, "Invalid pincode"),
+    pincode: z
+        .string()
+        .trim()
+        .regex(/^\d{6}$/, "Pincode must be exactly 6 digits"),
 
     landmark: z.string().trim().optional(),
 
