@@ -613,7 +613,7 @@ export const useReactivateAccount = () => {
             queryClient.invalidateQueries(
                 {
                     queryKey: [
-                        "users",
+                        "users-infinite",
                     ],
                 }
             );

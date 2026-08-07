@@ -34,6 +34,9 @@ interface ReusableDataTableProps<T extends object> {
   onLoadMore?: () => void;
 
   searchKeys?: (keyof T)[];
+  toolbar?: React.ReactNode;
+  resultSummary?: React.ReactNode;
+  rowKey?: (row: T) => React.Key;
 }
 
 // ─── Component ───
@@ -49,6 +52,9 @@ export function ReusableDataTable<T extends object>({
   isFetchingNextPage,
   onLoadMore,
   searchKeys = [],
+  toolbar,
+  resultSummary,
+  rowKey,
 }: ReusableDataTableProps<T>) {
   const [search, setSearch] = useState("");
   const loadMoreRef = useRef<HTMLDivElement | null>(null);
@@ -70,7 +76,7 @@ export function ReusableDataTable<T extends object>({
     if (!loadMoreRef.current || !onLoadMore) return;
 
     const observer = new IntersectionObserver((entries) => {
-      if (entries[0].isIntersecting && hasNextPage) {
+      if (entries[0].isIntersecting && hasNextPage && !isFetchingNextPage) {
         onLoadMore();
       }
     });
@@ -78,7 +84,7 @@ export function ReusableDataTable<T extends object>({
     observer.observe(loadMoreRef.current);
 
     return () => observer.disconnect();
-  }, [hasNextPage, onLoadMore]);
+  }, [hasNextPage, isFetchingNextPage, onLoadMore]);
 
   const columnCount = React.Children.count(head) || 1;
 
@@ -99,6 +105,8 @@ export function ReusableDataTable<T extends object>({
       </CardHeader>
 
       <CardContent>
+        {toolbar}
+
         {/* Search */}
         {searchKeys.length > 0 && (
           <div className="mb-4">
@@ -108,6 +116,12 @@ export function ReusableDataTable<T extends object>({
               onChange={(e) => setSearch(e.target.value)}
               className="max-w-xs"
             />
+          </div>
+        )}
+
+        {resultSummary && (
+          <div className="mb-3 text-sm text-muted-foreground">
+            {resultSummary}
           </div>
         )}
 
@@ -127,7 +141,7 @@ export function ReusableDataTable<T extends object>({
                 </TableRow>
               ) : (
                 filteredData.map((row, index) => (
-                  <TableRow key={index}>
+                  <TableRow key={rowKey ? rowKey(row) : index}>
                     {children(row, index)}
                   </TableRow>
                 ))

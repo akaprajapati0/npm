@@ -965,23 +965,87 @@ export const logout = async (
 
 export const getAllUsers = async (req: Request, res: Response) => {
     try {
-        // Get query params (default: page=1, limit=10)
-        const page = parseInt(req.query.page as string) || 1;
-        const limit = parseInt(req.query.limit as string) || 10;
+        const page = Math.max(parseInt(req.query.page as string) || 1, 1);
+        const limit = Math.min(Math.max(parseInt(req.query.limit as string) || 25, 1), 100);
+        const search = String(req.query.search || "").trim();
+        const provider = String(req.query.provider || "all");
+        const progress = String(req.query.progress || "all");
+        const status = String(req.query.status || "all");
+        const sortBy = ["createdAt", "email", "phone", "progress"].includes(String(req.query.sortBy))
+            ? String(req.query.sortBy)
+            : "createdAt";
+        const sortOrder = req.query.sortOrder === "asc" ? 1 : -1;
+        const filter: Record<string, unknown> = {};
+        const validProgressValues = [
+            "none",
+            "caretaker_uploaded",
+            "prescribed_uploaded",
+            "doctor_uploaded",
+            "prescription_uploaded",
+            "kyc_uploaded",
+            "request_quotation",
+            "request_invoice",
+            "request_license",
+            "bank_receipt_uploaded",
+            "cdec_uploaded",
+            "address_added",
+            "address_skipped",
+            "completed",
+        ];
 
-        // Calculate how many records to skip
+        if (search) {
+            const escapedSearch = search.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+            filter.$or = [
+                { email: { $regex: escapedSearch, $options: "i" } },
+                { phone: { $regex: escapedSearch, $options: "i" } },
+            ];
+        }
+
+        if (["local", "google"].includes(provider)) {
+            filter.authProvider = provider;
+        }
+
+        if (validProgressValues.includes(progress)) {
+            filter.progress = progress;
+        }
+
+        if (status === "active") {
+            filter.isDeactivated = { $ne: true };
+        } else if (status === "deactivated") {
+            filter.isDeactivated = true;
+        }
+
+        const createdAt: { $gte?: Date; $lte?: Date } = {};
+        const dateFrom = new Date(String(req.query.dateFrom || ""));
+        const dateTo = new Date(String(req.query.dateTo || ""));
+
+        if (!Number.isNaN(dateFrom.getTime())) {
+            createdAt.$gte = dateFrom;
+        }
+
+        if (!Number.isNaN(dateTo.getTime())) {
+            dateTo.setUTCHours(23, 59, 59, 999);
+            createdAt.$lte = dateTo;
+        }
+
+        if (Object.keys(createdAt).length > 0) {
+            filter.createdAt = createdAt;
+        }
+
         const skip = (page - 1) * limit;
-
-        // Fetch users with pagination
-        const users = await User.find()
-            .sort({ createdAt: -1 })
-            .skip(skip)
-            .limit(limit)
-            .lean()
-            .select("email phone authProvider progress image isDeactivated");
-
-        // Total count for frontend pagination
-        const totalUsers = await User.countDocuments();
+        const [users, totalUsers, allUsers, activeUsers, deactivatedUsers, completedUsers] = await Promise.all([
+            User.find(filter)
+                .sort({ [sortBy]: sortOrder, _id: -1 })
+                .skip(skip)
+                .limit(limit)
+                .lean()
+                .select("email phone authProvider progress image isDeactivated createdAt"),
+            User.countDocuments(filter),
+            User.countDocuments(),
+            User.countDocuments({ isDeactivated: { $ne: true } }),
+            User.countDocuments({ isDeactivated: true }),
+            User.countDocuments({ progress: { $in: ["address_added", "address_skipped", "completed"] } }),
+        ]);
 
         return sendSuccessResponse(res, 200, "Users retrieved successfully", {
             users,
@@ -990,7 +1054,13 @@ export const getAllUsers = async (req: Request, res: Response) => {
                 page,
                 limit,
                 totalPages: Math.ceil(totalUsers / limit),
-            }
+            },
+            summary: {
+                total: allUsers,
+                active: activeUsers,
+                deactivated: deactivatedUsers,
+                completed: completedUsers,
+            },
 
         });
     } catch (error) {

@@ -18,6 +18,25 @@ interface Pagination {
 interface UserResponse {
     users: UserRow[];
     pagination: Pagination;
+    summary: UserSummary;
+}
+
+export interface UserSummary {
+    total: number;
+    active: number;
+    deactivated: number;
+    completed: number;
+}
+
+export interface UserFilters {
+    search?: string;
+    provider?: "all" | "local" | "google";
+    progress?: string;
+    status?: "all" | "active" | "deactivated";
+    dateFrom?: string;
+    dateTo?: string;
+    sortBy?: "createdAt" | "email" | "phone" | "progress";
+    sortOrder?: "asc" | "desc";
 }
 
 // caretaker register request
@@ -151,13 +170,13 @@ export const useGetCaretaker = () => {
 
 
 // for admin use 
-export const useInfiniteUsers = (limit: number = 10) => {
+export const useInfiniteUsers = (limit: number = 25, filters: UserFilters = {}) => {
     return useInfiniteQuery<UserResponse, Error>({
-        queryKey: ["users-infinite", limit],
+        queryKey: ["users-infinite", limit, filters],
 
         queryFn: async ({ pageParam = 1 }) => {
             const { data } = await adminApi.get("/auth/user-data", {
-                params: { page: pageParam, limit },
+                params: { page: pageParam, limit, ...filters },
             });
 
             // adjust based on backend

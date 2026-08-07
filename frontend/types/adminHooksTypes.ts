@@ -12,6 +12,7 @@ export interface UserRow {
     authProvider?: string;
     progress: string;
     isDeactivated: boolean;
+    createdAt: string;
 }
 
 export interface CaretakerRow {
