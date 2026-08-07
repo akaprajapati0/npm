@@ -41,7 +41,7 @@ export const usePrescribedMedicine = () => {
         onSuccess: (res) => {
             if (res?.success) {
                 successToast("Prescribed medicine saved successfully");
-                router.replace("/caretaker/doctor-details");
+                router.push("/caretaker/doctor-details");
             } else {
                 errorToast(res?.message || "Data was not saved");
             }

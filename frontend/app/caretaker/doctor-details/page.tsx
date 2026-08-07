@@ -51,7 +51,7 @@ export default function DoctorDetailsPage() {
     const handlePopupClose = (open: boolean) => {
         setOpenPopup(open);
         if (!open) {
-            router.replace("/caretaker/upload-document");
+            router.push("/caretaker/upload-document");
 
         }
     };

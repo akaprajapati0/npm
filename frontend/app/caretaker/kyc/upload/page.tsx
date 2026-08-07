@@ -308,7 +308,7 @@ export default function KycUploadPage() {
                 open={openPopup}
                 onOpenChange={() => {
                     setOpenPopup(false);
-                    router.replace("/caretaker/request-docs");
+                    router.push("/caretaker/request-docs");
                 }}
                 image="/successfull-popup.svg"
                 title={kycType === "aadhaar" ? "Aadhaar Details Submitted Successfully" : "Passport Details Submitted Successfully"}

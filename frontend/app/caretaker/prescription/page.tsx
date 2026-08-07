@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 import GoBackBtn from '@/components/GoBackBtn';
@@ -22,10 +22,15 @@ export default function Prescription() {
         setUploadType("document");
     };
 
-    setTimeout(() => {
-        if (files.length > 0) router.replace("/caretaker/prescription/upload")
-        return
-    }, 500);
+    useEffect(() => {
+        if (files.length === 0) return;
+
+        const timer = setTimeout(() => {
+            router.push("/caretaker/prescription/upload");
+        }, 500);
+
+        return () => clearTimeout(timer);
+    }, [files.length, router]);
 
 
     return (

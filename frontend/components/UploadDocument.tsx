@@ -119,7 +119,7 @@ export default function UploadDocument({
                             ? () => openFilePicker({ camera: true })
                             : () => {
                                 setKycType("aadhaar");
-                                router.replace("/caretaker/kyc/upload");
+                                router.push("/caretaker/kyc/upload");
                             }
                     }
                     className="flex justify-between items-center px-4 w-full cursor-pointer"
@@ -143,7 +143,7 @@ export default function UploadDocument({
                         ? () => openFilePicker({ camera: false })
                         : () => {
                             setKycType("passport");
-                            router.replace("/caretaker/kyc/upload");
+                            router.push("/caretaker/kyc/upload");
                         }
                 }
                 className="flex justify-between items-center px-4 w-full cursor-pointer h-fit"

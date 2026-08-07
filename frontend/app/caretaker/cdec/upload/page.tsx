@@ -23,10 +23,15 @@ export default function UploadCdec() {
     const [uploadType, setUploadType] = useState<PopupType>("");
     const [activeTextModal, setActiveTextModal] = useState<keyof typeof CDEC_CONFIG | null>(null);
 
-    setTimeout(() => {
-        if (files.length > 0) router.replace("/caretaker/cdec/upload/document")
-        return
-    }, 500);
+    useEffect(() => {
+        if (files.length === 0) return;
+
+        const timer = setTimeout(() => {
+            router.push("/caretaker/cdec/upload/document");
+        }, 500);
+
+        return () => clearTimeout(timer);
+    }, [files.length, router]);
 
     return (
         <div className="min-h-screen flex items-center justify-center bg-white md:bg-gray-100">

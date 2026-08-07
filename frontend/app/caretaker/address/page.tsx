@@ -51,7 +51,7 @@ export default function Address() {
                 progress: "address_skipped"
             });
 
-            router.replace("/home");
+            router.push("/home");
         } catch (error) {
             console.log(error);
         }
@@ -65,7 +65,7 @@ export default function Address() {
                 setOpen(true)
                 setTimeout(() => {
                     setOpen(false)
-                    router.replace("/home");
+                    router.push("/home");
                 }, 3000);
             },
         });

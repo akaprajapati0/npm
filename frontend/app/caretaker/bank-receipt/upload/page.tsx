@@ -103,7 +103,7 @@ export default function UploadBankReceipt() {
     const handlePopupClose = (open: boolean) => {
         setOpenPopup(open);
         if (!open) {
-            router.replace("/caretaker/cdec");
+            router.push("/caretaker/cdec");
         }
     };
 

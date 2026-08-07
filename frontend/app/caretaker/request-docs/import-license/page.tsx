@@ -39,7 +39,7 @@ export default function ImportLicense() {
 
   const handlePopupClose = (open: boolean) => {
     setOpenPopup(open);
-    router.replace("/caretaker/bank-receipt");
+    router.push("/caretaker/bank-receipt");
   };
 
   // if (isPending) {

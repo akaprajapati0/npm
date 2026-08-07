@@ -132,7 +132,7 @@ export default function CDEC() {
                         </div>
 
                         <div className="relative w-full">
-                            <Button disabled={checkApproval || !fileUrl} className="w-full mt-5 py-6 text-xl font-medium" onClick={() => router.replace("/caretaker/cdec/upload")}>
+                            <Button disabled={checkApproval || !fileUrl} className="w-full mt-5 py-6 text-xl font-medium" onClick={() => router.push("/caretaker/cdec/upload")}>
                                 Upload CDEC Document
                             </Button>
                             <ReadTextPopup

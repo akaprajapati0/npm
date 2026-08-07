@@ -37,7 +37,7 @@ export default function CdecDocument() {
 
     const handleSuccessPopup = () => {
         setSuccessPopup(false)
-        router.replace("/caretaker/address")
+        router.push("/caretaker/address")
     }
 
 

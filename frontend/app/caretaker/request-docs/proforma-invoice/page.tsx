@@ -56,7 +56,7 @@ export default function ProformaInvoice() {
 
   const handlePopupClose = (open: boolean) => {
     setOpenPopup(open);
-    router.replace("/caretaker/request-docs");
+    router.push("/caretaker/request-docs");
   };
 
   return (

@@ -63,7 +63,7 @@ export default function PrescriptionKycUpload() {
 
                 <CarouselInfo heading='Complete Your Prescription & KYC' subHeading='Add your prescription and complete KYC to help us validate your treatment.' items={carouselItems}>
 
-                    <Button className="w-full mt-5 py-6 text-xl font-medium" variant={progressStatus ? "secondary" : "default"} disabled={progressStatus} onClick={() => router.replace("/caretaker/prescription")}>
+                    <Button className="w-full mt-5 py-6 text-xl font-medium" variant={progressStatus ? "secondary" : "default"} disabled={progressStatus} onClick={() => router.push("/caretaker/prescription")}>
                         Prescription
                     </Button>
 
@@ -76,7 +76,7 @@ export default function PrescriptionKycUpload() {
                         className="w-full mt-5 py-6 text-xl font-medium"
                         variant={!progressStatus ? "secondary" : "default"}
                         disabled={!progressStatus || !hasPrescription}
-                        onClick={() => router.replace("/caretaker/kyc")}
+                        onClick={() => router.push("/caretaker/kyc")}
                     >
                         KYC
                     </Button>

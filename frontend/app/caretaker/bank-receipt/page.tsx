@@ -43,7 +43,7 @@ export default function BankReceipt() {
                         Authorized Dealer Code issued by your bank, as it is required for regulatory and customs documentation to avoid delays.
                     </div>
 
-                    <Button className="w-full mt-4 py-6 text-xl font-medium" onClick={() => router.replace("/caretaker/bank-receipt/upload")}>
+                    <Button className="w-full mt-4 py-6 text-xl font-medium" onClick={() => router.push("/caretaker/bank-receipt/upload")}>
                         Upload Bank Receipt
                     </Button>
                 </div>
